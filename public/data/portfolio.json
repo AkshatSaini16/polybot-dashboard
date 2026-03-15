@@ -18,7 +18,7 @@
       "opened_at": "2026-03-15T17:28:17",
       "source_wallet": "0x2a2c53bd27",
       "category": "",
-      "question": "Sharks vs. Senators",
+      "question": "",
       "polymarket_url": ""
     },
     {
@@ -33,7 +33,7 @@
       "opened_at": "2026-03-15T17:28:18",
       "source_wallet": "0x37c1874a60",
       "category": "",
-      "question": "Spread: Pistons (-3.5)",
+      "question": "",
       "polymarket_url": ""
     },
     {
@@ -48,7 +48,7 @@
       "opened_at": "2026-03-15T17:28:19",
       "source_wallet": "0x37c1874a60",
       "category": "",
-      "question": "Will San Jose Earthquakes win on 2026-03-15?",
+      "question": "",
       "polymarket_url": ""
     },
     {
@@ -63,7 +63,7 @@
       "opened_at": "2026-03-15T17:32:20",
       "source_wallet": "0x37c1874a60",
       "category": "",
-      "question": "Will VfB Stuttgart win on 2026-03-15?",
+      "question": "",
       "polymarket_url": ""
     },
     {
@@ -78,7 +78,7 @@
       "opened_at": "2026-03-15T17:32:54",
       "source_wallet": "0x2a2c53bd27",
       "category": "",
-      "question": "Will Stade Rennais FC 1901 win on 2026-03-15?",
+      "question": "",
       "polymarket_url": ""
     },
     {
@@ -93,7 +93,7 @@
       "opened_at": "2026-03-15T17:33:22",
       "source_wallet": "0x2a2c53bd27",
       "category": "",
-      "question": "Sharks vs. Senators",
+      "question": "",
       "polymarket_url": ""
     },
     {
@@ -108,7 +108,7 @@
       "opened_at": "2026-03-15T17:34:59",
       "source_wallet": "0x6ac5bb06a9",
       "category": "",
-      "question": "Will SSC Napoli win on 2026-03-20?",
+      "question": "",
       "polymarket_url": ""
     },
     {
@@ -123,10 +123,10 @@
       "opened_at": "2026-03-15T17:37:54",
       "source_wallet": "0x2a2c53bd27",
       "category": "",
-      "question": "Will Stade Rennais FC 1901 win on 2026-03-15?",
+      "question": "",
       "polymarket_url": ""
     }
   ],
   "total_unrealized_pnl": 0.0,
-  "last_updated": "2026-03-15T17:41:14.171787"
+  "last_updated": "2026-03-15T17:42:33.775294"
 }
