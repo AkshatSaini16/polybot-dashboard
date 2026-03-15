@@ -1,7 +1,7 @@
 {
-  "balance_usdt": 63.73,
-  "balance_inr": 5321.44,
-  "active_capital_usdt": 63.73,
+  "balance_usdt": 65.37,
+  "balance_inr": 5458.41,
+  "active_capital_usdt": 65.37,
   "reserve_usdt": 0.0,
   "regime": "bull",
   "bot_status": "paper",
@@ -32,9 +32,9 @@
       "current_price": 0.6368,
       "size_usdt": 4.79,
       "size_inr": 399.96,
-      "pnl": 1.1148,
-      "pnl_inr": 93.09,
-      "pnl_pct": 23.27,
+      "pnl": 2.7282,
+      "pnl_inr": 227.8,
+      "pnl_pct": 56.96,
       "opened_at": "2026-03-15T18:10:55",
       "source_wallet": "0x2a2c53bd27",
       "category": "",
@@ -68,9 +68,9 @@
       "current_price": 0.4875,
       "size_usdt": 4.79,
       "size_inr": 399.96,
-      "pnl": 0.0737,
-      "pnl_inr": 6.15,
-      "pnl_pct": 1.54,
+      "pnl": -0.0246,
+      "pnl_inr": -2.05,
+      "pnl_pct": -0.51,
       "opened_at": "2026-03-15T18:10:56",
       "source_wallet": "0x37c1874a60",
       "category": "",
@@ -133,24 +133,6 @@
       "bet_description": "Pistons (-3.5) covers \u2014 48% implied"
     },
     {
-      "condition_id": "0x5e6ff78de865dbe201e3d2044722977aa5ffb18c90414dfb561a7d178ba35c8a",
-      "token_id": "103079803914363742780020998271274562392234323215253877084815687313780977684677",
-      "side": "BUY",
-      "entry_price": 0.6269,
-      "current_price": 0.6269,
-      "size_usdt": 0.72,
-      "size_inr": 60.12,
-      "pnl": 0.4279,
-      "pnl_inr": 35.73,
-      "pnl_pct": 59.43,
-      "opened_at": "2026-03-15T18:13:16",
-      "source_wallet": "0x37c1874a60",
-      "category": "",
-      "question": "Will RB Leipzig win on 2026-03-15?",
-      "polymarket_url": "https://polymarket.com/sports/bundesliga/bun-stu-lei-2026-03-15",
-      "bet_description": "RB Leipzig wins \u2014 63% implied"
-    },
-    {
       "condition_id": "0x1b3fa3e7bc5ec5a04c04f2c086ad19beef838fab73ad900edf80386e108026dc",
       "token_id": "45944214626270152025943230145028698354114055782969638854247214562056709592139",
       "side": "BUY",
@@ -176,9 +158,9 @@
       "current_price": 0.597,
       "size_usdt": 2.48,
       "size_inr": 207.08,
-      "pnl": 0.0332,
-      "pnl_inr": 2.77,
-      "pnl_pct": 1.34,
+      "pnl": 0.1579,
+      "pnl_inr": 13.18,
+      "pnl_pct": 6.37,
       "opened_at": "2026-03-15T20:37:35",
       "source_wallet": "0x6ac5bb06a9",
       "category": "",
@@ -223,6 +205,6 @@
       "bet_description": "YES on Jazz vs. Kings \u2014 41% implied"
     }
   ],
-  "total_unrealized_pnl": 3.85,
-  "last_updated": "2026-03-15T22:41:53.496279"
+  "total_unrealized_pnl": 5.06,
+  "last_updated": "2026-03-15T23:42:02.760875"
 }
