@@ -115,7 +115,16 @@ export default function PortfolioPage() {
             <tbody>
               {portfolio.positions.map((pos, i) => (
                 <tr key={i} className="border-t border-gray-800/50 hover:bg-gray-800/30">
-                  <td className="px-4 py-2 font-mono text-xs">{pos.condition_id.slice(0, 16)}...</td>
+                  <td className="px-4 py-2 text-xs max-w-[200px]">
+                    {pos.polymarket_url ? (
+                      <a href={pos.polymarket_url} target="_blank" rel="noopener noreferrer"
+                         className="text-blue-400 hover:text-blue-300 hover:underline">
+                        {pos.question || pos.condition_id.slice(0, 16) + "..."}
+                      </a>
+                    ) : (
+                      <span className="font-mono text-gray-400">{pos.condition_id.slice(0, 16)}...</span>
+                    )}
+                  </td>
                   <td className="px-4 py-2">
                     <span className={pos.side === "BUY" ? "text-emerald-400" : "text-red-400"}>
                       {pos.side}

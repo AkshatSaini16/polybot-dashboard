@@ -10,6 +10,8 @@ export interface Position {
   opened_at: string;
   source_wallet: string;
   category: string;
+  question?: string;
+  polymarket_url?: string;
 }
 
 export interface Trade {
