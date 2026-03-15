@@ -87,8 +87,17 @@ export default function TradesPage() {
                   <td className="px-4 py-2 text-xs text-gray-400">
                     {new Date(trade.timestamp).toLocaleString()}
                   </td>
-                  <td className="px-4 py-2 font-mono text-xs">
-                    {trade.condition_id.slice(0, 16)}...
+                  <td className="px-4 py-2 text-xs max-w-[200px]">
+                    {trade.polymarket_url ? (
+                      <a href={trade.polymarket_url} target="_blank" rel="noopener noreferrer"
+                         className="text-blue-400 hover:text-blue-300 hover:underline">
+                        {trade.question || trade.condition_id.slice(0, 16) + "..."}
+                      </a>
+                    ) : (
+                      <span className="font-mono text-gray-400">
+                        {trade.question || trade.condition_id.slice(0, 16) + "..."}
+                      </span>
+                    )}
                   </td>
                   <td className="px-4 py-2">
                     <span className={trade.side === "BUY" ? "text-emerald-400" : "text-red-400"}>

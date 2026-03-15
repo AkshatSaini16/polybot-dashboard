@@ -5,7 +5,9 @@ export interface Position {
   entry_price: number;
   current_price: number;
   size_usdt: number;
+  size_inr?: number;
   pnl: number;
+  pnl_inr?: number;
   pnl_pct: number;
   opened_at: string;
   source_wallet: string;
@@ -21,8 +23,12 @@ export interface Trade {
   side: string;
   price: number;
   size_usdt: number;
+  size_inr?: number;
   pnl: number;
+  pnl_inr?: number;
   timestamp: string;
+  question?: string;
+  polymarket_url?: string;
   tier: number;
   category: string;
   status: string;
