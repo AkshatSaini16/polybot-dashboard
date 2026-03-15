@@ -18,8 +18,8 @@
       "opened_at": "2026-03-15T17:28:17",
       "source_wallet": "0x2a2c53bd27",
       "category": "",
-      "question": "",
-      "polymarket_url": ""
+      "question": "Sharks vs. Senators",
+      "polymarket_url": "https://polymarket.com/event/nhl-sj-ott-2026-03-15"
     },
     {
       "condition_id": "0xbe597fd73b895cd51def6e454ba5514b58a5d9fac5fd2c81919979473eb4c450",
@@ -33,8 +33,8 @@
       "opened_at": "2026-03-15T17:28:18",
       "source_wallet": "0x37c1874a60",
       "category": "",
-      "question": "",
-      "polymarket_url": ""
+      "question": "Spread: Pistons (-3.5)",
+      "polymarket_url": "https://polymarket.com/event/nba-det-tor-2026-03-15-spread-away-3pt5"
     },
     {
       "condition_id": "0x840bab2a0bc063d6586810bb06f97f80ca1a66b8ab2cfb9e90042102bc05dc40",
@@ -48,8 +48,8 @@
       "opened_at": "2026-03-15T17:28:19",
       "source_wallet": "0x37c1874a60",
       "category": "",
-      "question": "",
-      "polymarket_url": ""
+      "question": "Will San Jose Earthquakes win on 2026-03-15?",
+      "polymarket_url": "https://polymarket.com/event/mls-sje-sea-2026-03-15-sje"
     },
     {
       "condition_id": "0xfde3ab8c84900ea9e2378726817b946d85ebb900b757ea8ac7c1f59ce0f99d06",
@@ -63,8 +63,8 @@
       "opened_at": "2026-03-15T17:32:20",
       "source_wallet": "0x37c1874a60",
       "category": "",
-      "question": "",
-      "polymarket_url": ""
+      "question": "Will VfB Stuttgart win on 2026-03-15?",
+      "polymarket_url": "https://polymarket.com/event/bun-stu-lei-2026-03-15-stu"
     },
     {
       "condition_id": "0xde20551ab7a1cf0217c0a4775b32d9c4e4bc35238a074bb30d310435dc869b4c",
@@ -78,8 +78,8 @@
       "opened_at": "2026-03-15T17:32:54",
       "source_wallet": "0x2a2c53bd27",
       "category": "",
-      "question": "",
-      "polymarket_url": ""
+      "question": "Will Stade Rennais FC 1901 win on 2026-03-15?",
+      "polymarket_url": "https://polymarket.com/event/fl1-ren-lil-2026-03-15-ren"
     },
     {
       "condition_id": "0xf7cc7f51e1cd6a07a0677e4d7683ace88666d417b14b9deec9d590584b2e0064",
@@ -93,8 +93,8 @@
       "opened_at": "2026-03-15T17:33:22",
       "source_wallet": "0x2a2c53bd27",
       "category": "",
-      "question": "",
-      "polymarket_url": ""
+      "question": "Sharks vs. Senators",
+      "polymarket_url": "https://polymarket.com/event/nhl-sj-ott-2026-03-15"
     },
     {
       "condition_id": "0x2caeb2bba32475c540eb9f41c10032a0fab2e22fae844c6ea5064299d8a0b2de",
@@ -108,8 +108,8 @@
       "opened_at": "2026-03-15T17:34:59",
       "source_wallet": "0x6ac5bb06a9",
       "category": "",
-      "question": "",
-      "polymarket_url": ""
+      "question": "Will SSC Napoli win on 2026-03-20?",
+      "polymarket_url": "https://polymarket.com/event/sea-cag-nap-2026-03-20-nap"
     },
     {
       "condition_id": "0xde20551ab7a1cf0217c0a4775b32d9c4e4bc35238a074bb30d310435dc869b4c",
@@ -123,10 +123,10 @@
       "opened_at": "2026-03-15T17:37:54",
       "source_wallet": "0x2a2c53bd27",
       "category": "",
-      "question": "",
-      "polymarket_url": ""
+      "question": "Will Stade Rennais FC 1901 win on 2026-03-15?",
+      "polymarket_url": "https://polymarket.com/event/fl1-ren-lil-2026-03-15-ren"
     }
   ],
   "total_unrealized_pnl": 0.0,
-  "last_updated": "2026-03-15T17:42:33.775294"
+  "last_updated": "2026-03-15T17:50:56.087415"
 }
