@@ -1,7 +1,36 @@
 {
-  "exported_at": "2026-03-15T16:42:00.362113",
+  "exported_at": "2026-03-15T17:32:06.227264",
   "bot_running": true,
-  "current_regime": "unknown",
+  "current_regime": "bull",
+  "soft_params": {
+    "tier1_trust_min": 80.0,
+    "tier2_trust_min": 60.0,
+    "copy_size_fraction": 0.5,
+    "regime": "bull"
+  },
+  "ai_advisor": {
+    "regime": "bull",
+    "confidence": "medium",
+    "reasoning": "4 of 10 tracked wallets in daily top 10 leaderboard. CemeterySun #1 with $807K PnL, 0p0jogggg #3 with $352K, bcda #5 with $245K, Countryside #10 with $98K. All wallets showing strong positive daily performance.",
+    "actions": [
+      "Fixed market lookup: changed from conditionId to clob_token_ids (Gamma API was ignoring conditionId param)",
+      "Cleared stale market cache (1 dead Biden Coronavirus market)",
+      "Lowered tier1_trust_min 85->80 and tier2_trust_min 65->60 (all wallets seeded at 70, need room to execute)",
+      "Re-activated 0p0jogggg (was wash-flagged but is #3 daily leaderboard with $352K PnL)",
+      "Regime set to bull based on strong daily wallet performance"
+    ],
+    "wallet_review": {
+      "active": 10,
+      "deactivated": 0,
+      "top_performers": [
+        "CemeterySun",
+        "0p0jogggg",
+        "bcda",
+        "Countryside"
+      ]
+    },
+    "next_review": "6h"
+  },
   "starting_capital_usdt": 59.88,
   "starting_capital_inr": 4999.98
 }

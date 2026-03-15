@@ -1,3 +1,43 @@
 {
-  "trades": []
+  "trades": [
+    {
+      "id": 3,
+      "condition_id": "0x840bab2a0bc063d6586810bb06f97f80ca1a66b8ab2cfb9e90042102bc05dc40",
+      "wallet": "0x37c1874a60",
+      "side": "BUY",
+      "price": 0.587,
+      "size_usdt": 213.52,
+      "pnl": 0.0,
+      "timestamp": "2026-03-15T17:28:19",
+      "tier": 2,
+      "category": "sports",
+      "status": "OPEN"
+    },
+    {
+      "id": 2,
+      "condition_id": "0xbe597fd73b895cd51def6e454ba5514b58a5d9fac5fd2c81919979473eb4c450",
+      "wallet": "0x37c1874a60",
+      "side": "BUY",
+      "price": 0.4975,
+      "size_usdt": 560.0,
+      "pnl": 0.0,
+      "timestamp": "2026-03-15T17:28:18",
+      "tier": 2,
+      "category": "sports",
+      "status": "OPEN"
+    },
+    {
+      "id": 1,
+      "condition_id": "0xf7cc7f51e1cd6a07a0677e4d7683ace88666d417b14b9deec9d590584b2e0064",
+      "wallet": "0x2a2c53bd27",
+      "side": "BUY",
+      "price": 0.6368,
+      "size_usdt": 560.0,
+      "pnl": 0.0,
+      "timestamp": "2026-03-15T17:28:17",
+      "tier": 2,
+      "category": "sports",
+      "status": "OPEN"
+    }
+  ]
 }
