@@ -88,7 +88,7 @@ export default function PortfolioPage() {
         </Card>
         <Card title="Open Positions">
           <p className="text-2xl font-bold">{portfolio.positions.length}</p>
-          <p className="text-sm text-gray-500">Max: 8</p>
+          <p className="text-sm text-gray-500">Max: 12</p>
         </Card>
       </div>
 

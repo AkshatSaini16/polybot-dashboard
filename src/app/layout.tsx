@@ -5,6 +5,10 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Titlr's PolyBot",
   description: "Polymarket Copy-Trading Bot — Paper Trading Dashboard",
+  icons: {
+    icon: "/favicon.png",
+    apple: "/favicon.png",
+  },
 };
 
 const navItems = [
