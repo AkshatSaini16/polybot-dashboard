@@ -107,6 +107,7 @@ export default function PortfolioPage() {
                 <th className="px-4 py-2 text-left text-gray-500">Side</th>
                 <th className="px-4 py-2 text-right text-gray-500">Entry</th>
                 <th className="px-4 py-2 text-right text-gray-500">Current</th>
+                <th className="px-4 py-2 text-right text-gray-500">Size</th>
                 <th className="px-4 py-2 text-right text-gray-500">Bet Amount</th>
                 <th className="px-4 py-2 text-right text-gray-500">P&L</th>
                 <th className="px-4 py-2 text-left text-gray-500">Category</th>
@@ -132,9 +133,9 @@ export default function PortfolioPage() {
                   </td>
                   <td className="px-4 py-2 text-right">{pos.entry_price.toFixed(4)}</td>
                   <td className="px-4 py-2 text-right">{pos.current_price.toFixed(4)}</td>
-                  <td className="px-4 py-2 text-right">
-                    <div>{formatUsdt(pos.size_usdt)}</div>
-                    <div className="text-xs text-gray-500">{formatInr(pos.size_inr || pos.size_usdt * 83.5)}</div>
+                  <td className="px-4 py-2 text-right">{formatUsdt(pos.size_usdt)}</td>
+                  <td className="px-4 py-2 text-right text-yellow-300">
+                    {formatInr(pos.size_inr || pos.size_usdt * 83.5)}
                   </td>
                   <td className={`px-4 py-2 text-right ${pos.pnl >= 0 ? "text-emerald-400" : "text-red-400"}`}>
                     {formatUsdt(pos.pnl)} ({pos.pnl_pct >= 0 ? "+" : ""}{pos.pnl_pct.toFixed(1)}%)
