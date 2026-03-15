@@ -1,0 +1,11 @@
+{
+  "balance_usdt": 59.88,
+  "balance_inr": 4999.98,
+  "active_capital_usdt": 59.88,
+  "reserve_usdt": 0.0,
+  "regime": "unknown",
+  "bot_status": "paper",
+  "positions": [],
+  "total_unrealized_pnl": 0.0,
+  "last_updated": "2026-03-15T16:04:45.006922"
+}
