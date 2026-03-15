@@ -1,0 +1,237 @@
+"use client";
+
+import { useEffect, useState } from "react";
+import type { Meta } from "@/lib/types";
+import { formatInr } from "@/lib/currency";
+
+function SectionCard({ title, children }: { title: string; children: React.ReactNode }) {
+  return (
+    <div className="bg-gray-900 border border-gray-800 rounded-lg p-5">
+      <h3 className="text-sm font-medium text-gray-400 uppercase tracking-wider mb-3">{title}</h3>
+      {children}
+    </div>
+  );
+}
+
+function ConfidenceBadge({ confidence }: { confidence: string }) {
+  const colors: Record<string, string> = {
+    high: "bg-emerald-900 text-emerald-300",
+    medium: "bg-yellow-900 text-yellow-300",
+    low: "bg-red-900 text-red-300",
+  };
+  return (
+    <span className={`px-2 py-0.5 rounded text-xs font-medium ${colors[confidence] || "bg-gray-800 text-gray-400"}`}>
+      {confidence}
+    </span>
+  );
+}
+
+function RegimeBadge({ regime }: { regime: string }) {
+  const colors: Record<string, string> = {
+    bull: "bg-green-900 text-green-300",
+    bear: "bg-red-900 text-red-300",
+    sideways: "bg-yellow-900 text-yellow-300",
+    high_vol: "bg-purple-900 text-purple-300",
+    unknown: "bg-gray-800 text-gray-400",
+  };
+  return (
+    <span className={`px-2 py-0.5 rounded text-xs font-medium ${colors[regime] || colors.unknown}`}>
+      {regime}
+    </span>
+  );
+}
+
+export default function AdvisorPage() {
+  const [meta, setMeta] = useState<Meta | null>(null);
+  const [error, setError] = useState("");
+
+  useEffect(() => {
+    fetch("/data/meta.json")
+      .then((r) => r.json())
+      .then(setMeta)
+      .catch(() => setError("No advisor data yet."));
+  }, []);
+
+  if (error) return <div className="text-center py-20 text-gray-500">{error}</div>;
+  if (!meta) return <div className="text-center py-20 text-gray-500">Loading...</div>;
+
+  const advisor = meta.ai_advisor;
+  const params = meta.soft_params;
+  const skipReasons = meta.skip_reasons || [];
+
+  // How long ago was last signal
+  const lastSignalAgo = meta.last_signal_at
+    ? Math.round((Date.now() - new Date(meta.last_signal_at + "Z").getTime()) / 60000)
+    : null;
+
+  return (
+    <div className="space-y-6">
+      <div className="flex items-center justify-between">
+        <h2 className="text-2xl font-bold">AI Advisor</h2>
+        <span className="text-xs text-gray-500">
+          Last export: {new Date(meta.exported_at).toLocaleString()}
+        </span>
+      </div>
+
+      {/* Bot Health */}
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+        <SectionCard title="Bot Status">
+          <div className="flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+            <span className="text-lg font-bold text-emerald-400">
+              {meta.bot_running ? "Running" : "Stopped"}
+            </span>
+          </div>
+          <p className="text-xs text-gray-500 mt-1">Paper Trading</p>
+        </SectionCard>
+
+        <SectionCard title="Regime">
+          <div className="flex items-center gap-2">
+            <RegimeBadge regime={meta.current_regime} />
+            {advisor && <ConfidenceBadge confidence={advisor.confidence} />}
+          </div>
+          <p className="text-xs text-gray-500 mt-1">
+            Next review: {advisor?.next_review || "?"}
+          </p>
+        </SectionCard>
+
+        <SectionCard title="Last Signal">
+          <p className="text-lg font-bold">
+            {lastSignalAgo !== null
+              ? (lastSignalAgo < 60 ? `${lastSignalAgo}m ago` : `${(lastSignalAgo / 60).toFixed(1)}h ago`)
+              : "No signals"}
+          </p>
+          <p className="text-xs text-gray-500 mt-1">
+            {meta.last_signal_at ? new Date(meta.last_signal_at + "Z").toLocaleString() : "-"}
+          </p>
+        </SectionCard>
+
+        <SectionCard title="Capital">
+          <p className="text-lg font-bold">{formatInr(meta.starting_capital_inr)}</p>
+          <p className="text-xs text-gray-500 mt-1">${meta.starting_capital_usdt} USDT</p>
+        </SectionCard>
+      </div>
+
+      {/* Active Parameters */}
+      {params && (
+        <SectionCard title="Active Soft Parameters">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+            <div>
+              <p className="text-gray-500">Tier 1 Trust Min</p>
+              <p className="text-xl font-mono font-bold">{params.tier1_trust_min}</p>
+              <p className="text-xs text-gray-600">Hard bounds: 75-95</p>
+            </div>
+            <div>
+              <p className="text-gray-500">Tier 2 Trust Min</p>
+              <p className="text-xl font-mono font-bold">{params.tier2_trust_min}</p>
+              <p className="text-xs text-gray-600">Hard bounds: 55-80</p>
+            </div>
+            <div>
+              <p className="text-gray-500">Copy Size Fraction</p>
+              <p className="text-xl font-mono font-bold">{(params.copy_size_fraction * 100).toFixed(0)}%</p>
+              <p className="text-xs text-gray-600">Hard bounds: 10-100%</p>
+            </div>
+            <div>
+              <p className="text-gray-500">Regime</p>
+              <RegimeBadge regime={params.regime} />
+            </div>
+          </div>
+        </SectionCard>
+      )}
+
+      {/* AI Reasoning */}
+      {advisor && (
+        <SectionCard title="Last AI Analysis">
+          <div className="space-y-4">
+            <div>
+              <p className="text-sm text-gray-300 leading-relaxed">{advisor.reasoning}</p>
+            </div>
+
+            <div>
+              <p className="text-xs text-gray-500 uppercase tracking-wider mb-2">Actions Taken</p>
+              <ul className="space-y-1.5">
+                {advisor.actions.map((action, i) => (
+                  <li key={i} className="flex items-start gap-2 text-sm">
+                    <span className="text-emerald-400 mt-0.5 shrink-0">-</span>
+                    <span className="text-gray-300">{action}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {advisor.wallet_review && (
+              <div>
+                <p className="text-xs text-gray-500 uppercase tracking-wider mb-2">Wallet Review</p>
+                <div className="flex gap-6 text-sm">
+                  <span className="text-gray-400">
+                    Active: <span className="text-white font-bold">{advisor.wallet_review.active}</span>
+                  </span>
+                  <span className="text-gray-400">
+                    Deactivated: <span className="text-white font-bold">{advisor.wallet_review.deactivated}</span>
+                  </span>
+                </div>
+                {advisor.wallet_review.top_performers.length > 0 && (
+                  <div className="mt-2 flex flex-wrap gap-2">
+                    {advisor.wallet_review.top_performers.map((w, i) => (
+                      <span key={i} className="px-2 py-0.5 bg-emerald-900/50 text-emerald-300 rounded text-xs">
+                        {w}
+                      </span>
+                    ))}
+                  </div>
+                )}
+              </div>
+            )}
+          </div>
+        </SectionCard>
+      )}
+
+      {/* Signal Skip Reasons (Debug) */}
+      <SectionCard title="Signal Skip Reasons (Last 24h)">
+        {skipReasons.length === 0 ? (
+          <p className="text-gray-500 text-sm">No skip data yet</p>
+        ) : (
+          <div className="space-y-2">
+            {skipReasons.map((s, i) => {
+              const maxCount = skipReasons[0]?.count || 1;
+              const barWidth = Math.max(5, (s.count / maxCount) * 100);
+              // Categorize skip reasons by color
+              const isHardRule = s.reason.startsWith("hard_rule:");
+              const isWash = s.reason.startsWith("wash");
+              const isExit = s.reason.startsWith("exit_liquidity");
+              const isTier = s.reason.startsWith("below_tier");
+              const barColor = isHardRule ? "bg-red-800" : isWash ? "bg-orange-800" : isExit ? "bg-yellow-800" : isTier ? "bg-blue-800" : "bg-gray-700";
+
+              // Clean up the reason text for display
+              let displayReason = s.reason;
+              if (s.reason.startsWith("exit_liquidity:exit_liquidity: ")) {
+                displayReason = s.reason.replace("exit_liquidity:exit_liquidity: ", "Exit Liq: ");
+              } else if (s.reason.startsWith("below_tier2: ")) {
+                displayReason = s.reason.replace("below_tier2: ", "Below T2: ");
+              } else if (s.reason === "wash_filter_flagged") {
+                displayReason = "Wash trade flagged";
+              } else if (s.reason.startsWith("hard_rule:")) {
+                displayReason = "Hard rule: " + s.reason.slice(10);
+              } else if (s.reason.startsWith("category_disabled:")) {
+                displayReason = "Category disabled: " + s.reason.slice(18);
+              }
+
+              return (
+                <div key={i} className="flex items-center gap-3">
+                  <div className="w-12 text-right text-sm font-mono text-gray-400">{s.count}</div>
+                  <div className="flex-1">
+                    <div className={`h-5 rounded ${barColor} flex items-center px-2`} style={{ width: `${barWidth}%` }}>
+                      <span className="text-xs text-gray-200 truncate">{displayReason}</span>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+            <p className="text-xs text-gray-600 mt-2">
+              Red = hard rules | Orange = wash filter | Yellow = exit liquidity | Blue = below tier threshold
+            </p>
+          </div>
+        )}
+      </SectionCard>
+    </div>
+  );
+}

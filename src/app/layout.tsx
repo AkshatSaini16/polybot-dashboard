@@ -11,6 +11,7 @@ const navItems = [
   { href: "/", label: "Portfolio" },
   { href: "/trades/", label: "Trade Log" },
   { href: "/analytics/", label: "Analytics" },
+  { href: "/advisor/", label: "AI Advisor" },
 ];
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

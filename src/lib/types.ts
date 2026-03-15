@@ -74,10 +74,42 @@ export interface Analytics {
   signals_executed: number;
 }
 
+export interface WalletReview {
+  active: number;
+  deactivated: number;
+  top_performers: string[];
+}
+
+export interface AiAdvisor {
+  regime: string;
+  confidence: string;
+  reasoning: string;
+  actions: string[];
+  wallet_review: WalletReview;
+  next_review: string;
+}
+
+export interface SoftParams {
+  tier1_trust_min: number;
+  tier2_trust_min: number;
+  copy_size_fraction: number;
+  regime: string;
+}
+
+export interface SkipReason {
+  reason: string;
+  count: number;
+}
+
 export interface Meta {
   exported_at: string;
   bot_running: boolean;
   current_regime: string;
+  soft_params?: SoftParams;
+  ai_advisor?: AiAdvisor;
   starting_capital_usdt: number;
   starting_capital_inr: number;
+  skip_reasons?: SkipReason[];
+  last_signal_at?: string;
+  bot_uptime_hours?: number;
 }
