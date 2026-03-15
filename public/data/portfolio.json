@@ -17,7 +17,9 @@
       "pnl_pct": 0.0,
       "opened_at": "2026-03-15T17:28:17",
       "source_wallet": "0x2a2c53bd27",
-      "category": ""
+      "category": "",
+      "question": "Sharks vs. Senators",
+      "polymarket_url": ""
     },
     {
       "condition_id": "0xbe597fd73b895cd51def6e454ba5514b58a5d9fac5fd2c81919979473eb4c450",
@@ -30,7 +32,9 @@
       "pnl_pct": 0.0,
       "opened_at": "2026-03-15T17:28:18",
       "source_wallet": "0x37c1874a60",
-      "category": ""
+      "category": "",
+      "question": "Spread: Pistons (-3.5)",
+      "polymarket_url": ""
     },
     {
       "condition_id": "0x840bab2a0bc063d6586810bb06f97f80ca1a66b8ab2cfb9e90042102bc05dc40",
@@ -43,9 +47,86 @@
       "pnl_pct": 0.0,
       "opened_at": "2026-03-15T17:28:19",
       "source_wallet": "0x37c1874a60",
-      "category": ""
+      "category": "",
+      "question": "Will San Jose Earthquakes win on 2026-03-15?",
+      "polymarket_url": ""
+    },
+    {
+      "condition_id": "0xfde3ab8c84900ea9e2378726817b946d85ebb900b757ea8ac7c1f59ce0f99d06",
+      "token_id": "61585818258249406325894193591416461445716385424660795859631828408464193337286",
+      "side": "BUY",
+      "entry_price": 0.3881,
+      "current_price": 0.3881,
+      "size_usdt": 353.26,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "opened_at": "2026-03-15T17:32:20",
+      "source_wallet": "0x37c1874a60",
+      "category": "",
+      "question": "Will VfB Stuttgart win on 2026-03-15?",
+      "polymarket_url": ""
+    },
+    {
+      "condition_id": "0xde20551ab7a1cf0217c0a4775b32d9c4e4bc35238a074bb30d310435dc869b4c",
+      "token_id": "46762526970436243733677719246549292754309045925919821049711046396936725210202",
+      "side": "BUY",
+      "entry_price": 0.5572,
+      "current_price": 0.5572,
+      "size_usdt": 560.0,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "opened_at": "2026-03-15T17:32:54",
+      "source_wallet": "0x2a2c53bd27",
+      "category": "",
+      "question": "Will Stade Rennais FC 1901 win on 2026-03-15?",
+      "polymarket_url": ""
+    },
+    {
+      "condition_id": "0xf7cc7f51e1cd6a07a0677e4d7683ace88666d417b14b9deec9d590584b2e0064",
+      "token_id": "38043819482611657099148283773580530670850311904013668865893588240421586504839",
+      "side": "BUY",
+      "entry_price": 0.6368,
+      "current_price": 0.6368,
+      "size_usdt": 560.0,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "opened_at": "2026-03-15T17:33:22",
+      "source_wallet": "0x2a2c53bd27",
+      "category": "",
+      "question": "Sharks vs. Senators",
+      "polymarket_url": ""
+    },
+    {
+      "condition_id": "0x2caeb2bba32475c540eb9f41c10032a0fab2e22fae844c6ea5064299d8a0b2de",
+      "token_id": "54158700672872219112871718858549321613267600884863626262598540285458984427472",
+      "side": "BUY",
+      "entry_price": 0.597,
+      "current_price": 0.597,
+      "size_usdt": 12.6,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "opened_at": "2026-03-15T17:34:59",
+      "source_wallet": "0x6ac5bb06a9",
+      "category": "",
+      "question": "Will SSC Napoli win on 2026-03-20?",
+      "polymarket_url": ""
+    },
+    {
+      "condition_id": "0xde20551ab7a1cf0217c0a4775b32d9c4e4bc35238a074bb30d310435dc869b4c",
+      "token_id": "46762526970436243733677719246549292754309045925919821049711046396936725210202",
+      "side": "BUY",
+      "entry_price": 0.5572,
+      "current_price": 0.5572,
+      "size_usdt": 560.0,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "opened_at": "2026-03-15T17:37:54",
+      "source_wallet": "0x2a2c53bd27",
+      "category": "",
+      "question": "Will Stade Rennais FC 1901 win on 2026-03-15?",
+      "polymarket_url": ""
     }
   ],
   "total_unrealized_pnl": 0.0,
-  "last_updated": "2026-03-15T17:32:06.225647"
+  "last_updated": "2026-03-15T17:41:14.171787"
 }
