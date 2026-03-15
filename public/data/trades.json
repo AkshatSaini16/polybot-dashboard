@@ -8,14 +8,15 @@
       "price": 0.6269,
       "size_usdt": 0.72,
       "size_inr": 60.12,
-      "pnl": 0.0,
-      "pnl_inr": 0.0,
+      "pnl": 0.421,
+      "pnl_inr": 35.15,
       "timestamp": "2026-03-15T18:13:16",
       "tier": 2,
       "category": "sports",
       "status": "OPEN",
       "question": "Will RB Leipzig win on 2026-03-15?",
-      "polymarket_url": "https://polymarket.com/event/bun-stu-lei-2026-03-15-lei"
+      "polymarket_url": "https://polymarket.com/sports/bundesliga/bun-stu-lei-2026-03-15",
+      "bet_description": "RB Leipzig wins \u2014 63% implied"
     },
     {
       "id": 14,
@@ -25,14 +26,15 @@
       "price": 0.6766,
       "size_usdt": 4.79,
       "size_inr": 399.96,
-      "pnl": 0.0,
-      "pnl_inr": 0.0,
+      "pnl": 2.2824,
+      "pnl_inr": 190.58,
       "timestamp": "2026-03-15T18:12:08",
       "tier": 2,
       "category": "sports",
       "status": "OPEN",
       "question": "Will FC Cincinnati win on 2026-03-15?",
-      "polymarket_url": "https://polymarket.com/event/mls-ner-fcc-2026-03-15-fcc"
+      "polymarket_url": "https://polymarket.com/sports/mls/mls-ner-fcc-2026-03-15",
+      "bet_description": "FC Cincinnati wins \u2014 68% implied"
     },
     {
       "id": 15,
@@ -42,14 +44,15 @@
       "price": 0.4776,
       "size_usdt": 4.79,
       "size_inr": 399.96,
-      "pnl": 0.0,
-      "pnl_inr": 0.0,
+      "pnl": 0.5757,
+      "pnl_inr": 48.07,
       "timestamp": "2026-03-15T18:12:08",
       "tier": 2,
       "category": "sports",
       "status": "OPEN",
       "question": "Spread: Pistons (-3.5)",
-      "polymarket_url": "https://polymarket.com/event/nba-det-tor-2026-03-15-spread-away-3pt5"
+      "polymarket_url": "https://polymarket.com/sports/nba/nba-det-tor-2026-03-15",
+      "bet_description": "Pistons (-3.5) covers \u2014 48% implied"
     },
     {
       "id": 13,
@@ -59,14 +62,15 @@
       "price": 0.3085,
       "size_usdt": 4.79,
       "size_inr": 399.96,
-      "pnl": 0.0,
-      "pnl_inr": 0.0,
+      "pnl": -4.7745,
+      "pnl_inr": -398.67,
       "timestamp": "2026-03-15T18:12:06",
       "tier": 2,
       "category": "sports",
       "status": "OPEN",
       "question": "Will FC Cincinnati win on 2026-03-15?",
-      "polymarket_url": "https://polymarket.com/event/mls-ner-fcc-2026-03-15-fcc"
+      "polymarket_url": "https://polymarket.com/sports/mls/mls-ner-fcc-2026-03-15",
+      "bet_description": "FC Cincinnati wins \u2014 31% implied"
     },
     {
       "id": 11,
@@ -76,14 +80,15 @@
       "price": 0.5174,
       "size_usdt": 3.64,
       "size_inr": 303.94,
-      "pnl": 0.0,
-      "pnl_inr": 0.0,
+      "pnl": 0.8625,
+      "pnl_inr": 72.02,
       "timestamp": "2026-03-15T18:10:56",
       "tier": 2,
       "category": "sports",
       "status": "OPEN",
       "question": "Pistons vs. Raptors: O/U 223.5",
-      "polymarket_url": "https://polymarket.com/event/nba-det-tor-2026-03-15-total-223pt5"
+      "polymarket_url": "https://polymarket.com/sports/nba/nba-det-tor-2026-03-15",
+      "bet_description": "Over on Pistons vs. Raptors: O/U 223.5 \u2014 52% implied"
     },
     {
       "id": 12,
@@ -93,14 +98,15 @@
       "price": 0.4875,
       "size_usdt": 4.79,
       "size_inr": 399.96,
-      "pnl": 0.0,
-      "pnl_inr": 0.0,
+      "pnl": 0.0246,
+      "pnl_inr": 2.05,
       "timestamp": "2026-03-15T18:10:56",
       "tier": 2,
       "category": "sports",
       "status": "OPEN",
       "question": "Spread: Knicks (-14.5)",
-      "polymarket_url": "https://polymarket.com/event/nba-gsw-nyk-2026-03-15-spread-home-14pt5"
+      "polymarket_url": "https://polymarket.com/sports/nba/nba-gsw-nyk-2026-03-15",
+      "bet_description": "Knicks (-14.5) covers \u2014 49% implied"
     },
     {
       "id": 9,
@@ -110,14 +116,15 @@
       "price": 0.5572,
       "size_usdt": 0.89,
       "size_inr": 74.31,
-      "pnl": 0.0,
-      "pnl_inr": 0.0,
+      "pnl": 0.4437,
+      "pnl_inr": 37.05,
       "timestamp": "2026-03-15T18:10:55",
       "tier": 2,
       "category": "sports",
       "status": "OPEN",
       "question": "Will Stade Rennais FC 1901 win on 2026-03-15?",
-      "polymarket_url": "https://polymarket.com/event/fl1-ren-lil-2026-03-15-ren"
+      "polymarket_url": "https://polymarket.com/sports/ligue-1/fl1-ren-lil-2026-03-15",
+      "bet_description": "Stade Rennais FC 1901 wins \u2014 56% implied"
     },
     {
       "id": 10,
@@ -127,14 +134,15 @@
       "price": 0.6368,
       "size_usdt": 4.79,
       "size_inr": 399.96,
-      "pnl": 0.0,
-      "pnl_inr": 0.0,
+      "pnl": 0.0617,
+      "pnl_inr": 5.15,
       "timestamp": "2026-03-15T18:10:55",
       "tier": 2,
       "category": "sports",
       "status": "OPEN",
       "question": "Sharks vs. Senators",
-      "polymarket_url": "https://polymarket.com/event/nhl-sj-ott-2026-03-15"
+      "polymarket_url": "https://polymarket.com/sports/nhl/nhl-sj-ott-2026-03-15",
+      "bet_description": "YES on Sharks vs. Senators \u2014 64% implied"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
-  "balance_usdt": 59.88,
-  "balance_inr": 4999.98,
-  "active_capital_usdt": 59.88,
+  "balance_usdt": 59.78,
+  "balance_inr": 4991.39,
+  "active_capital_usdt": 59.78,
   "reserve_usdt": 0.0,
   "regime": "bull",
   "bot_status": "paper",
@@ -14,14 +14,15 @@
       "current_price": 0.5572,
       "size_usdt": 0.89,
       "size_inr": 74.31,
-      "pnl": 0.0,
-      "pnl_inr": 0.0,
-      "pnl_pct": 0.0,
+      "pnl": 0.4437,
+      "pnl_inr": 37.05,
+      "pnl_pct": 49.85,
       "opened_at": "2026-03-15T18:10:55",
       "source_wallet": "0x2a2c53bd27",
       "category": "",
       "question": "Will Stade Rennais FC 1901 win on 2026-03-15?",
-      "polymarket_url": "https://polymarket.com/event/fl1-ren-lil-2026-03-15-ren"
+      "polymarket_url": "https://polymarket.com/sports/ligue-1/fl1-ren-lil-2026-03-15",
+      "bet_description": "Stade Rennais FC 1901 wins \u2014 56% implied"
     },
     {
       "condition_id": "0xf7cc7f51e1cd6a07a0677e4d7683ace88666d417b14b9deec9d590584b2e0064",
@@ -31,14 +32,15 @@
       "current_price": 0.6368,
       "size_usdt": 4.79,
       "size_inr": 399.96,
-      "pnl": 0.0,
-      "pnl_inr": 0.0,
-      "pnl_pct": 0.0,
+      "pnl": 0.0617,
+      "pnl_inr": 5.15,
+      "pnl_pct": 1.29,
       "opened_at": "2026-03-15T18:10:55",
       "source_wallet": "0x2a2c53bd27",
       "category": "",
       "question": "Sharks vs. Senators",
-      "polymarket_url": "https://polymarket.com/event/nhl-sj-ott-2026-03-15"
+      "polymarket_url": "https://polymarket.com/sports/nhl/nhl-sj-ott-2026-03-15",
+      "bet_description": "YES on Sharks vs. Senators \u2014 64% implied"
     },
     {
       "condition_id": "0xf89ce0081d9d7d357f990531e07458ad5241a48eddc45c77462b24b8677448de",
@@ -48,14 +50,15 @@
       "current_price": 0.5174,
       "size_usdt": 3.64,
       "size_inr": 303.94,
-      "pnl": 0.0,
-      "pnl_inr": 0.0,
-      "pnl_pct": 0.0,
+      "pnl": 0.8625,
+      "pnl_inr": 72.02,
+      "pnl_pct": 23.7,
       "opened_at": "2026-03-15T18:10:56",
       "source_wallet": "0x37c1874a60",
       "category": "",
       "question": "Pistons vs. Raptors: O/U 223.5",
-      "polymarket_url": "https://polymarket.com/event/nba-det-tor-2026-03-15-total-223pt5"
+      "polymarket_url": "https://polymarket.com/sports/nba/nba-det-tor-2026-03-15",
+      "bet_description": "Over on Pistons vs. Raptors: O/U 223.5 \u2014 52% implied"
     },
     {
       "condition_id": "0x58921ff5a49d1d2b13e6a4d4d8b6a6ab5a532cd86d9c36a951c785f9e99f689e",
@@ -65,14 +68,15 @@
       "current_price": 0.4875,
       "size_usdt": 4.79,
       "size_inr": 399.96,
-      "pnl": 0.0,
-      "pnl_inr": 0.0,
-      "pnl_pct": 0.0,
+      "pnl": 0.0246,
+      "pnl_inr": 2.05,
+      "pnl_pct": 0.51,
       "opened_at": "2026-03-15T18:10:56",
       "source_wallet": "0x37c1874a60",
       "category": "",
       "question": "Spread: Knicks (-14.5)",
-      "polymarket_url": "https://polymarket.com/event/nba-gsw-nyk-2026-03-15-spread-home-14pt5"
+      "polymarket_url": "https://polymarket.com/sports/nba/nba-gsw-nyk-2026-03-15",
+      "bet_description": "Knicks (-14.5) covers \u2014 49% implied"
     },
     {
       "condition_id": "0x66f7f01818ea83d0d51a36a62f0b1e7acd4d3beb9d6a231ddbb60e7fef80d45c",
@@ -82,14 +86,15 @@
       "current_price": 0.3085,
       "size_usdt": 4.79,
       "size_inr": 399.96,
-      "pnl": 0.0,
-      "pnl_inr": 0.0,
-      "pnl_pct": 0.0,
+      "pnl": -4.7745,
+      "pnl_inr": -398.67,
+      "pnl_pct": -99.68,
       "opened_at": "2026-03-15T18:12:06",
       "source_wallet": "0x37c1874a60",
       "category": "",
       "question": "Will FC Cincinnati win on 2026-03-15?",
-      "polymarket_url": "https://polymarket.com/event/mls-ner-fcc-2026-03-15-fcc"
+      "polymarket_url": "https://polymarket.com/sports/mls/mls-ner-fcc-2026-03-15",
+      "bet_description": "FC Cincinnati wins \u2014 31% implied"
     },
     {
       "condition_id": "0x66f7f01818ea83d0d51a36a62f0b1e7acd4d3beb9d6a231ddbb60e7fef80d45c",
@@ -99,14 +104,15 @@
       "current_price": 0.6766,
       "size_usdt": 4.79,
       "size_inr": 399.96,
-      "pnl": 0.0,
-      "pnl_inr": 0.0,
-      "pnl_pct": 0.0,
+      "pnl": 2.2824,
+      "pnl_inr": 190.58,
+      "pnl_pct": 47.65,
       "opened_at": "2026-03-15T18:12:08",
       "source_wallet": "0x6ac5bb06a9",
       "category": "",
       "question": "Will FC Cincinnati win on 2026-03-15?",
-      "polymarket_url": "https://polymarket.com/event/mls-ner-fcc-2026-03-15-fcc"
+      "polymarket_url": "https://polymarket.com/sports/mls/mls-ner-fcc-2026-03-15",
+      "bet_description": "FC Cincinnati wins \u2014 68% implied"
     },
     {
       "condition_id": "0xbe597fd73b895cd51def6e454ba5514b58a5d9fac5fd2c81919979473eb4c450",
@@ -116,14 +122,15 @@
       "current_price": 0.4776,
       "size_usdt": 4.79,
       "size_inr": 399.96,
-      "pnl": 0.0,
-      "pnl_inr": 0.0,
-      "pnl_pct": 0.0,
+      "pnl": 0.5757,
+      "pnl_inr": 48.07,
+      "pnl_pct": 12.02,
       "opened_at": "2026-03-15T18:12:08",
       "source_wallet": "0x6ac5bb06a9",
       "category": "",
       "question": "Spread: Pistons (-3.5)",
-      "polymarket_url": "https://polymarket.com/event/nba-det-tor-2026-03-15-spread-away-3pt5"
+      "polymarket_url": "https://polymarket.com/sports/nba/nba-det-tor-2026-03-15",
+      "bet_description": "Pistons (-3.5) covers \u2014 48% implied"
     },
     {
       "condition_id": "0x5e6ff78de865dbe201e3d2044722977aa5ffb18c90414dfb561a7d178ba35c8a",
@@ -133,16 +140,17 @@
       "current_price": 0.6269,
       "size_usdt": 0.72,
       "size_inr": 60.12,
-      "pnl": 0.0,
-      "pnl_inr": 0.0,
-      "pnl_pct": 0.0,
+      "pnl": 0.421,
+      "pnl_inr": 35.15,
+      "pnl_pct": 58.47,
       "opened_at": "2026-03-15T18:13:16",
       "source_wallet": "0x37c1874a60",
       "category": "",
       "question": "Will RB Leipzig win on 2026-03-15?",
-      "polymarket_url": "https://polymarket.com/event/bun-stu-lei-2026-03-15-lei"
+      "polymarket_url": "https://polymarket.com/sports/bundesliga/bun-stu-lei-2026-03-15",
+      "bet_description": "RB Leipzig wins \u2014 63% implied"
     }
   ],
-  "total_unrealized_pnl": 0.0,
-  "last_updated": "2026-03-15T19:41:26.513130"
+  "total_unrealized_pnl": -0.1,
+  "last_updated": "2026-03-15T20:20:49.278903"
 }

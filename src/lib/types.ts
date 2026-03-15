@@ -14,6 +14,7 @@ export interface Position {
   category: string;
   question?: string;
   polymarket_url?: string;
+  bet_description?: string;
 }
 
 export interface Trade {
@@ -29,6 +30,7 @@ export interface Trade {
   timestamp: string;
   question?: string;
   polymarket_url?: string;
+  bet_description?: string;
   tier: number;
   category: string;
   status: string;

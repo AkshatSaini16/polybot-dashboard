@@ -70,67 +70,63 @@ export default function TradesPage() {
             <thead className="bg-gray-800/50">
               <tr>
                 <th className="px-4 py-2 text-left text-gray-500">Time</th>
-                <th className="px-4 py-2 text-left text-gray-500">Market</th>
-                <th className="px-4 py-2 text-left text-gray-500">Side</th>
-                <th className="px-4 py-2 text-left text-gray-500">Tier</th>
-                <th className="px-4 py-2 text-right text-gray-500">Price</th>
-                <th className="px-4 py-2 text-right text-gray-500">Size (USDT)</th>
-                <th className="px-4 py-2 text-right text-gray-500">Size (INR)</th>
-                <th className="px-4 py-2 text-right text-gray-500">P&L</th>
-                <th className="px-4 py-2 text-left text-gray-500">Status</th>
-                <th className="px-4 py-2 text-left text-gray-500">Category</th>
+                <th className="px-4 py-2 text-left text-gray-500">What We Bet On</th>
+                <th className="px-4 py-2 text-right text-gray-500">Bet (INR)</th>
+                <th className="px-4 py-2 text-right text-gray-500">P&L (INR)</th>
+                <th className="px-4 py-2 text-left text-gray-500">Result</th>
               </tr>
             </thead>
             <tbody>
-              {filtered.map((trade, i) => (
+              {filtered.map((trade, i) => {
+                const pnlInr = trade.pnl * 83.5;
+                const resultLabel = trade.status === "CLOSED"
+                  ? (trade.pnl > 0 ? "WON" : "LOST")
+                  : "PENDING";
+                const resultColor = trade.status === "CLOSED"
+                  ? (trade.pnl > 0 ? "bg-emerald-900 text-emerald-300" : "bg-red-900 text-red-300")
+                  : "bg-blue-900 text-blue-300";
+                return (
                 <tr key={i} className="border-t border-gray-800/50 hover:bg-gray-800/30">
                   <td className="px-4 py-2 text-xs text-gray-400">
                     {new Date(trade.timestamp).toLocaleString()}
                   </td>
-                  <td className="px-4 py-2 text-xs max-w-[200px]">
-                    {trade.polymarket_url ? (
-                      <a href={trade.polymarket_url} target="_blank" rel="noopener noreferrer"
-                         className="text-blue-400 hover:text-blue-300 hover:underline">
-                        {trade.question || trade.condition_id.slice(0, 16) + "..."}
-                      </a>
-                    ) : (
-                      <span className="font-mono text-gray-400">
-                        {trade.question || trade.condition_id.slice(0, 16) + "..."}
-                      </span>
-                    )}
+                  <td className="px-4 py-2 max-w-[300px]">
+                    <div>
+                      {trade.polymarket_url ? (
+                        <a href={trade.polymarket_url} target="_blank" rel="noopener noreferrer"
+                           className="text-blue-400 hover:text-blue-300 hover:underline text-sm">
+                          {trade.bet_description || trade.question || trade.condition_id.slice(0, 16) + "..."}
+                        </a>
+                      ) : (
+                        <span className="text-sm text-gray-300">
+                          {trade.bet_description || trade.question || trade.condition_id.slice(0, 16) + "..."}
+                        </span>
+                      )}
+                    </div>
+                    <div className="text-xs text-gray-600 mt-0.5">
+                      T{trade.tier} | {trade.wallet} | {Math.round(trade.price * 100)}% odds
+                    </div>
                   </td>
-                  <td className="px-4 py-2">
-                    <span className={trade.side === "BUY" ? "text-emerald-400" : "text-red-400"}>
-                      {trade.side}
-                    </span>
-                  </td>
-                  <td className="px-4 py-2">
-                    <span className={`px-1.5 py-0.5 rounded text-xs ${
-                      trade.tier === 1 ? "bg-emerald-900 text-emerald-300" : "bg-yellow-900 text-yellow-300"
-                    }`}>
-                      T{trade.tier}
-                    </span>
-                  </td>
-                  <td className="px-4 py-2 text-right">{trade.price.toFixed(4)}</td>
-                  <td className="px-4 py-2 text-right">{formatUsdt(trade.size_usdt)}</td>
-                  <td className="px-4 py-2 text-right text-gray-400">
-                    {formatInr(usdtToInr(trade.size_usdt))}
+                  <td className="px-4 py-2 text-right text-yellow-300">
+                    {formatInr(trade.size_inr || trade.size_usdt * 83.5)}
                   </td>
                   <td className={`px-4 py-2 text-right ${
-                    trade.pnl >= 0 ? "text-emerald-400" : "text-red-400"
+                    trade.status === "CLOSED"
+                      ? (trade.pnl >= 0 ? "text-emerald-400" : "text-red-400")
+                      : "text-gray-500"
                   }`}>
-                    {trade.status === "CLOSED" ? formatUsdt(trade.pnl) : "-"}
+                    {trade.status === "CLOSED"
+                      ? formatInr(pnlInr)
+                      : "-"}
                   </td>
                   <td className="px-4 py-2">
-                    <span className={`text-xs ${
-                      trade.status === "OPEN" ? "text-blue-400" : "text-gray-400"
-                    }`}>
-                      {trade.status}
+                    <span className={`px-2 py-0.5 rounded text-xs font-medium ${resultColor}`}>
+                      {resultLabel}
                     </span>
                   </td>
-                  <td className="px-4 py-2 text-gray-400">{trade.category}</td>
                 </tr>
-              ))}
+                );
+              })}
             </tbody>
           </table>
         )}
