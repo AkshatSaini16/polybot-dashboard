@@ -29,7 +29,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <nav className="border-b border-gray-800 bg-gray-900">
           <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <Image src="/favicon.png" alt="PolyBot" width={32} height={32} className="rounded" />
+              <Image src="/favicon.png" alt="PolyBot" width={40} height={40} className="rounded" />
               <h1 className="text-lg font-bold text-emerald-400">Titlr&apos;s PolyBot</h1>
             </div>
             <div className="flex gap-6">
