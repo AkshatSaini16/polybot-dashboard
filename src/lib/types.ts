@@ -10,6 +10,8 @@ export interface Position {
   pnl_inr?: number;
   pnl_pct: number;
   opened_at: string;
+  age_hours?: number;
+  queue?: "active" | "stale";
   source_wallet: string;
   category: string;
   question?: string;
@@ -49,6 +51,16 @@ export interface CategoryBreakdown {
   win_rate: number;
 }
 
+export interface QueueStats {
+  active_slots_used: number;
+  active_slots_max: number;
+  stale_count: number;
+  active_locked_usdt: number;
+  stale_locked_usdt: number;
+  stale_capital_cap_pct: number;
+  free_capital_usdt: number;
+}
+
 export interface Portfolio {
   balance_usdt: number;
   balance_inr: number;
@@ -59,6 +71,7 @@ export interface Portfolio {
   positions: Position[];
   total_unrealized_pnl: number;
   last_updated: string;
+  queue?: QueueStats;
 }
 
 export interface Analytics {
