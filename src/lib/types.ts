@@ -81,6 +81,7 @@ export interface WalletReview {
 }
 
 export interface AiAdvisor {
+  timestamp?: string;
   regime: string;
   confidence: string;
   reasoning: string;
@@ -101,6 +102,39 @@ export interface SkipReason {
   count: number;
 }
 
+export interface WalletHealthEntry {
+  address: string;
+  label: string;
+  is_active: boolean;
+  avg_score: number;
+  trades: number;
+  win_rate: number;
+  recent_pnl: number;
+  recent_trades: number;
+}
+
+export interface AiProposal {
+  action: string;
+  wallet?: string;
+  label?: string;
+  param?: string;
+  value?: number;
+  category?: string;
+  reason: string;
+  tier: number;
+}
+
+export interface AiAction {
+  action: string;
+  wallet?: string;
+  label?: string;
+  param?: string;
+  value?: number;
+  reason?: string;
+  decision: string;
+  decided_at: string;
+}
+
 export interface Meta {
   exported_at: string;
   bot_running: boolean;
@@ -112,4 +146,7 @@ export interface Meta {
   skip_reasons?: SkipReason[];
   last_signal_at?: string;
   bot_uptime_hours?: number;
+  pending_proposals?: AiProposal[];
+  action_history?: AiAction[];
+  wallet_health?: WalletHealthEntry[];
 }

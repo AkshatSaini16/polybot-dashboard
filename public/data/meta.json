@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-03-16T18:44:22.905211",
+  "exported_at": "2026-03-16T18:54:50.947590",
   "bot_running": true,
   "current_regime": "sideways",
   "soft_params": {
@@ -35,15 +35,15 @@
   "skip_reasons": [
     {
       "reason": "wash_filter_flagged",
-      "count": 4807
+      "count": 4814
     },
     {
       "reason": "hard_rule:max_open_positions",
-      "count": 561
+      "count": 563
     },
     {
       "reason": "below_tier2: trust=70.0 liq=0",
-      "count": 356
+      "count": 348
     },
     {
       "reason": "below_tier2: trust=70.0 liq=83713",
@@ -56,10 +56,6 @@
     {
       "reason": "below_tier2: trust=70.0 liq=79984",
       "count": 9
-    },
-    {
-      "reason": "below_tier2: trust=70.0 liq=13259",
-      "count": 8
     },
     {
       "reason": "exit_liquidity:exit_liquidity: age=168.1h>4h AND move=100.0%>5.0%",
@@ -92,7 +88,215 @@
     {
       "reason": "exit_liquidity:exit_liquidity: age=163.4h>4h AND move=100.0%>5.0%",
       "count": 6
+    },
+    {
+      "reason": "exit_liquidity:exit_liquidity: age=162.8h>4h AND move=100.0%>5.0%",
+      "count": 6
     }
   ],
-  "last_signal_at": "2026-03-16T18:44:21"
+  "last_signal_at": "2026-03-16T18:54:38",
+  "pending_proposals": [],
+  "action_history": [],
+  "wallet_health": [
+    {
+      "address": "0x6ac5bb06a9",
+      "label": "0p0jogggg",
+      "is_active": true,
+      "avg_score": 70.0,
+      "trades": 40,
+      "win_rate": 0.6,
+      "recent_pnl": 0.0,
+      "recent_trades": 2877
+    },
+    {
+      "address": "0x2a2c53bd27",
+      "label": "0x2a2C53bD278c04DA9962Fcf96490E17F3DfB9Bc1-1772479215461",
+      "is_active": true,
+      "avg_score": 70.0,
+      "trades": 40,
+      "win_rate": 0.6,
+      "recent_pnl": 0.0,
+      "recent_trades": 3526
+    },
+    {
+      "address": "0xdc876e6873",
+      "label": "432614799197",
+      "is_active": true,
+      "avg_score": 70.0,
+      "trades": 40,
+      "win_rate": 0.6,
+      "recent_pnl": 0.0,
+      "recent_trades": 1898
+    },
+    {
+      "address": "0x37c1874a60",
+      "label": "CemeterySun",
+      "is_active": true,
+      "avg_score": 70.0,
+      "trades": 40,
+      "win_rate": 0.6,
+      "recent_pnl": 0.0,
+      "recent_trades": 3760
+    },
+    {
+      "address": "0xbddf61af53",
+      "label": "Countryside",
+      "is_active": true,
+      "avg_score": 70.0,
+      "trades": 40,
+      "win_rate": 0.6,
+      "recent_pnl": 0.0,
+      "recent_trades": 2183
+    },
+    {
+      "address": "0x507e52ef68",
+      "label": "GamblingIsAllYouNeed",
+      "is_active": true,
+      "avg_score": 0.0,
+      "trades": 0,
+      "win_rate": 0,
+      "recent_pnl": 0.0,
+      "recent_trades": 1468
+    },
+    {
+      "address": "0x036c159d5a",
+      "label": "HedgeMaster88",
+      "is_active": true,
+      "avg_score": 0.0,
+      "trades": 0,
+      "win_rate": 0,
+      "recent_pnl": 0.0,
+      "recent_trades": 1974
+    },
+    {
+      "address": "0x02227b8f5a",
+      "label": "HorizonSplendidView",
+      "is_active": true,
+      "avg_score": 70.0,
+      "trades": 40,
+      "win_rate": 0.6,
+      "recent_pnl": 0.0,
+      "recent_trades": 1996
+    },
+    {
+      "address": "0x83720820a8",
+      "label": "Jsram",
+      "is_active": true,
+      "avg_score": 0.0,
+      "trades": 0,
+      "win_rate": 0,
+      "recent_pnl": 0.0,
+      "recent_trades": 1993
+    },
+    {
+      "address": "0x8c80d213c0",
+      "label": "SecondWindCapital",
+      "is_active": true,
+      "avg_score": 0.0,
+      "trades": 0,
+      "win_rate": 0,
+      "recent_pnl": 0.0,
+      "recent_trades": 1400
+    },
+    {
+      "address": "0x916f7165c2",
+      "label": "WoofMaster",
+      "is_active": true,
+      "avg_score": 0.0,
+      "trades": 0,
+      "win_rate": 0,
+      "recent_pnl": 0.0,
+      "recent_trades": 1991
+    },
+    {
+      "address": "0xb45a797faa",
+      "label": "bcda",
+      "is_active": true,
+      "avg_score": 70.0,
+      "trades": 40,
+      "win_rate": 0.6,
+      "recent_pnl": 0.0,
+      "recent_trades": 2872
+    },
+    {
+      "address": "0xc2e7800b5a",
+      "label": "beachboy4",
+      "is_active": true,
+      "avg_score": 70.0,
+      "trades": 40,
+      "win_rate": 0.6,
+      "recent_pnl": 0.0,
+      "recent_trades": 136
+    },
+    {
+      "address": "0x93abbc022c",
+      "label": "gatorr",
+      "is_active": true,
+      "avg_score": 70.0,
+      "trades": 40,
+      "win_rate": 0.6,
+      "recent_pnl": 0.0,
+      "recent_trades": 2336
+    },
+    {
+      "address": "0x0b9cae2b0d",
+      "label": "geniusMC",
+      "is_active": true,
+      "avg_score": 0.0,
+      "trades": 0,
+      "win_rate": 0,
+      "recent_pnl": 0.0,
+      "recent_trades": 1947
+    },
+    {
+      "address": "0xe90bec87d9",
+      "label": "gmanas",
+      "is_active": true,
+      "avg_score": 0.0,
+      "trades": 0,
+      "win_rate": 0,
+      "recent_pnl": 0.0,
+      "recent_trades": 1927
+    },
+    {
+      "address": "0xf19d7d88cf",
+      "label": "huhaoli",
+      "is_active": true,
+      "avg_score": 0.0,
+      "trades": 0,
+      "win_rate": 0,
+      "recent_pnl": 0.0,
+      "recent_trades": 1949
+    },
+    {
+      "address": "0x019782cab5",
+      "label": "majorexploiter",
+      "is_active": true,
+      "avg_score": 70.0,
+      "trades": 40,
+      "win_rate": 0.6,
+      "recent_pnl": 0.0,
+      "recent_trades": 865
+    },
+    {
+      "address": "0x204f72f353",
+      "label": "swisstony",
+      "is_active": true,
+      "avg_score": 0.0,
+      "trades": 0,
+      "win_rate": 0,
+      "recent_pnl": 0.0,
+      "recent_trades": 1987
+    },
+    {
+      "address": "0xb90494d9a5",
+      "label": "waterbottle6",
+      "is_active": true,
+      "avg_score": 0.0,
+      "trades": 0,
+      "win_rate": 0,
+      "recent_pnl": 0.0,
+      "recent_trades": 1970
+    }
+  ]
 }
