@@ -1,7 +1,7 @@
 {
-  "balance_usdt": 54.81,
-  "balance_inr": 4576.64,
-  "active_capital_usdt": 54.81,
+  "balance_usdt": 52.41,
+  "balance_inr": 4376.13,
+  "active_capital_usdt": 52.41,
   "reserve_usdt": 0.0,
   "regime": "bull",
   "bot_status": "paper",
@@ -68,9 +68,9 @@
       "current_price": 0.4079,
       "size_usdt": 4.79,
       "size_inr": 399.96,
-      "pnl": -2.3827,
-      "pnl_inr": -198.96,
-      "pnl_pct": -49.74,
+      "pnl": -4.7841,
+      "pnl_inr": -399.47,
+      "pnl_pct": -99.88,
       "opened_at": "2026-03-15T20:38:33",
       "source_wallet": "0xb45a797faa",
       "category": "",
@@ -79,6 +79,6 @@
       "bet_description": "YES on Jazz vs. Kings \u2014 41% implied"
     }
   ],
-  "total_unrealized_pnl": -10.28,
-  "last_updated": "2026-03-16T03:42:37.503002"
+  "total_unrealized_pnl": -12.68,
+  "last_updated": "2026-03-16T04:42:44.699041"
 }
