@@ -20,17 +20,17 @@
   "category_breakdown": [
     {
       "category": "",
-      "pnl": -1703.74,
-      "trades": 408,
+      "pnl": -1756.43,
+      "trades": 419,
       "win_rate": 0.07
     },
     {
       "category": "sports",
-      "pnl": -940.22,
-      "trades": 235,
+      "pnl": -992.91,
+      "trades": 246,
       "win_rate": 0.11
     }
   ],
-  "signals_generated": 5809,
+  "signals_generated": 6141,
   "signals_executed": 12
 }

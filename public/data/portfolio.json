@@ -3,9 +3,9 @@
   "balance_inr": 4375.06,
   "active_capital_usdt": 52.4,
   "reserve_usdt": 0.0,
-  "regime": "bull",
+  "regime": "sideways",
   "bot_status": "paper",
   "positions": [],
   "total_unrealized_pnl": 0.0,
-  "last_updated": "2026-03-16T12:43:41.807304"
+  "last_updated": "2026-03-16T13:40:36.334520"
 }
