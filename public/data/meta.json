@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-03-16T23:45:25.832030",
+  "exported_at": "2026-03-16T23:53:20.485383",
   "bot_running": true,
   "current_regime": "sideways",
   "soft_params": {
@@ -36,15 +36,15 @@
   "skip_reasons": [
     {
       "reason": "wash_filter_flagged",
-      "count": 5383
+      "count": 5356
     },
     {
       "reason": "hard_rule:max_open_positions",
-      "count": 419
+      "count": 415
     },
     {
       "reason": "below_tier2: trust=70.0 liq=0",
-      "count": 285
+      "count": 284
     },
     {
       "reason": "below_tier2: trust=70.0 liq=83713",
@@ -52,6 +52,18 @@
     },
     {
       "reason": "below_tier2: composite=54.9 trust=70.0 bqs=32 liq=0",
+      "count": 21
+    },
+    {
+      "reason": "hard_rule:max_active_positions",
+      "count": 15
+    },
+    {
+      "reason": "exit_no_matching_position",
+      "count": 11
+    },
+    {
+      "reason": "category_disabled:geopolitical",
       "count": 10
     },
     {
@@ -81,30 +93,10 @@
     {
       "reason": "exit_liquidity:exit_liquidity: age=169.7h>4h AND move=100.0%>5.0%",
       "count": 7
-    },
-    {
-      "reason": "category_disabled:geopolitical",
-      "count": 7
-    },
-    {
-      "reason": "exit_liquidity:exit_liquidity: age=173.4h>4h AND move=100.0%>5.0%",
-      "count": 6
-    },
-    {
-      "reason": "exit_liquidity:exit_liquidity: age=172.8h>4h AND move=100.0%>5.0%",
-      "count": 6
     }
   ],
-  "last_signal_at": "2026-03-16T23:45:20",
-  "pending_proposals": [
-    {
-      "action": "demote_wallet",
-      "wallet": "0x019782cab5d844f02bafb71f512758be78579f3c",
-      "label": "majorexploiter",
-      "reason": "Inactive 14.9 days, 0 trades in last 7 days. Exceeded max 2 demotions per cycle.",
-      "tier": 3
-    }
-  ],
+  "last_signal_at": "2026-03-16T23:53:13",
+  "pending_proposals": [],
   "approved_queue": [],
   "action_history": [
     {
@@ -120,6 +112,14 @@
       "reason": "Inactive >13 days, 0 trades in last 7 days",
       "decision": "approved",
       "decided_at": "2026-03-16T18:59:07Z"
+    },
+    {
+      "action": "demote_wallet",
+      "wallet": "0x019782cab5d844f02bafb71f512758be78579f3c",
+      "label": "majorexploiter",
+      "reason": "Inactive 14.9 days, 0 trades in last 7 days. Exceeded max 2 demotions per cycle.",
+      "decision": "approved",
+      "decided_at": "2026-03-17T05:12:00"
     }
   ],
   "wallet_health": [
@@ -323,6 +323,5 @@
       "recent_pnl": 0.0,
       "recent_trades": 1970
     }
-  ],
-  "last_pushed_at": "2026-03-16T23:45:28"
+  ]
 }
