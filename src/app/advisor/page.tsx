@@ -82,9 +82,20 @@ export default function AdvisorPage() {
       });
       const data = await resp.json();
       if (data.success) {
-        setActionResult(`${action === "approve" ? "Approved" : "Rejected"} — changes pushed to site`);
-        // Refresh data after a short delay to let the export finish
-        setTimeout(refreshData, 2000);
+        setActionResult(data.message || `${action === "approve" ? "Approved" : "Rejected"}`);
+        // Optimistic UI — remove proposal from local state immediately
+        setMeta((prev) => {
+          if (!prev) return prev;
+          const updated = { ...prev };
+          const proposals = [...(updated.pending_proposals || [])];
+          const removed = proposals.splice(id, 1)[0];
+          updated.pending_proposals = proposals;
+          updated.action_history = [
+            ...(updated.action_history || []),
+            { ...removed, decision: action === "approve" ? "approved" : "rejected", decided_at: new Date().toISOString() },
+          ];
+          return updated;
+        });
       } else {
         setActionResult(`Error: ${data.error}`);
       }
