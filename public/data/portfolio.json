@@ -1,48 +1,11 @@
 {
   "balance_usdt": 52.4,
-  "balance_inr": 4375.37,
+  "balance_inr": 4375.06,
   "active_capital_usdt": 52.4,
   "reserve_usdt": 0.0,
   "regime": "bull",
   "bot_status": "paper",
-  "positions": [
-    {
-      "condition_id": "0x22b2a9b56554a645affe8d28a627ea5dc440a25820602e3c04937809d300e310",
-      "token_id": "87383908864848872133990116247942551476731330820120804735417511259669701900921",
-      "side": "BUY",
-      "entry_price": 0.597,
-      "current_price": 0.597,
-      "size_usdt": 2.48,
-      "size_inr": 207.08,
-      "pnl": 1.672,
-      "pnl_inr": 139.61,
-      "pnl_pct": 67.42,
-      "opened_at": "2026-03-15T20:37:35",
-      "source_wallet": "0x6ac5bb06a9",
-      "category": "",
-      "question": "Will Red Bull Bragantino win on 2026-03-15?",
-      "polymarket_url": "https://polymarket.com/event/bra-bra-sao-2026-03-15-bra",
-      "bet_description": "Red Bull Bragantino wins \u2014 60% implied"
-    },
-    {
-      "condition_id": "0x81672be3a86cb59edbdf292fa223d2a74703eb4e3f0bf570587bcae830928822",
-      "token_id": "29938514184970414348155694778671980817991099472183324339505529775105034074937",
-      "side": "BUY",
-      "entry_price": 0.4079,
-      "current_price": 0.4079,
-      "size_usdt": 4.79,
-      "size_inr": 399.96,
-      "pnl": -4.7841,
-      "pnl_inr": -399.47,
-      "pnl_pct": -99.88,
-      "opened_at": "2026-03-15T20:38:33",
-      "source_wallet": "0xb45a797faa",
-      "category": "",
-      "question": "Jazz vs. Kings",
-      "polymarket_url": "https://polymarket.com/sports/nba/nba-uta-sac-2026-03-15",
-      "bet_description": "YES on Jazz vs. Kings \u2014 41% implied"
-    }
-  ],
-  "total_unrealized_pnl": -3.11,
-  "last_updated": "2026-03-16T06:43:00.849337"
+  "positions": [],
+  "total_unrealized_pnl": 0.0,
+  "last_updated": "2026-03-16T07:43:08.254546"
 }
