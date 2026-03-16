@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-03-16T23:17:57.013075",
+  "exported_at": "2026-03-16T23:42:22.460257",
   "bot_running": true,
   "current_regime": "sideways",
   "soft_params": {
@@ -36,19 +36,23 @@
   "skip_reasons": [
     {
       "reason": "wash_filter_flagged",
-      "count": 5360
+      "count": 5394
     },
     {
       "reason": "hard_rule:max_open_positions",
-      "count": 425
+      "count": 419
     },
     {
       "reason": "below_tier2: trust=70.0 liq=0",
-      "count": 293
+      "count": 287
     },
     {
       "reason": "below_tier2: trust=70.0 liq=83713",
       "count": 46
+    },
+    {
+      "reason": "below_tier2: composite=54.9 trust=70.0 bqs=32 liq=0",
+      "count": 10
     },
     {
       "reason": "exit_liquidity:exit_liquidity: age=171.8h>4h AND move=100.0%>5.0%",
@@ -75,6 +79,10 @@
       "count": 7
     },
     {
+      "reason": "category_disabled:geopolitical",
+      "count": 7
+    },
+    {
       "reason": "exit_liquidity:exit_liquidity: age=174.9h>4h AND move=100.0%>5.0%",
       "count": 6
     },
@@ -85,17 +93,9 @@
     {
       "reason": "exit_liquidity:exit_liquidity: age=172.8h>4h AND move=100.0%>5.0%",
       "count": 6
-    },
-    {
-      "reason": "exit_liquidity:exit_liquidity: age=172.5h>4h AND move=100.0%>5.0%",
-      "count": 6
-    },
-    {
-      "reason": "exit_liquidity:exit_liquidity: age=171.9h>4h AND move=100.0%>5.0%",
-      "count": 6
     }
   ],
-  "last_signal_at": "2026-03-16T23:17:40",
+  "last_signal_at": "2026-03-16T23:42:20",
   "pending_proposals": [
     {
       "action": "demote_wallet",
@@ -105,15 +105,7 @@
       "tier": 3
     }
   ],
-  "approved_queue": [
-    {
-      "action": "demote_wallet",
-      "wallet": "0x019782cab5d844f02bafb71f512758be78579f3c",
-      "label": "majorexploiter",
-      "reason": "Inactive 14.9 days, 0 trades in last 7 days. Exceeded max 2 demotions per cycle.",
-      "tier": 3
-    }
-  ],
+  "approved_queue": [],
   "action_history": [
     {
       "action": "demote_wallet",
