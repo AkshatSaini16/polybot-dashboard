@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-03-15T23:42:02.765958",
+  "exported_at": "2026-03-16T00:42:11.518114",
   "bot_running": true,
   "current_regime": "bull",
   "soft_params": {
@@ -36,15 +36,15 @@
   "skip_reasons": [
     {
       "reason": "wash_filter_flagged",
-      "count": 950
+      "count": 1180
     },
     {
       "reason": "hard_rule:max_open_positions",
-      "count": 188
+      "count": 204
     },
     {
       "reason": "below_tier2: trust=70.0 liq=0",
-      "count": 163
+      "count": 176
     },
     {
       "reason": "below_tier2: trust=70.0 liq=91480",
@@ -67,33 +67,33 @@
       "count": 7
     },
     {
+      "reason": "exit_liquidity:exit_liquidity: age=150.2h>4h AND move=100.0%>5.0%",
+      "count": 6
+    },
+    {
+      "reason": "exit_liquidity:exit_liquidity: age=149.7h>4h AND move=100.0%>5.0%",
+      "count": 6
+    },
+    {
       "reason": "exit_liquidity:exit_liquidity: age=150.5h>4h AND move=100.0%>5.0%",
       "count": 5
     },
     {
-      "reason": "exit_liquidity:exit_liquidity: age=149.1h>4h AND move=100.0%>5.0%",
+      "reason": "exit_liquidity:exit_liquidity: age=150.0h>4h AND move=100.0%>5.0%",
       "count": 5
     },
     {
-      "reason": "exit_liquidity:exit_liquidity: age=148.6h>4h AND move=100.0%>5.0%",
+      "reason": "exit_liquidity:exit_liquidity: age=149.9h>4h AND move=100.0%>5.0%",
       "count": 5
     },
     {
-      "reason": "exit_liquidity:exit_liquidity: age=21.9h>4h AND move=100.0%>5.0%",
-      "count": 4
+      "reason": "exit_liquidity:exit_liquidity: age=149.5h>4h AND move=100.0%>5.0%",
+      "count": 5
     },
     {
-      "reason": "exit_liquidity:exit_liquidity: age=21.6h>4h AND move=100.0%>5.0%",
-      "count": 4
-    },
-    {
-      "reason": "exit_liquidity:exit_liquidity: age=21.5h>4h AND move=100.0%>5.0%",
-      "count": 4
-    },
-    {
-      "reason": "exit_liquidity:exit_liquidity: age=21.4h>4h AND move=100.0%>5.0%",
-      "count": 4
+      "reason": "exit_liquidity:exit_liquidity: age=149.4h>4h AND move=100.0%>5.0%",
+      "count": 5
     }
   ],
-  "last_signal_at": "2026-03-15T23:41:47"
+  "last_signal_at": "2026-03-16T00:41:35"
 }
