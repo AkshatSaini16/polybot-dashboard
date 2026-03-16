@@ -12,14 +12,14 @@
     "timestamp": "2026-03-16T18:59:07.121682",
     "regime": "sideways",
     "confidence": "medium",
-    "reasoning": "Cycle 3 analysis: All 12 positions remain closed with net P&L of -$7.48 (-12.5%). No new trades executed in last 6h \u2014 2,128 signals processed but all filtered: 1,497 wash filter (70%), 96 max_open_positions (stale \u2014 all positions are closed, dedup cooldown fix should resolve next cycle), 72 zero-liquidity markets, 37 below $100k liquidity threshold. Bot is effectively idle since Mar 15 20:38 UTC. The dedup cooldown change (1h re-entry after position close) and 10 new wallets added this session should increase signal flow in the next cycle. Demoted 2 inactive wallets (WoofMaster: 13.5d inactive, gmanas: 13.8d inactive). Proposed majorexploiter demotion as Tier 3 (14.9d inactive, needs your approval). Keeping all parameters unchanged \u2014 no evidence to justify changes with zero new trades. Key watch: if next cycle still shows 0 executed signals, need to investigate whether the paper trader polling loop is actually running.",
+    "reasoning": "Cycle 3 analysis: All 12 positions remain closed with net P&L of -$7.48 (-12.5%). No new trades executed in last 6h — 2,128 signals processed but all filtered: 1,497 wash filter (70%), 96 max_open_positions (stale — all positions are closed, dedup cooldown fix should resolve next cycle), 72 zero-liquidity markets, 37 below $100k liquidity threshold. Bot is effectively idle since Mar 15 20:38 UTC. The dedup cooldown change (1h re-entry after position close) and 10 new wallets added this session should increase signal flow in the next cycle. Demoted 2 inactive wallets (WoofMaster: 13.5d inactive, gmanas: 13.8d inactive). Proposed majorexploiter demotion as Tier 3 (14.9d inactive, needs your approval). Keeping all parameters unchanged — no evidence to justify changes with zero new trades. Key watch: if next cycle still shows 0 executed signals, need to investigate whether the paper trader polling loop is actually running.",
     "actions": [
-      "No soft_param changes \u2014 insufficient new data to justify adjustments",
-      "Demoted WoofMaster (Tier 2 auto) \u2014 0 trades in 13.5 days",
-      "Demoted gmanas (Tier 2 auto) \u2014 0 trades in 13.8 days",
-      "Proposed majorexploiter demotion (Tier 3) \u2014 14.9 days inactive, awaiting approval",
-      "Identified stale max_open_positions counter as potential bug \u2014 all positions closed but 96 signals still blocked by this rule",
-      "Bet Quality Score system now active \u2014 will affect tier assignment on next trade"
+      "No soft_param changes — insufficient new data to justify adjustments",
+      "Demoted WoofMaster (Tier 2 auto) — 0 trades in 13.5 days",
+      "Demoted gmanas (Tier 2 auto) — 0 trades in 13.8 days",
+      "Proposed majorexploiter demotion (Tier 3) — 14.9 days inactive, awaiting approval",
+      "Identified stale max_open_positions counter as potential bug — all positions closed but 96 signals still blocked by this rule",
+      "Bet Quality Score system now active — will affect tier assignment on next trade"
     ],
     "wallet_review": {
       "active": 18,
@@ -96,7 +96,8 @@
     }
   ],
   "last_signal_at": "2026-03-16T23:04:45",
-  "pending_proposals": [
+  "pending_proposals": [],
+  "approved_queue": [
     {
       "action": "demote_wallet",
       "wallet": "0x019782cab5d844f02bafb71f512758be78579f3c",
@@ -105,7 +106,6 @@
       "tier": 3
     }
   ],
-  "approved_queue": [],
   "action_history": [
     {
       "action": "demote_wallet",
@@ -120,6 +120,15 @@
       "reason": "Inactive >13 days, 0 trades in last 7 days",
       "decision": "approved",
       "decided_at": "2026-03-16T18:59:07Z"
+    },
+    {
+      "action": "demote_wallet",
+      "wallet": "0x019782cab5d844f02bafb71f512758be78579f3c",
+      "label": "majorexploiter",
+      "reason": "Inactive 14.9 days, 0 trades in last 7 days. Exceeded max 2 demotions per cycle.",
+      "tier": 3,
+      "decision": "approved",
+      "decided_at": "2026-03-16T23:06:35.428Z"
     }
   ],
   "wallet_health": [
@@ -127,200 +136,200 @@
       "address": "0x6ac5bb06a9",
       "label": "0p0jogggg",
       "is_active": true,
-      "avg_score": 70.0,
+      "avg_score": 70,
       "trades": 40,
       "win_rate": 0.5,
-      "recent_pnl": 0.0,
+      "recent_pnl": 0,
       "recent_trades": 2877
     },
     {
       "address": "0x2a2c53bd27",
       "label": "0x2a2C53bD278c04DA9962Fcf96490E17F3DfB9Bc1-1772479215461",
       "is_active": true,
-      "avg_score": 70.0,
+      "avg_score": 70,
       "trades": 40,
       "win_rate": 0.5,
-      "recent_pnl": 0.0,
+      "recent_pnl": 0,
       "recent_trades": 3526
     },
     {
       "address": "0xdc876e6873",
       "label": "432614799197",
       "is_active": true,
-      "avg_score": 70.0,
+      "avg_score": 70,
       "trades": 40,
       "win_rate": 0.5,
-      "recent_pnl": 0.0,
+      "recent_pnl": 0,
       "recent_trades": 1898
     },
     {
       "address": "0x37c1874a60",
       "label": "CemeterySun",
       "is_active": true,
-      "avg_score": 70.0,
+      "avg_score": 70,
       "trades": 40,
       "win_rate": 0.5,
-      "recent_pnl": 0.0,
+      "recent_pnl": 0,
       "recent_trades": 3760
     },
     {
       "address": "0xbddf61af53",
       "label": "Countryside",
       "is_active": true,
-      "avg_score": 70.0,
+      "avg_score": 70,
       "trades": 40,
       "win_rate": 0.5,
-      "recent_pnl": 0.0,
+      "recent_pnl": 0,
       "recent_trades": 2183
     },
     {
       "address": "0x507e52ef68",
       "label": "GamblingIsAllYouNeed",
       "is_active": true,
-      "avg_score": 70.0,
+      "avg_score": 70,
       "trades": 40,
       "win_rate": 0.5,
-      "recent_pnl": 0.0,
+      "recent_pnl": 0,
       "recent_trades": 1468
     },
     {
       "address": "0x036c159d5a",
       "label": "HedgeMaster88",
       "is_active": true,
-      "avg_score": 70.0,
+      "avg_score": 70,
       "trades": 40,
       "win_rate": 0.5,
-      "recent_pnl": 0.0,
+      "recent_pnl": 0,
       "recent_trades": 1974
     },
     {
       "address": "0x02227b8f5a",
       "label": "HorizonSplendidView",
       "is_active": true,
-      "avg_score": 70.0,
+      "avg_score": 70,
       "trades": 40,
       "win_rate": 0.5,
-      "recent_pnl": 0.0,
+      "recent_pnl": 0,
       "recent_trades": 1996
     },
     {
       "address": "0x83720820a8",
       "label": "Jsram",
       "is_active": true,
-      "avg_score": 70.0,
+      "avg_score": 70,
       "trades": 40,
       "win_rate": 0.5,
-      "recent_pnl": 0.0,
+      "recent_pnl": 0,
       "recent_trades": 1993
     },
     {
       "address": "0x8c80d213c0",
       "label": "SecondWindCapital",
       "is_active": true,
-      "avg_score": 70.0,
+      "avg_score": 70,
       "trades": 40,
       "win_rate": 0.5,
-      "recent_pnl": 0.0,
+      "recent_pnl": 0,
       "recent_trades": 1400
     },
     {
       "address": "0x916f7165c2",
       "label": "WoofMaster",
       "is_active": false,
-      "avg_score": 0.0,
+      "avg_score": 0,
       "trades": 0,
       "win_rate": 0,
-      "recent_pnl": 0.0,
+      "recent_pnl": 0,
       "recent_trades": 1991
     },
     {
       "address": "0xb45a797faa",
       "label": "bcda",
       "is_active": true,
-      "avg_score": 70.0,
+      "avg_score": 70,
       "trades": 40,
       "win_rate": 0.5,
-      "recent_pnl": 0.0,
+      "recent_pnl": 0,
       "recent_trades": 2872
     },
     {
       "address": "0xc2e7800b5a",
       "label": "beachboy4",
       "is_active": true,
-      "avg_score": 70.0,
+      "avg_score": 70,
       "trades": 40,
       "win_rate": 0.5,
-      "recent_pnl": 0.0,
+      "recent_pnl": 0,
       "recent_trades": 136
     },
     {
       "address": "0x93abbc022c",
       "label": "gatorr",
       "is_active": true,
-      "avg_score": 70.0,
+      "avg_score": 70,
       "trades": 40,
       "win_rate": 0.5,
-      "recent_pnl": 0.0,
+      "recent_pnl": 0,
       "recent_trades": 2336
     },
     {
       "address": "0x0b9cae2b0d",
       "label": "geniusMC",
       "is_active": true,
-      "avg_score": 70.0,
+      "avg_score": 70,
       "trades": 40,
       "win_rate": 0.5,
-      "recent_pnl": 0.0,
+      "recent_pnl": 0,
       "recent_trades": 1947
     },
     {
       "address": "0xe90bec87d9",
       "label": "gmanas",
       "is_active": false,
-      "avg_score": 0.0,
+      "avg_score": 0,
       "trades": 0,
       "win_rate": 0,
-      "recent_pnl": 0.0,
+      "recent_pnl": 0,
       "recent_trades": 1927
     },
     {
       "address": "0xf19d7d88cf",
       "label": "huhaoli",
       "is_active": true,
-      "avg_score": 70.0,
+      "avg_score": 70,
       "trades": 40,
       "win_rate": 0.5,
-      "recent_pnl": 0.0,
+      "recent_pnl": 0,
       "recent_trades": 1949
     },
     {
       "address": "0x019782cab5",
       "label": "majorexploiter",
       "is_active": false,
-      "avg_score": 70.0,
+      "avg_score": 70,
       "trades": 40,
       "win_rate": 0.5,
-      "recent_pnl": 0.0,
+      "recent_pnl": 0,
       "recent_trades": 865
     },
     {
       "address": "0x204f72f353",
       "label": "swisstony",
       "is_active": true,
-      "avg_score": 70.0,
+      "avg_score": 70,
       "trades": 40,
       "win_rate": 0.5,
-      "recent_pnl": 0.0,
+      "recent_pnl": 0,
       "recent_trades": 1987
     },
     {
       "address": "0xb90494d9a5",
       "label": "waterbottle6",
       "is_active": true,
-      "avg_score": 70.0,
+      "avg_score": 70,
       "trades": 40,
       "win_rate": 0.5,
-      "recent_pnl": 0.0,
+      "recent_pnl": 0,
       "recent_trades": 1970
     }
   ]
