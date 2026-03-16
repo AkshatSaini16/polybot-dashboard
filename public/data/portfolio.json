@@ -39,7 +39,7 @@
       "source_wallet": "0x6ac5bb06a9",
       "category": "",
       "question": "Will Brentford FC win on 2026-03-16?",
-      "polymarket_url": "https://polymarket.com/sports/premier-league/epl-bre-wol-2026-03-16",
+      "polymarket_url": "https://polymarket.com/sports/epl/epl-bre-wol-2026-03-16",
       "bet_description": "Brentford FC wins \u2014 63% implied"
     },
     {
@@ -57,7 +57,7 @@
       "source_wallet": "0x6ac5bb06a9",
       "category": "",
       "question": "Will FK Bod\u00f8/Glimt win on 2026-03-17?",
-      "polymarket_url": "https://polymarket.com/sports/champions-league/ucl-spo1-bog1-2026-03-17",
+      "polymarket_url": "https://polymarket.com/sports/ucl/ucl-spo1-bog1-2026-03-17",
       "bet_description": "FK Bod\u00f8/Glimt wins \u2014 80% implied"
     },
     {
@@ -75,7 +75,7 @@
       "source_wallet": "0x0b9cae2b0d",
       "category": "",
       "question": "Will Rayo Vallecano de Madrid win on 2026-03-16?",
-      "polymarket_url": "https://polymarket.com/sports/la-liga/lal-ray-lev-2026-03-16",
+      "polymarket_url": "https://polymarket.com/sports/laliga/lal-ray-lev-2026-03-16",
       "bet_description": "Rayo Vallecano de Madrid wins \u2014 51% implied"
     },
     {
@@ -129,7 +129,7 @@
       "source_wallet": "0x204f72f353",
       "category": "",
       "question": "Will Levante UD win on 2026-03-16?",
-      "polymarket_url": "https://polymarket.com/sports/la-liga/lal-ray-lev-2026-03-16",
+      "polymarket_url": "https://polymarket.com/sports/laliga/lal-ray-lev-2026-03-16",
       "bet_description": "Levante UD wins \u2014 21% implied"
     },
     {
@@ -188,5 +188,5 @@
     }
   ],
   "total_unrealized_pnl": 7.28,
-  "last_updated": "2026-03-16T22:19:13.502120"
+  "last_updated": "2026-03-16T22:27:39.262716"
 }
