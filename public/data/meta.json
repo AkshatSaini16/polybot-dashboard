@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-03-16T18:54:50.947590",
+  "exported_at": "2026-03-16T18:59:12.802374",
   "bot_running": true,
   "current_regime": "sideways",
   "soft_params": {
@@ -9,41 +9,42 @@
     "regime": "sideways"
   },
   "ai_advisor": {
-    "timestamp": "2026-03-16T13:40:16.810870",
+    "timestamp": "2026-03-16T18:59:07.121682",
     "regime": "sideways",
     "confidence": "medium",
-    "reasoning": "Portfolio closed all 12 positions with net P&L of -$7.48 (-12.5% on $59.88 capital). Win rate 58% (7W/5L) is decent but losses were larger than wins on average. Best wallet: 0p0jogggg (+$4.41, 75% WR). Worst: CemeterySun (-$5.76, 50% WR). Wash filter blocked 1,176 signals \u2014 this is the dominant gate and is working correctly to protect us. 142 signals blocked by max_open_positions (now raised to 12). 71 signals blocked by below_tier2 with zero liquidity. Zero new trades executed in last 6h due to dedup filter (all signals already seen). All wallet scores remain at seed value 70.0 \u2014 insufficient trading history to differentiate. Switching regime from bull to sideways: negative P&L trend, small sample size, need more data before aggressive positioning.",
+    "reasoning": "Cycle 3 analysis: All 12 positions remain closed with net P&L of -$7.48 (-12.5%). No new trades executed in last 6h \u2014 2,128 signals processed but all filtered: 1,497 wash filter (70%), 96 max_open_positions (stale \u2014 all positions are closed, dedup cooldown fix should resolve next cycle), 72 zero-liquidity markets, 37 below $100k liquidity threshold. Bot is effectively idle since Mar 15 20:38 UTC. The dedup cooldown change (1h re-entry after position close) and 10 new wallets added this session should increase signal flow in the next cycle. Demoted 2 inactive wallets (WoofMaster: 13.5d inactive, gmanas: 13.8d inactive). Proposed majorexploiter demotion as Tier 3 (14.9d inactive, needs your approval). Keeping all parameters unchanged \u2014 no evidence to justify changes with zero new trades. Key watch: if next cycle still shows 0 executed signals, need to investigate whether the paper trader polling loop is actually running.",
     "actions": [
-      "Changed regime from bull to sideways \u2014 losses suggest caution",
-      "Reduced copy_size_fraction from 0.50 to 0.40 \u2014 smaller bets until we see positive alpha",
-      "Kept tier1_trust_min at 80, tier2_trust_min at 60 \u2014 wallet scores at 70 pass tier2",
-      "No wallets deactivated \u2014 all have activity within 7 days and scores above 50",
-      "Wash filter working as intended \u2014 1,176 blocked signals show healthy protection"
+      "No soft_param changes \u2014 insufficient new data to justify adjustments",
+      "Demoted WoofMaster (Tier 2 auto) \u2014 0 trades in 13.5 days",
+      "Demoted gmanas (Tier 2 auto) \u2014 0 trades in 13.8 days",
+      "Proposed majorexploiter demotion (Tier 3) \u2014 14.9 days inactive, awaiting approval",
+      "Identified stale max_open_positions counter as potential bug \u2014 all positions closed but 96 signals still blocked by this rule",
+      "Bet Quality Score system now active \u2014 will affect tier assignment on next trade"
     ],
     "wallet_review": {
-      "active": 5,
-      "deactivated": 0,
+      "active": 18,
+      "deactivated": 2,
       "top_performers": [
         "0p0jogggg (+$4.41, 75% WR)",
-        "FrankTank (+$0.49)"
+        "0x2a2c53bd (+$3.44, 100% WR)"
       ]
     },
-    "next_review": "2026-03-16 19:40 UTC"
+    "next_review": "2026-03-17 06:55 UTC"
   },
   "starting_capital_usdt": 59.88,
   "starting_capital_inr": 4999.98,
   "skip_reasons": [
     {
       "reason": "wash_filter_flagged",
-      "count": 4814
+      "count": 4813
     },
     {
       "reason": "hard_rule:max_open_positions",
-      "count": 563
+      "count": 562
     },
     {
       "reason": "below_tier2: trust=70.0 liq=0",
-      "count": 348
+      "count": 345
     },
     {
       "reason": "below_tier2: trust=70.0 liq=83713",
@@ -94,9 +95,32 @@
       "count": 6
     }
   ],
-  "last_signal_at": "2026-03-16T18:54:38",
-  "pending_proposals": [],
-  "action_history": [],
+  "last_signal_at": "2026-03-16T18:59:06",
+  "pending_proposals": [
+    {
+      "action": "demote_wallet",
+      "wallet": "0x019782cab5d844f02bafb71f512758be78579f3c",
+      "label": "majorexploiter",
+      "reason": "Inactive 14.9 days, 0 trades in last 7 days. Exceeded max 2 demotions per cycle.",
+      "tier": 3
+    }
+  ],
+  "action_history": [
+    {
+      "action": "demote_wallet",
+      "label": "WoofMaster",
+      "reason": "Inactive >13 days, 0 trades in last 7 days",
+      "decision": "approved",
+      "decided_at": "2026-03-16T18:59:07Z"
+    },
+    {
+      "action": "demote_wallet",
+      "label": "gmanas",
+      "reason": "Inactive >13 days, 0 trades in last 7 days",
+      "decision": "approved",
+      "decided_at": "2026-03-16T18:59:07Z"
+    }
+  ],
   "wallet_health": [
     {
       "address": "0x6ac5bb06a9",
@@ -201,7 +225,7 @@
     {
       "address": "0x916f7165c2",
       "label": "WoofMaster",
-      "is_active": true,
+      "is_active": false,
       "avg_score": 0.0,
       "trades": 0,
       "win_rate": 0,
@@ -251,7 +275,7 @@
     {
       "address": "0xe90bec87d9",
       "label": "gmanas",
-      "is_active": true,
+      "is_active": false,
       "avg_score": 0.0,
       "trades": 0,
       "win_rate": 0,
