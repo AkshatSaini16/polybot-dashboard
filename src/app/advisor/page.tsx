@@ -126,7 +126,7 @@ export default function AdvisorPage() {
             </span>
           )}
           <span className="text-xs text-gray-500">
-            Last export: {new Date(meta.exported_at).toLocaleString()}
+            Last push: {meta.last_pushed_at ? new Date(meta.last_pushed_at + "Z").toLocaleString() : new Date(meta.exported_at).toLocaleString()}
           </span>
         </div>
       </div>

@@ -137,6 +137,7 @@ export interface AiAction {
 
 export interface Meta {
   exported_at: string;
+  last_pushed_at?: string;
   bot_running: boolean;
   current_regime: string;
   soft_params?: SoftParams;
