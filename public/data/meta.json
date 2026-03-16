@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-03-16T08:43:14.551274",
+  "exported_at": "2026-03-16T09:43:21.541701",
   "bot_running": true,
   "current_regime": "bull",
   "soft_params": {
@@ -36,15 +36,15 @@
   "skip_reasons": [
     {
       "reason": "wash_filter_flagged",
-      "count": 2577
+      "count": 2765
     },
     {
       "reason": "hard_rule:max_open_positions",
-      "count": 385
+      "count": 409
     },
     {
       "reason": "below_tier2: trust=70.0 liq=0",
-      "count": 271
+      "count": 283
     },
     {
       "reason": "below_tier2: trust=70.0 liq=91480",
@@ -67,6 +67,14 @@
       "count": 7
     },
     {
+      "reason": "exit_liquidity:exit_liquidity: age=158.7h>4h AND move=100.0%>5.0%",
+      "count": 6
+    },
+    {
+      "reason": "exit_liquidity:exit_liquidity: age=158.5h>4h AND move=100.0%>5.0%",
+      "count": 6
+    },
+    {
       "reason": "exit_liquidity:exit_liquidity: age=158.0h>4h AND move=100.0%>5.0%",
       "count": 6
     },
@@ -85,15 +93,7 @@
     {
       "reason": "exit_liquidity:exit_liquidity: age=155.5h>4h AND move=100.0%>5.0%",
       "count": 6
-    },
-    {
-      "reason": "exit_liquidity:exit_liquidity: age=154.9h>4h AND move=100.0%>5.0%",
-      "count": 6
-    },
-    {
-      "reason": "exit_liquidity:exit_liquidity: age=153.4h>4h AND move=100.0%>5.0%",
-      "count": 6
     }
   ],
-  "last_signal_at": "2026-03-16T08:42:56"
+  "last_signal_at": "2026-03-16T09:42:33"
 }
