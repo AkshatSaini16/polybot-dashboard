@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-03-16T19:41:04.333927",
+  "exported_at": "2026-03-16T19:43:48.947752",
   "bot_running": true,
   "current_regime": "sideways",
   "soft_params": {
@@ -36,15 +36,15 @@
   "skip_reasons": [
     {
       "reason": "wash_filter_flagged",
-      "count": 4811
+      "count": 4812
     },
     {
       "reason": "hard_rule:max_open_positions",
-      "count": 553
+      "count": 554
     },
     {
       "reason": "below_tier2: trust=70.0 liq=0",
-      "count": 338
+      "count": 336
     },
     {
       "reason": "below_tier2: trust=70.0 liq=83713",
@@ -52,7 +52,7 @@
     },
     {
       "reason": "below_tier2: trust=70.0 liq=91480",
-      "count": 28
+      "count": 27
     },
     {
       "reason": "below_tier2: trust=70.0 liq=79984",
@@ -95,7 +95,7 @@
       "count": 6
     }
   ],
-  "last_signal_at": "2026-03-16T19:40:59",
+  "last_signal_at": "2026-03-16T19:43:43",
   "pending_proposals": [
     {
       "action": "demote_wallet",
@@ -295,7 +295,7 @@
     {
       "address": "0x019782cab5",
       "label": "majorexploiter",
-      "is_active": true,
+      "is_active": false,
       "avg_score": 70.0,
       "trades": 40,
       "win_rate": 0.6,
