@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-03-16T20:43:07.915326",
+  "exported_at": "2026-03-16T20:44:51.539157",
   "bot_running": true,
   "current_regime": "sideways",
   "soft_params": {
@@ -36,11 +36,11 @@
   "skip_reasons": [
     {
       "reason": "wash_filter_flagged",
-      "count": 4932
+      "count": 4940
     },
     {
       "reason": "hard_rule:max_open_positions",
-      "count": 518
+      "count": 517
     },
     {
       "reason": "below_tier2: trust=70.0 liq=0",
@@ -95,7 +95,7 @@
       "count": 6
     }
   ],
-  "last_signal_at": "2026-03-16T20:43:05",
+  "last_signal_at": "2026-03-16T20:44:46",
   "pending_proposals": [
     {
       "action": "demote_wallet",
