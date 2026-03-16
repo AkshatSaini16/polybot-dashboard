@@ -147,7 +147,7 @@
       "source_wallet": "0x0b9cae2b0d",
       "category": "",
       "question": "Will Bodo Glimt win the 2025\u201326 Champions League?",
-      "polymarket_url": "https://polymarket.com/event/will-bodo-glimt-win-the-202526-champions-league",
+      "polymarket_url": "https://polymarket.com/event/uefa-champions-league-winner/will-bodo-glimt-win-the-202526-champions-league",
       "bet_description": "Bodo Glimt win the 2025\u201326 Champions League wins \u2014 97% implied"
     },
     {
@@ -165,7 +165,7 @@
       "source_wallet": "0x8c80d213c0",
       "category": "",
       "question": "Will Gavin Newsom win the 2028 US Presidential Election?",
-      "polymarket_url": "https://polymarket.com/event/will-gavin-newsom-win-the-2028-us-presidential-election",
+      "polymarket_url": "https://polymarket.com/event/presidential-election-winner-2028/will-gavin-newsom-win-the-2028-us-presidential-election",
       "bet_description": "Gavin Newsom win the 2028 US Presidential Election wins \u2014 81% implied"
     },
     {
@@ -183,10 +183,10 @@
       "source_wallet": "0x83720820a8",
       "category": "",
       "question": "Will Marco Rubio win the 2028 Republican presidential nomination?",
-      "polymarket_url": "https://polymarket.com/event/will-marco-rubio-win-the-2028-republican-presidential-nomination",
+      "polymarket_url": "https://polymarket.com/event/republican-presidential-nominee-2028/will-marco-rubio-win-the-2028-republican-presidential-nomination",
       "bet_description": "Marco Rubio win the 2028 Republican presidential nomination wins \u2014 26% implied"
     }
   ],
   "total_unrealized_pnl": 7.28,
-  "last_updated": "2026-03-16T22:27:39.262716"
+  "last_updated": "2026-03-16T22:40:16.844059"
 }
