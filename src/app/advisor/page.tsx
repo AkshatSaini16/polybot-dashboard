@@ -57,13 +57,43 @@ function StatusBadge({ status }: { status: string }) {
 export default function AdvisorPage() {
   const [meta, setMeta] = useState<Meta | null>(null);
   const [error, setError] = useState("");
+  const [actionInProgress, setActionInProgress] = useState<number | null>(null);
+  const [actionResult, setActionResult] = useState<string>("");
 
-  useEffect(() => {
+  const refreshData = () => {
     fetch("/data/meta.json")
       .then((r) => r.json())
       .then(setMeta)
       .catch(() => setError("No advisor data yet."));
+  };
+
+  useEffect(() => {
+    refreshData();
   }, []);
+
+  const handleProposal = async (id: number, action: "approve" | "reject") => {
+    setActionInProgress(id);
+    setActionResult("");
+    try {
+      const resp = await fetch("/api/proposal", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ action, id }),
+      });
+      const data = await resp.json();
+      if (data.success) {
+        setActionResult(`${action === "approve" ? "Approved" : "Rejected"} — changes pushed to site`);
+        // Refresh data after a short delay to let the export finish
+        setTimeout(refreshData, 2000);
+      } else {
+        setActionResult(`Error: ${data.error}`);
+      }
+    } catch (e) {
+      setActionResult(`Failed: ${e instanceof Error ? e.message : "Unknown error"}`);
+    } finally {
+      setActionInProgress(null);
+    }
+  };
 
   if (error) return <div className="text-center py-20 text-gray-500">{error}</div>;
   if (!meta) return <div className="text-center py-20 text-gray-500">Loading...</div>;
@@ -105,12 +135,14 @@ export default function AdvisorPage() {
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
         <SectionCard title="Bot Status">
           <div className="flex items-center gap-2">
-            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-            <span className="text-lg font-bold text-emerald-400">
+            <span className={`w-2 h-2 rounded-full ${meta.bot_running ? "bg-emerald-400 animate-pulse" : "bg-red-400"}`} />
+            <span className={`text-lg font-bold ${meta.bot_running ? "text-emerald-400" : "text-red-400"}`}>
               {meta.bot_running ? "Running" : "Stopped"}
             </span>
           </div>
-          <p className="text-xs text-gray-500 mt-1">Paper Trading</p>
+          <p className="text-xs text-gray-500 mt-1">
+            Paper Trading{!meta.bot_running && " — check logs"}
+          </p>
         </SectionCard>
 
         <SectionCard title="Regime">
@@ -157,12 +189,34 @@ export default function AdvisorPage() {
                     {p.label || p.wallet || p.param} — {p.reason}
                   </p>
                 </div>
-                <div className="text-xs text-gray-500">
-                  Run: <code className="bg-gray-800 px-1.5 py-0.5 rounded">python scripts/approve_proposal.py --approve {i}</code>
+                <div className="flex items-center gap-2">
+                  {actionInProgress === i ? (
+                    <span className="text-xs text-gray-400 animate-pulse">Processing...</span>
+                  ) : (
+                    <>
+                      <button
+                        onClick={() => handleProposal(i, "approve")}
+                        className="px-3 py-1.5 bg-emerald-700 hover:bg-emerald-600 text-white text-xs font-medium rounded transition-colors"
+                      >
+                        Approve
+                      </button>
+                      <button
+                        onClick={() => handleProposal(i, "reject")}
+                        className="px-3 py-1.5 bg-red-700 hover:bg-red-600 text-white text-xs font-medium rounded transition-colors"
+                      >
+                        Reject
+                      </button>
+                    </>
+                  )}
                 </div>
               </div>
             ))}
           </div>
+          {actionResult && (
+            <div className={`mt-3 px-3 py-2 rounded text-sm ${actionResult.startsWith("Error") || actionResult.startsWith("Failed") ? "bg-red-900/30 text-red-300" : "bg-emerald-900/30 text-emerald-300"}`}>
+              {actionResult}
+            </div>
+          )}
         </SectionCard>
       )}
 
