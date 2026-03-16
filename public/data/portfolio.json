@@ -1,29 +1,11 @@
 {
-  "balance_usdt": 57.9,
-  "balance_inr": 4834.33,
-  "active_capital_usdt": 57.9,
+  "balance_usdt": 54.81,
+  "balance_inr": 4576.64,
+  "active_capital_usdt": 54.81,
   "reserve_usdt": 0.0,
   "regime": "bull",
   "bot_status": "paper",
   "positions": [
-    {
-      "condition_id": "0xf7cc7f51e1cd6a07a0677e4d7683ace88666d417b14b9deec9d590584b2e0064",
-      "token_id": "38043819482611657099148283773580530670850311904013668865893588240421586504839",
-      "side": "BUY",
-      "entry_price": 0.6368,
-      "current_price": 0.6368,
-      "size_usdt": 4.79,
-      "size_inr": 399.96,
-      "pnl": 2.7282,
-      "pnl_inr": 227.8,
-      "pnl_pct": 56.96,
-      "opened_at": "2026-03-15T18:10:55",
-      "source_wallet": "0x2a2c53bd27",
-      "category": "",
-      "question": "Sharks vs. Senators",
-      "polymarket_url": "https://polymarket.com/sports/nhl/nhl-sj-ott-2026-03-15",
-      "bet_description": "YES on Sharks vs. Senators \u2014 64% implied"
-    },
     {
       "condition_id": "0x58921ff5a49d1d2b13e6a4d4d8b6a6ab5a532cd86d9c36a951c785f9e99f689e",
       "token_id": "72417408549462383753527123672746311013623020358110321557522523261420325368529",
@@ -50,9 +32,9 @@
       "current_price": 0.587,
       "size_usdt": 4.79,
       "size_inr": 399.96,
-      "pnl": -4.7492,
-      "pnl_inr": -396.56,
-      "pnl_pct": -99.15,
+      "pnl": -4.7859,
+      "pnl_inr": -399.62,
+      "pnl_pct": -99.91,
       "opened_at": "2026-03-15T20:37:16",
       "source_wallet": "0x6ac5bb06a9",
       "category": "",
@@ -86,9 +68,9 @@
       "current_price": 0.4079,
       "size_usdt": 4.79,
       "size_inr": 399.96,
-      "pnl": 0.6705,
-      "pnl_inr": 55.99,
-      "pnl_pct": 14.0,
+      "pnl": -2.3827,
+      "pnl_inr": -198.96,
+      "pnl_pct": -49.74,
       "opened_at": "2026-03-15T20:38:33",
       "source_wallet": "0xb45a797faa",
       "category": "",
@@ -97,6 +79,6 @@
       "bet_description": "YES on Jazz vs. Kings \u2014 41% implied"
     }
   ],
-  "total_unrealized_pnl": -4.46,
-  "last_updated": "2026-03-16T02:42:29.728873"
+  "total_unrealized_pnl": -10.28,
+  "last_updated": "2026-03-16T03:42:37.503002"
 }

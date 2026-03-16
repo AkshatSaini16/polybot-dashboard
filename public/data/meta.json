@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-03-16T02:42:29.735920",
+  "exported_at": "2026-03-16T03:42:37.510006",
   "bot_running": true,
   "current_regime": "bull",
   "soft_params": {
@@ -36,15 +36,15 @@
   "skip_reasons": [
     {
       "reason": "wash_filter_flagged",
-      "count": 1554
+      "count": 1728
     },
     {
       "reason": "hard_rule:max_open_positions",
-      "count": 243
+      "count": 267
     },
     {
       "reason": "below_tier2: trust=70.0 liq=0",
-      "count": 200
+      "count": 212
     },
     {
       "reason": "below_tier2: trust=70.0 liq=91480",
@@ -95,5 +95,5 @@
       "count": 6
     }
   ],
-  "last_signal_at": "2026-03-16T02:41:43"
+  "last_signal_at": "2026-03-16T03:42:09"
 }
