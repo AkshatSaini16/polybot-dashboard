@@ -1,7 +1,7 @@
 {
-  "balance_usdt": 60.63,
-  "balance_inr": 5062.6,
-  "active_capital_usdt": 60.63,
+  "balance_usdt": 57.9,
+  "balance_inr": 4834.33,
+  "active_capital_usdt": 57.9,
   "reserve_usdt": 0.0,
   "regime": "bull",
   "bot_status": "paper",
@@ -32,9 +32,9 @@
       "current_price": 0.4875,
       "size_usdt": 4.79,
       "size_inr": 399.96,
-      "pnl": -3.4635,
-      "pnl_inr": -289.2,
-      "pnl_pct": -72.31,
+      "pnl": -4.7851,
+      "pnl_inr": -399.56,
+      "pnl_pct": -99.9,
       "opened_at": "2026-03-15T18:10:56",
       "source_wallet": "0x37c1874a60",
       "category": "",
@@ -50,9 +50,9 @@
       "current_price": 0.587,
       "size_usdt": 4.79,
       "size_inr": 399.96,
-      "pnl": -2.75,
-      "pnl_inr": -229.62,
-      "pnl_pct": -57.41,
+      "pnl": -4.7492,
+      "pnl_inr": -396.56,
+      "pnl_pct": -99.15,
       "opened_at": "2026-03-15T20:37:16",
       "source_wallet": "0x6ac5bb06a9",
       "category": "",
@@ -86,9 +86,9 @@
       "current_price": 0.4079,
       "size_usdt": 4.79,
       "size_inr": 399.96,
-      "pnl": 0.0834,
-      "pnl_inr": 6.96,
-      "pnl_pct": 1.74,
+      "pnl": 0.6705,
+      "pnl_inr": 55.99,
+      "pnl_pct": 14.0,
       "opened_at": "2026-03-15T20:38:33",
       "source_wallet": "0xb45a797faa",
       "category": "",
@@ -97,6 +97,6 @@
       "bet_description": "YES on Jazz vs. Kings \u2014 41% implied"
     }
   ],
-  "total_unrealized_pnl": -1.73,
-  "last_updated": "2026-03-16T01:42:22.445896"
+  "total_unrealized_pnl": -4.46,
+  "last_updated": "2026-03-16T02:42:29.728873"
 }
