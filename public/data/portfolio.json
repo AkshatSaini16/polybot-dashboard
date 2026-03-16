@@ -102,7 +102,7 @@
       "pnl_inr": 2.92,
       "pnl_pct": 3.65,
       "opened_at": "2026-03-16T20:11:24",
-      "age_hours": 3.0,
+      "age_hours": 3.1,
       "end_date": "2026-03-17",
       "queue": "active",
       "source_wallet": "0x37c1874a60",
@@ -123,7 +123,7 @@
       "pnl_inr": 13.6,
       "pnl_pct": 3.4,
       "opened_at": "2026-03-16T20:11:24",
-      "age_hours": 3.0,
+      "age_hours": 3.1,
       "end_date": "2026-03-16",
       "queue": "active",
       "source_wallet": "0x37c1874a60",
@@ -144,7 +144,7 @@
       "pnl_inr": 1179.6,
       "pnl_pct": 294.92,
       "opened_at": "2026-03-16T20:11:34",
-      "age_hours": 3.0,
+      "age_hours": 3.1,
       "end_date": "2026-03-16",
       "queue": "active",
       "source_wallet": "0x204f72f353",
@@ -165,7 +165,7 @@
       "pnl_inr": 2.24,
       "pnl_pct": 0.56,
       "opened_at": "2026-03-16T20:11:38",
-      "age_hours": 3.0,
+      "age_hours": 3.1,
       "end_date": "2026-05-31",
       "queue": "stale",
       "source_wallet": "0x0b9cae2b0d",
@@ -186,7 +186,7 @@
       "pnl_inr": 4.67,
       "pnl_pct": 1.17,
       "opened_at": "2026-03-16T20:11:38",
-      "age_hours": 3.0,
+      "age_hours": 3.1,
       "end_date": "2028-11-07",
       "queue": "stale",
       "source_wallet": "0x8c80d213c0",
@@ -207,7 +207,7 @@
       "pnl_inr": 0.83,
       "pnl_pct": 1.27,
       "opened_at": "2026-03-16T20:11:40",
-      "age_hours": 3.0,
+      "age_hours": 3.1,
       "end_date": "2028-11-07",
       "queue": "stale",
       "source_wallet": "0x83720820a8",
@@ -218,7 +218,7 @@
     }
   ],
   "total_unrealized_pnl": 7.28,
-  "last_updated": "2026-03-16T23:13:42.501222",
+  "last_updated": "2026-03-16T23:17:56.893592",
   "queue": {
     "active_slots_used": 7,
     "active_slots_max": 12,
@@ -226,6 +226,6 @@
     "active_locked_usdt": 29.19,
     "stale_locked_usdt": 10.36,
     "stale_capital_cap_pct": 0.25,
-    "free_capital_usdt": 22.74
+    "free_capital_usdt": 33.1
   }
 }

@@ -55,7 +55,6 @@ function PositionTable({ positions, title, subtitle }: { positions: Position[]; 
             <th className="px-4 py-2 text-right text-gray-500">Odds</th>
             <th className="px-4 py-2 text-right text-gray-500">Bet (INR)</th>
             <th className="px-4 py-2 text-right text-gray-500">Potential Win</th>
-            <th className="px-4 py-2 text-right text-gray-500">Age</th>
             <th className="px-4 py-2 text-right text-gray-500">P&L</th>
           </tr>
         </thead>
@@ -63,8 +62,6 @@ function PositionTable({ positions, title, subtitle }: { positions: Position[]; 
           {positions.map((pos, i) => {
             const shares = pos.entry_price > 0 ? pos.size_usdt / pos.entry_price : 0;
             const potentialWin = (shares * 1.0 - pos.size_usdt) * 83.5;
-            const ageHours = pos.age_hours ?? 0;
-            const ageStr = ageHours >= 24 ? `${Math.round(ageHours / 24)}d` : `${Math.round(ageHours)}h`;
             return (
               <tr key={i} className="border-t border-gray-800/50 hover:bg-gray-800/30">
                 <td className="px-4 py-2 max-w-[300px]">
@@ -93,9 +90,6 @@ function PositionTable({ positions, title, subtitle }: { positions: Position[]; 
                 </td>
                 <td className="px-4 py-2 text-right text-emerald-400">
                   +{formatInr(potentialWin > 0 ? potentialWin : 0)}
-                </td>
-                <td className="px-4 py-2 text-right text-gray-400 text-xs">
-                  {ageStr}
                 </td>
                 <td className={`px-4 py-2 text-right ${pos.pnl >= 0 ? "text-emerald-400" : "text-red-400"}`}>
                   {pos.pnl !== 0 ? (
