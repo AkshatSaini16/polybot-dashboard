@@ -148,6 +148,7 @@ export interface Meta {
   last_signal_at?: string;
   bot_uptime_hours?: number;
   pending_proposals?: AiProposal[];
+  approved_queue?: AiProposal[];
   action_history?: AiAction[];
   wallet_health?: WalletHealthEntry[];
 }
