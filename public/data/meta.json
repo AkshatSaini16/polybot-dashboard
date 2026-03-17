@@ -1,14 +1,36 @@
 {
-  "exported_at": "2026-03-17T19:25:42.613747",
+  "exported_at": "2026-03-17T20:25:53.671484",
   "bot_running": true,
-  "current_regime": "unknown",
+  "current_regime": "cautious",
   "soft_params": {
     "tier1_trust_min": 85,
-    "tier2_trust_min": 65,
+    "tier2_trust_min": 60,
     "copy_size_fraction": 0.5,
-    "regime": "unknown"
+    "regime": "cautious"
   },
-  "ai_advisor": {},
+  "ai_advisor": {
+    "timestamp": "2026-03-18T00:10:00+05:30",
+    "regime": "cautious",
+    "confidence": "low",
+    "reasoning": "Fresh start \u2014 only 3 positions opened, 0 closed. Too early for regime detection. 118 signals generated but 97% blocked: main blockers are liq=0 (liquidity lookup returning zero for valid markets) and composite scores below tier2 threshold. Lowered tier2_trust_min from 65 to 60 to accommodate fallback-capped scores (max 75). Tier 1 unchanged at 85 \u2014 only resolved categorical trades qualify. All 4 wallets active and generating signals. copy_size_fraction at 0.50 appropriate for observation phase.",
+    "actions": [
+      "tier2_trust_min: 65 -> 60 (let capped-score signals through)",
+      "regime: unknown -> cautious",
+      "no wallet changes"
+    ],
+    "wallet_status": {
+      "HorizonSplendidView": "active, sports=95.5 Tier1, others=75.0 capped",
+      "geniusMC": "active, sports=88.3 Tier1, others=75.0 capped",
+      "Jsram": "active, all=75.0 capped",
+      "huhaoli": "active, sports=50.0, others=75.0 capped"
+    },
+    "risks": [
+      "liq=0 blocking many high-trust signals \u2014 liquidity lookup may need investigation",
+      "Only sports category has resolved trades for real scores",
+      "huhaoli sports at 50.0 \u2014 at prior, no edge detected"
+    ],
+    "next_review": "6h"
+  },
   "starting_capital_usdt": 59.88,
   "starting_capital_inr": 4999.98,
   "investments": [
@@ -24,19 +46,27 @@
   "skip_reasons": [
     {
       "reason": "exit_no_matching_position",
-      "count": 17
+      "count": 41
     },
     {
       "reason": "below_tier2: composite=70.3 trust=95.5 bqs=33 liq=0",
-      "count": 17
+      "count": 29
+    },
+    {
+      "reason": "below_tier2: composite=72.0 trust=88.3 bqs=48 liq=54612",
+      "count": 14
+    },
+    {
+      "reason": "below_tier2: composite=44.0 trust=50.0 bqs=35 liq=73993",
+      "count": 12
     },
     {
       "reason": "below_tier2: composite=62.6 trust=75.0 bqs=44 liq=64178",
-      "count": 10
+      "count": 11
     },
     {
       "reason": "below_tier2: composite=62.2 trust=75.0 bqs=43 liq=89382",
-      "count": 9
+      "count": 10
     },
     {
       "reason": "below_tier2: composite=47.0 trust=50.0 bqs=43 liq=95538",
@@ -47,8 +77,8 @@
       "count": 8
     },
     {
-      "reason": "below_tier2: composite=72.0 trust=88.3 bqs=48 liq=54612",
-      "count": 6
+      "reason": "below_tier2: composite=71.6 trust=88.3 bqs=46 liq=17829",
+      "count": 7
     },
     {
       "reason": "below_tier2: composite=61.6 trust=75.0 bqs=42 liq=0",
@@ -67,23 +97,15 @@
       "count": 4
     },
     {
-      "reason": "below_tier2: composite=70.2 trust=88.3 bqs=43 liq=50647",
+      "reason": "below_tier2: composite=71.6 trust=88.3 bqs=47 liq=41603",
+      "count": 3
+    },
+    {
+      "reason": "below_tier2: composite=73.9 trust=88.3 bqs=52 liq=92747",
       "count": 2
-    },
-    {
-      "reason": "below_tier2: composite=74.7 trust=95.2 bqs=44 liq=64178",
-      "count": 1
-    },
-    {
-      "reason": "below_tier2: composite=70.6 trust=88.3 bqs=44 liq=63650",
-      "count": 1
-    },
-    {
-      "reason": "below_tier2: composite=69.7 trust=88.4 bqs=42 liq=0",
-      "count": 1
     }
   ],
-  "last_signal_at": "2026-03-17T19:25:34",
+  "last_signal_at": "2026-03-17T20:25:48",
   "pending_proposals": [],
   "approved_queue": [],
   "action_history": [],
@@ -418,6 +440,5 @@
       "recent_pnl": 496625.33,
       "recent_trades": 1970
     }
-  ],
-  "last_pushed_at": "2026-03-17T19:25:45"
+  ]
 }
