@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-03-16T23:53:20.485383",
+  "exported_at": "2026-03-17T00:40:13.962732",
   "bot_running": true,
   "current_regime": "sideways",
   "soft_params": {
@@ -36,35 +36,39 @@
   "skip_reasons": [
     {
       "reason": "wash_filter_flagged",
-      "count": 5356
+      "count": 5295
     },
     {
       "reason": "hard_rule:max_open_positions",
-      "count": 415
+      "count": 404
     },
     {
       "reason": "below_tier2: trust=70.0 liq=0",
-      "count": 284
+      "count": 275
+    },
+    {
+      "reason": "below_tier2: composite=54.9 trust=70.0 bqs=32 liq=0",
+      "count": 94
+    },
+    {
+      "reason": "hard_rule:max_active_positions",
+      "count": 56
     },
     {
       "reason": "below_tier2: trust=70.0 liq=83713",
       "count": 46
     },
     {
-      "reason": "below_tier2: composite=54.9 trust=70.0 bqs=32 liq=0",
-      "count": 21
-    },
-    {
-      "reason": "hard_rule:max_active_positions",
-      "count": 15
-    },
-    {
       "reason": "exit_no_matching_position",
-      "count": 11
+      "count": 45
     },
     {
       "reason": "category_disabled:geopolitical",
-      "count": 10
+      "count": 14
+    },
+    {
+      "reason": "below_tier2: composite=57.7 trust=70.0 bqs=39 liq=124934",
+      "count": 11
     },
     {
       "reason": "exit_liquidity:exit_liquidity: age=171.8h>4h AND move=100.0%>5.0%",
@@ -73,6 +77,10 @@
     {
       "reason": "exit_liquidity:exit_liquidity: age=171.3h>4h AND move=100.0%>5.0%",
       "count": 8
+    },
+    {
+      "reason": "exit_liquidity:exit_liquidity: age=177.0h>4h AND move=100.0%>5.0%",
+      "count": 7
     },
     {
       "reason": "exit_liquidity:exit_liquidity: age=174.9h>4h AND move=100.0%>5.0%",
@@ -85,17 +93,9 @@
     {
       "reason": "exit_liquidity:exit_liquidity: age=172.3h>4h AND move=100.0%>5.0%",
       "count": 7
-    },
-    {
-      "reason": "exit_liquidity:exit_liquidity: age=170.8h>4h AND move=100.0%>5.0%",
-      "count": 7
-    },
-    {
-      "reason": "exit_liquidity:exit_liquidity: age=169.7h>4h AND move=100.0%>5.0%",
-      "count": 7
     }
   ],
-  "last_signal_at": "2026-03-16T23:53:13",
+  "last_signal_at": "2026-03-17T00:40:09",
   "pending_proposals": [],
   "approved_queue": [],
   "action_history": [
@@ -221,7 +221,7 @@
       "trades": 40,
       "win_rate": 0.5,
       "recent_pnl": 0.0,
-      "recent_trades": 1400
+      "recent_trades": 1399
     },
     {
       "address": "0x916f7165c2",
@@ -323,6 +323,5 @@
       "recent_pnl": 0.0,
       "recent_trades": 1970
     }
-  ],
-  "last_pushed_at": "2026-03-16T23:53:23"
+  ]
 }
