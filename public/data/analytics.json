@@ -1,10 +1,10 @@
 {
-  "total_pnl": -51.74,
-  "total_trades": 35,
-  "win_rate": 0.314,
+  "total_pnl": -61.32,
+  "total_trades": 36,
+  "win_rate": 0.306,
   "best_trade": 5.24,
-  "worst_trade": -4.79,
-  "monthly_alpha_est": -172.83,
+  "worst_trade": -9.58,
+  "monthly_alpha_est": -204.82,
   "daily_pnl": [
     {
       "date": "2026-03-15",
@@ -18,15 +18,15 @@
     },
     {
       "date": "2026-03-17",
-      "pnl": -46.76,
-      "cumulative": -51.74
+      "pnl": -56.34,
+      "cumulative": -61.32
     }
   ],
   "category_breakdown": [
     {
       "category": "",
-      "pnl": -3317.51,
-      "trades": 925,
+      "pnl": -3355.83,
+      "trades": 929,
       "win_rate": 0.06
     },
     {
@@ -37,11 +37,11 @@
     },
     {
       "category": "sports",
-      "pnl": -1366.35,
-      "trades": 394,
+      "pnl": -1399.88,
+      "trades": 410,
       "win_rate": 0.1
     }
   ],
-  "signals_generated": 11903,
-  "signals_executed": 38
+  "signals_generated": 11988,
+  "signals_executed": 39
 }
