@@ -1,6 +1,24 @@
 {
   "trades": [
     {
+      "id": 48,
+      "condition_id": "0x7637dcb119d54ad03a968a1a6bec2e1f7e03bd22556808c8ef451c2150b6acac",
+      "wallet": "0xb45a797faa",
+      "side": "BUY",
+      "price": 0.4771,
+      "size_usdt": 9.58,
+      "size_inr": 799.93,
+      "pnl": -9.58,
+      "pnl_inr": -799.93,
+      "timestamp": "2026-03-17T15:53:03",
+      "tier": 2,
+      "category": "sports",
+      "status": "CLOSED",
+      "question": "Spurs vs. Clippers: O/U 232.5",
+      "polymarket_url": "https://polymarket.com/sports/nba/nba-sas-lac-2026-03-16",
+      "bet_description": "Over on Spurs vs. Clippers: O/U 232.5 \u2014 48% implied"
+    },
+    {
       "id": 47,
       "condition_id": "0x7637dcb119d54ad03a968a1a6bec2e1f7e03bd22556808c8ef451c2150b6acac",
       "wallet": "0xb45a797faa",
@@ -62,8 +80,8 @@
       "price": 0.4875,
       "size_usdt": 4.79,
       "size_inr": 399.96,
-      "pnl": -0.0246,
-      "pnl_inr": -2.05,
+      "pnl": 0.0246,
+      "pnl_inr": 2.05,
       "timestamp": "2026-03-17T12:48:09",
       "tier": 2,
       "category": "sports",

@@ -1,7 +1,7 @@
 {
-  "balance_usdt": 48.86,
-  "balance_inr": 4079.76,
-  "active_capital_usdt": 48.86,
+  "balance_usdt": -20.55,
+  "balance_inr": -1716.04,
+  "active_capital_usdt": -20.55,
   "reserve_usdt": 0.0,
   "regime": "cautious",
   "bot_status": "paper",
@@ -14,11 +14,11 @@
       "current_price": 0.4875,
       "size_usdt": 4.79,
       "size_inr": 399.96,
-      "pnl": -0.0246,
-      "pnl_inr": -2.05,
-      "pnl_pct": -0.51,
+      "pnl": 0.0246,
+      "pnl_inr": 2.05,
+      "pnl_pct": 0.51,
       "opened_at": "2026-03-17T12:48:09",
-      "age_hours": 3.0,
+      "age_hours": 3.2,
       "end_date": "2026-03-18",
       "queue": "active",
       "source_wallet": "0x0b9cae2b0d",
@@ -39,7 +39,7 @@
       "pnl_inr": 2.35,
       "pnl_pct": 2.63,
       "opened_at": "2026-03-17T13:48:13",
-      "age_hours": 2.0,
+      "age_hours": 2.2,
       "end_date": "2028-11-07",
       "queue": "stale",
       "source_wallet": "0x83720820a8",
@@ -49,8 +49,8 @@
       "bet_description": "Marco Rubio win the 2028 Republican presidential nomination wins \u2014 26% implied"
     }
   ],
-  "total_unrealized_pnl": 0.0,
-  "last_updated": "2026-03-17T15:48:55.531346",
+  "total_unrealized_pnl": 0.05,
+  "last_updated": "2026-03-17T16:01:13.500368",
   "queue": {
     "active_slots_used": 1,
     "active_slots_max": 12,
@@ -58,6 +58,6 @@
     "active_locked_usdt": 4.79,
     "stale_locked_usdt": 1.07,
     "stale_capital_cap_pct": 0.25,
-    "free_capital_usdt": 44.07
+    "free_capital_usdt": 0.0
   }
 }

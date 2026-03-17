@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-03-17T15:48:55.619325",
+  "exported_at": "2026-03-17T16:01:13.678607",
   "bot_running": true,
   "current_regime": "cautious",
   "soft_params": {
@@ -38,8 +38,8 @@
       "win_rate_7d": "31.4%"
     }
   },
-  "starting_capital_usdt": 119.76,
-  "starting_capital_inr": 9999.96,
+  "starting_capital_usdt": 59.88,
+  "starting_capital_inr": 4999.98,
   "investments": [
     {
       "date": "2026-03-14",
@@ -59,11 +59,11 @@
   "skip_reasons": [
     {
       "reason": "wash_filter_flagged",
-      "count": 2436
+      "count": 2380
     },
     {
       "reason": "exit_no_matching_position",
-      "count": 157
+      "count": 159
     },
     {
       "reason": "below_tier2: composite=54.9 trust=70.0 bqs=32 liq=0",
@@ -75,7 +75,7 @@
     },
     {
       "reason": "below_tier2: trust=70.0 liq=0",
-      "count": 94
+      "count": 91
     },
     {
       "reason": "below_tier2: composite=43.7 trust=54.0 bqs=28 liq=0",
@@ -83,19 +83,19 @@
     },
     {
       "reason": "hard_rule:max_open_positions",
-      "count": 63
-    },
-    {
-      "reason": "below_tier2: trust=70.0 liq=83713",
-      "count": 35
+      "count": 60
     },
     {
       "reason": "below_tier2: composite=69.7 trust=94.6 bqs=32 liq=0",
-      "count": 34
+      "count": 36
     },
     {
       "reason": "below_tier2: composite=56.9 trust=68.9 bqs=39 liq=121564",
-      "count": 34
+      "count": 36
+    },
+    {
+      "reason": "below_tier2: trust=70.0 liq=83713",
+      "count": 32
     },
     {
       "reason": "below_tier2: composite=44.9 trust=50.3 bqs=37 liq=31677",
@@ -118,7 +118,7 @@
       "count": 20
     }
   ],
-  "last_signal_at": "2026-03-17T15:48:47",
+  "last_signal_at": "2026-03-17T15:59:12",
   "pending_proposals": [],
   "approved_queue": [],
   "action_history": [
@@ -560,6 +560,5 @@
       "recent_pnl": 496625.33,
       "recent_trades": 1970
     }
-  ],
-  "last_pushed_at": "2026-03-17T15:48:59"
+  ]
 }
