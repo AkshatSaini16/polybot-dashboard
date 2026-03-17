@@ -1,62 +1,87 @@
 {
-  "exported_at": "2026-03-17T00:45:38.100298",
-  "bot_running": true,
+  "exported_at": "2026-03-17T01:31:32.880219",
+  "bot_running": false,
   "current_regime": "sideways",
   "soft_params": {
-    "tier1_trust_min": 80,
-    "tier2_trust_min": 60,
-    "copy_size_fraction": 0.4,
+    "tier1_trust_min": 85,
+    "tier2_trust_min": 65,
+    "copy_size_fraction": 0.3,
     "regime": "sideways"
   },
   "ai_advisor": {
-    "timestamp": "2026-03-16T18:59:07.121682",
+    "timestamp": "2026-03-17T01:20:58.355043+00:00",
     "regime": "sideways",
-    "confidence": "medium",
-    "reasoning": "Cycle 3 analysis: All 12 positions remain closed with net P&L of -$7.48 (-12.5%). No new trades executed in last 6h \u2014 2,128 signals processed but all filtered: 1,497 wash filter (70%), 96 max_open_positions (stale \u2014 all positions are closed, dedup cooldown fix should resolve next cycle), 72 zero-liquidity markets, 37 below $100k liquidity threshold. Bot is effectively idle since Mar 15 20:38 UTC. The dedup cooldown change (1h re-entry after position close) and 10 new wallets added this session should increase signal flow in the next cycle. Demoted 2 inactive wallets (WoofMaster: 13.5d inactive, gmanas: 13.8d inactive). Proposed majorexploiter demotion as Tier 3 (14.9d inactive, needs your approval). Keeping all parameters unchanged \u2014 no evidence to justify changes with zero new trades. Key watch: if next cycle still shows 0 executed signals, need to investigate whether the paper trader polling loop is actually running.",
-    "actions": [
-      "No soft_param changes \u2014 insufficient new data to justify adjustments",
-      "Demoted WoofMaster (Tier 2 auto) \u2014 0 trades in 13.5 days",
-      "Demoted gmanas (Tier 2 auto) \u2014 0 trades in 13.8 days",
-      "Proposed majorexploiter demotion (Tier 3) \u2014 14.9 days inactive, awaiting approval",
-      "Identified stale max_open_positions counter as potential bug \u2014 all positions closed but 96 signals still blocked by this rule",
-      "Bet Quality Score system now active \u2014 will affect tier assignment on next trade"
-    ],
-    "wallet_review": {
-      "active": 18,
-      "deactivated": 2,
-      "top_performers": [
-        "0p0jogggg (+$4.41, 75% WR)",
-        "0x2a2c53bd (+$3.44, 100% WR)"
-      ]
+    "confidence": "high",
+    "reasoning": "Cycle 4 analysis (post-score-fix): Scores now differentiated (31.9-95.4) after resolving 10,536 wallet_trades via Gamma API + early exit detection. 17 closed positions with net PnL -$19.36 (WR 47%, 8W/9L). 14 open positions (over max). 3082 signals/6h, 0.6% exec rate. Wash filter caught 49% of signals (1504). below_tier2 rejected 864 signals (many with old trust=70 scores). Regime: sideways (small losses, near-50% WR, high volume). Raised tier1 80\u219285 (4 wallets qualify: bcda 95.4, waterbottle6 94.5, geniusMC 90.4, Countryside 89.2). Raised tier2 60\u219265 (filters HedgeMaster88 at 63.6 until proven). Reduced copy_size 0.4\u21920.3 (capital preservation while positions are underwater). Deactivated 4 wallets scoring <50: swisstony(49.8), 0p0jogggg(41.6), CemeterySun(37.6), beachboy4(31.9). 13 wallets remain active.",
+    "params_before": {
+      "tier1_trust_min": 80,
+      "tier2_trust_min": 60,
+      "copy_size_fraction": 0.4,
+      "regime": "sideways"
     },
-    "next_review": "2026-03-17 06:55 UTC"
+    "params_after": {
+      "tier1_trust_min": 85,
+      "tier2_trust_min": 65,
+      "copy_size_fraction": 0.3,
+      "regime": "sideways"
+    },
+    "deactivated_wallets": [
+      {
+        "label": "swisstony",
+        "reason": "score=49.8<50"
+      },
+      {
+        "label": "CemeterySun",
+        "reason": "score=37.6<50"
+      },
+      {
+        "label": "0p0jogggg",
+        "reason": "score=41.6<50"
+      },
+      {
+        "label": "beachboy4",
+        "reason": "score=31.9<50"
+      }
+    ],
+    "signals_6h": {
+      "total": 3082,
+      "executed": 20,
+      "wash_filtered": 1504,
+      "below_tier2": 864
+    },
+    "positions": {
+      "open": 14,
+      "closed": 17,
+      "total_pnl": -19.3573,
+      "win_rate": 0.471
+    }
   },
   "starting_capital_usdt": 59.88,
   "starting_capital_inr": 4999.98,
   "skip_reasons": [
     {
       "reason": "wash_filter_flagged",
-      "count": 5283
+      "count": 5193
     },
     {
       "reason": "hard_rule:max_open_positions",
-      "count": 402
+      "count": 392
     },
     {
       "reason": "below_tier2: trust=70.0 liq=0",
-      "count": 273
+      "count": 264
     },
     {
       "reason": "below_tier2: composite=54.9 trust=70.0 bqs=32 liq=0",
-      "count": 100
-    },
-    {
-      "reason": "hard_rule:max_active_positions",
-      "count": 65
+      "count": 139
     },
     {
       "reason": "exit_no_matching_position",
-      "count": 49
+      "count": 90
+    },
+    {
+      "reason": "hard_rule:max_active_positions",
+      "count": 81
     },
     {
       "reason": "below_tier2: trust=70.0 liq=83713",
@@ -64,38 +89,38 @@
     },
     {
       "reason": "category_disabled:geopolitical",
-      "count": 16
+      "count": 21
     },
     {
       "reason": "below_tier2: composite=57.7 trust=70.0 bqs=39 liq=124934",
-      "count": 12
+      "count": 20
     },
     {
-      "reason": "exit_liquidity:exit_liquidity: age=171.8h>4h AND move=100.0%>5.0%",
-      "count": 8
+      "reason": "below_tier2: composite=43.7 trust=54.0 bqs=28 liq=0",
+      "count": 14
     },
     {
-      "reason": "exit_liquidity:exit_liquidity: age=171.3h>4h AND move=100.0%>5.0%",
-      "count": 8
+      "reason": "below_tier2: composite=56.7 trust=70.0 bqs=37 liq=0",
+      "count": 13
+    },
+    {
+      "reason": "below_tier2: composite=55.1 trust=70.0 bqs=33 liq=1910",
+      "count": 13
+    },
+    {
+      "reason": "below_tier2: composite=57.1 trust=70.0 bqs=38 liq=32583",
+      "count": 9
     },
     {
       "reason": "below_tier2: composite=55.1 trust=70.0 bqs=33 liq=1104",
+      "count": 9
+    },
+    {
+      "reason": "exit_liquidity:exit_liquidity: age=175.5h>4h AND move=100.0%>5.0%",
       "count": 8
-    },
-    {
-      "reason": "exit_liquidity:exit_liquidity: age=177.0h>4h AND move=100.0%>5.0%",
-      "count": 7
-    },
-    {
-      "reason": "exit_liquidity:exit_liquidity: age=174.9h>4h AND move=100.0%>5.0%",
-      "count": 7
-    },
-    {
-      "reason": "exit_liquidity:exit_liquidity: age=172.9h>4h AND move=100.0%>5.0%",
-      "count": 7
     }
   ],
-  "last_signal_at": "2026-03-17T00:45:37",
+  "last_signal_at": "2026-03-17T01:31:30",
   "pending_proposals": [],
   "approved_queue": [],
   "action_history": [
@@ -120,107 +145,141 @@
       "reason": "Inactive 14.9 days, 0 trades in last 7 days. Exceeded max 2 demotions per cycle.",
       "decision": "approved",
       "decided_at": "2026-03-17T05:12:00"
+    },
+    {
+      "action": "param_adjustment",
+      "changes": {
+        "tier1_trust_min": "80\u219285",
+        "tier2_trust_min": "60\u219265",
+        "copy_size_fraction": "0.4\u21920.3"
+      },
+      "reason": "Post-score-fix cycle: real scores enable tighter filtering, reduced sizing for capital preservation",
+      "decided_at": "2026-03-17T01:20:58.355043+00:00"
+    },
+    {
+      "action": "demote_wallet",
+      "label": "swisstony",
+      "reason": "score=49.8<50",
+      "decided_at": "2026-03-17T01:20:58.355043+00:00"
+    },
+    {
+      "action": "demote_wallet",
+      "label": "CemeterySun",
+      "reason": "score=37.6<50",
+      "decided_at": "2026-03-17T01:20:58.355043+00:00"
+    },
+    {
+      "action": "demote_wallet",
+      "label": "0p0jogggg",
+      "reason": "score=41.6<50",
+      "decided_at": "2026-03-17T01:20:58.355043+00:00"
+    },
+    {
+      "action": "demote_wallet",
+      "label": "beachboy4",
+      "reason": "score=31.9<50",
+      "decided_at": "2026-03-17T01:20:58.355043+00:00"
     }
   ],
   "wallet_health": [
     {
       "address": "0x6ac5bb06a9",
       "label": "0p0jogggg",
-      "is_active": true,
-      "avg_score": 70.0,
-      "trades": 40,
-      "win_rate": 0.5,
-      "recent_pnl": 0.0,
+      "is_active": false,
+      "avg_score": 41.6,
+      "trades": 1592,
+      "win_rate": 0.391,
+      "recent_pnl": 50959.92,
       "recent_trades": 2877
     },
     {
       "address": "0x2a2c53bd27",
       "label": "0x2a2C53bD278c04DA9962Fcf96490E17F3DfB9Bc1-1772479215461",
       "is_active": true,
-      "avg_score": 70.0,
-      "trades": 40,
-      "win_rate": 0.5,
-      "recent_pnl": 0.0,
+      "avg_score": 74.2,
+      "trades": 2156,
+      "win_rate": 0.725,
+      "recent_pnl": -291137.56,
       "recent_trades": 3526
     },
     {
       "address": "0xdc876e6873",
       "label": "432614799197",
       "is_active": true,
-      "avg_score": 70.0,
-      "trades": 40,
-      "win_rate": 0.5,
-      "recent_pnl": 0.0,
+      "avg_score": 51.8,
+      "trades": 0,
+      "win_rate": 0,
+      "recent_pnl": 312325.7,
       "recent_trades": 1898
     },
     {
       "address": "0x37c1874a60",
       "label": "CemeterySun",
-      "is_active": true,
-      "avg_score": 70.0,
-      "trades": 40,
-      "win_rate": 0.5,
-      "recent_pnl": 0.0,
+      "is_active": false,
+      "avg_score": 37.6,
+      "trades": 2288,
+      "win_rate": 0.341,
+      "recent_pnl": 254293.91,
       "recent_trades": 3760
     },
     {
       "address": "0xbddf61af53",
       "label": "Countryside",
       "is_active": true,
-      "avg_score": 70.0,
-      "trades": 40,
-      "win_rate": 0.5,
-      "recent_pnl": 0.0,
+      "avg_score": 89.2,
+      "trades": 732,
+      "win_rate": 0.945,
+      "recent_pnl": -869117.74,
       "recent_trades": 2183
     },
     {
       "address": "0x507e52ef68",
       "label": "GamblingIsAllYouNeed",
       "is_active": true,
-      "avg_score": 70.0,
-      "trades": 40,
-      "win_rate": 0.5,
-      "recent_pnl": 0.0,
+      "avg_score": 51.2,
+      "trades": 1743,
+      "win_rate": 0.477,
+      "recent_pnl": 7611.58,
       "recent_trades": 1468
     },
     {
       "address": "0x036c159d5a",
       "label": "HedgeMaster88",
       "is_active": true,
-      "avg_score": 70.0,
-      "trades": 40,
-      "win_rate": 0.5,
-      "recent_pnl": 0.0,
+      "avg_score": 63.6,
+      "trades": 1014,
+      "win_rate": 0.676,
+      "recent_pnl": -112583.52,
       "recent_trades": 1974
     },
     {
       "address": "0x02227b8f5a",
       "label": "HorizonSplendidView",
       "is_active": true,
-      "avg_score": 70.0,
-      "trades": 40,
-      "win_rate": 0.5,
-      "recent_pnl": 0.0,
+      "avg_score": 51.8,
+      "trades": 0,
+      "win_rate": 0,
+      "recent_pnl": 4901051.62,
       "recent_trades": 1996
     },
     {
       "address": "0x83720820a8",
       "label": "Jsram",
       "is_active": true,
-      "avg_score": 70.0,
-      "trades": 40,
-      "win_rate": 0.5,
-      "recent_pnl": 0.0,
+      "avg_score": 51.8,
+      "trades": 0,
+      "win_rate": 0,
+      "recent_pnl": 699969.86,
       "recent_trades": 1993
     },
     {
       "address": "0x8c80d213c0",
       "label": "SecondWindCapital",
       "is_active": true,
-      "avg_score": 70.0,
-      "trades": 40,
-      "win_rate": 0.5,
-      "recent_pnl": 0.0,
+      "avg_score": 69.4,
+      "trades": 1152,
+      "win_rate": 0.101,
+      "recent_pnl": 963603.12,
       "recent_trades": 1399
     },
     {
@@ -230,47 +289,47 @@
       "avg_score": 0.0,
       "trades": 0,
       "win_rate": 0,
-      "recent_pnl": 0.0,
+      "recent_pnl": 463718.14,
       "recent_trades": 1991
     },
     {
       "address": "0xb45a797faa",
       "label": "bcda",
       "is_active": true,
-      "avg_score": 70.0,
-      "trades": 40,
-      "win_rate": 0.5,
-      "recent_pnl": 0.0,
+      "avg_score": 95.4,
+      "trades": 2119,
+      "win_rate": 0.941,
+      "recent_pnl": 198899.9,
       "recent_trades": 2872
     },
     {
       "address": "0xc2e7800b5a",
       "label": "beachboy4",
-      "is_active": true,
-      "avg_score": 70.0,
-      "trades": 40,
-      "win_rate": 0.5,
-      "recent_pnl": 0.0,
-      "recent_trades": 136
+      "is_active": false,
+      "avg_score": 31.9,
+      "trades": 132,
+      "win_rate": 0.0,
+      "recent_pnl": 2952262.94,
+      "recent_trades": 135
     },
     {
       "address": "0x93abbc022c",
       "label": "gatorr",
       "is_active": true,
-      "avg_score": 70.0,
-      "trades": 40,
-      "win_rate": 0.5,
-      "recent_pnl": 0.0,
+      "avg_score": 82.0,
+      "trades": 800,
+      "win_rate": 0.859,
+      "recent_pnl": 110155.53,
       "recent_trades": 2336
     },
     {
       "address": "0x0b9cae2b0d",
       "label": "geniusMC",
       "is_active": true,
-      "avg_score": 70.0,
-      "trades": 40,
-      "win_rate": 0.5,
-      "recent_pnl": 0.0,
+      "avg_score": 90.4,
+      "trades": 928,
+      "win_rate": 0.912,
+      "recent_pnl": 166629.13,
       "recent_trades": 1947
     },
     {
@@ -280,17 +339,17 @@
       "avg_score": 0.0,
       "trades": 0,
       "win_rate": 0,
-      "recent_pnl": 0.0,
+      "recent_pnl": 408316.79,
       "recent_trades": 1927
     },
     {
       "address": "0xf19d7d88cf",
       "label": "huhaoli",
       "is_active": true,
-      "avg_score": 70.0,
-      "trades": 40,
-      "win_rate": 0.5,
-      "recent_pnl": 0.0,
+      "avg_score": 69.5,
+      "trades": 535,
+      "win_rate": 0.723,
+      "recent_pnl": 211529.13,
       "recent_trades": 1949
     },
     {
@@ -300,29 +359,28 @@
       "avg_score": 70.0,
       "trades": 40,
       "win_rate": 0.5,
-      "recent_pnl": 0.0,
+      "recent_pnl": 3667735.96,
       "recent_trades": 865
     },
     {
       "address": "0x204f72f353",
       "label": "swisstony",
-      "is_active": true,
-      "avg_score": 70.0,
-      "trades": 40,
-      "win_rate": 0.5,
-      "recent_pnl": 0.0,
+      "is_active": false,
+      "avg_score": 49.8,
+      "trades": 1730,
+      "win_rate": 0.479,
+      "recent_pnl": 1250.39,
       "recent_trades": 1987
     },
     {
       "address": "0xb90494d9a5",
       "label": "waterbottle6",
       "is_active": true,
-      "avg_score": 70.0,
-      "trades": 40,
-      "win_rate": 0.5,
-      "recent_pnl": 0.0,
+      "avg_score": 94.5,
+      "trades": 2000,
+      "win_rate": 0.834,
+      "recent_pnl": 496625.33,
       "recent_trades": 1970
     }
-  ],
-  "last_pushed_at": "2026-03-17T00:45:40"
+  ]
 }
