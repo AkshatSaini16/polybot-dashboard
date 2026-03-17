@@ -1,7 +1,7 @@
 {
-  "balance_usdt": 8.21,
-  "balance_inr": 685.5,
-  "active_capital_usdt": 8.21,
+  "balance_usdt": 68.09,
+  "balance_inr": 5685.48,
+  "active_capital_usdt": 68.09,
   "reserve_usdt": 0.0,
   "regime": "cautious",
   "bot_status": "paper",
@@ -18,7 +18,7 @@
       "pnl_inr": 6.15,
       "pnl_pct": 1.54,
       "opened_at": "2026-03-17T12:48:09",
-      "age_hours": 0.6,
+      "age_hours": 0.7,
       "end_date": "2026-03-18",
       "queue": "active",
       "source_wallet": "0x0b9cae2b0d",
@@ -29,7 +29,7 @@
     }
   ],
   "total_unrealized_pnl": 0.07,
-  "last_updated": "2026-03-17T13:22:52.207971",
+  "last_updated": "2026-03-17T13:27:49.298571",
   "queue": {
     "active_slots_used": 1,
     "active_slots_max": 12,
@@ -37,6 +37,6 @@
     "active_locked_usdt": 4.79,
     "stale_locked_usdt": 0.0,
     "stale_capital_cap_pct": 0.25,
-    "free_capital_usdt": 3.42
+    "free_capital_usdt": 63.3
   }
 }

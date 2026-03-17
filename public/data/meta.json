@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-03-17T13:22:52.351458",
+  "exported_at": "2026-03-17T13:27:49.442040",
   "bot_running": true,
   "current_regime": "cautious",
   "soft_params": {
@@ -38,8 +38,8 @@
       "win_rate_7d": "31.4%"
     }
   },
-  "starting_capital_usdt": 59.88,
-  "starting_capital_inr": 4999.98,
+  "starting_capital_usdt": 119.76,
+  "starting_capital_inr": 9999.96,
   "investments": [
     {
       "date": "2026-03-14",
@@ -59,7 +59,7 @@
   "skip_reasons": [
     {
       "reason": "wash_filter_flagged",
-      "count": 3031
+      "count": 3009
     },
     {
       "reason": "below_tier2: composite=54.9 trust=70.0 bqs=32 liq=0",
@@ -67,15 +67,15 @@
     },
     {
       "reason": "exit_no_matching_position",
-      "count": 127
+      "count": 128
     },
     {
       "reason": "below_tier2: trust=70.0 liq=0",
-      "count": 123
+      "count": 122
     },
     {
       "reason": "hard_rule:max_open_positions",
-      "count": 110
+      "count": 108
     },
     {
       "reason": "hard_rule:max_active_positions",
@@ -118,7 +118,7 @@
       "count": 10
     }
   ],
-  "last_signal_at": "2026-03-17T13:22:16",
+  "last_signal_at": "2026-03-17T13:27:18",
   "pending_proposals": [],
   "approved_queue": [],
   "action_history": [

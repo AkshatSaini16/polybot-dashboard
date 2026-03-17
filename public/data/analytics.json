@@ -4,7 +4,7 @@
   "win_rate": 0.314,
   "best_trade": 5.24,
   "worst_trade": -4.79,
-  "monthly_alpha_est": -345.65,
+  "monthly_alpha_est": -172.83,
   "daily_pnl": [
     {
       "date": "2026-03-15",
@@ -38,10 +38,10 @@
     {
       "category": "sports",
       "pnl": -1366.35,
-      "trades": 388,
+      "trades": 389,
       "win_rate": 0.1
     }
   ],
-  "signals_generated": 11863,
+  "signals_generated": 11870,
   "signals_executed": 37
 }
