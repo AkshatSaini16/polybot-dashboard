@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-03-17T08:47:29.876109",
+  "exported_at": "2026-03-17T09:47:43.409166",
   "bot_running": true,
   "current_regime": "sideways",
   "soft_params": {
@@ -61,15 +61,15 @@
   "skip_reasons": [
     {
       "reason": "wash_filter_flagged",
-      "count": 3946
+      "count": 3760
     },
     {
       "reason": "hard_rule:max_open_positions",
-      "count": 220
+      "count": 196
     },
     {
       "reason": "below_tier2: trust=70.0 liq=0",
-      "count": 178
+      "count": 166
     },
     {
       "reason": "below_tier2: composite=54.9 trust=70.0 bqs=32 liq=0",
@@ -81,11 +81,11 @@
     },
     {
       "reason": "hard_rule:max_active_positions",
-      "count": 98
+      "count": 100
     },
     {
       "reason": "below_tier2: composite=43.7 trust=54.0 bqs=28 liq=0",
-      "count": 58
+      "count": 63
     },
     {
       "reason": "below_tier2: trust=70.0 liq=83713",
@@ -120,7 +120,7 @@
       "count": 9
     }
   ],
-  "last_signal_at": "2026-03-17T08:47:28",
+  "last_signal_at": "2026-03-17T09:47:42",
   "pending_proposals": [],
   "approved_queue": [],
   "action_history": [
@@ -382,6 +382,5 @@
       "recent_pnl": 496625.33,
       "recent_trades": 1970
     }
-  ],
-  "last_pushed_at": "2026-03-17T08:47:33"
+  ]
 }
