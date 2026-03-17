@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-03-17T06:47:01.234409",
+  "exported_at": "2026-03-17T07:47:16.067760",
   "bot_running": true,
   "current_regime": "sideways",
   "soft_params": {
@@ -61,15 +61,15 @@
   "skip_reasons": [
     {
       "reason": "wash_filter_flagged",
-      "count": 4276
+      "count": 4111
     },
     {
       "reason": "hard_rule:max_open_positions",
-      "count": 268
+      "count": 244
     },
     {
       "reason": "below_tier2: trust=70.0 liq=0",
-      "count": 202
+      "count": 190
     },
     {
       "reason": "below_tier2: composite=54.9 trust=70.0 bqs=32 liq=0",
@@ -77,15 +77,15 @@
     },
     {
       "reason": "exit_no_matching_position",
-      "count": 109
+      "count": 110
     },
     {
       "reason": "hard_rule:max_active_positions",
-      "count": 89
+      "count": 93
     },
     {
       "reason": "below_tier2: composite=43.7 trust=54.0 bqs=28 liq=0",
-      "count": 48
+      "count": 53
     },
     {
       "reason": "below_tier2: trust=70.0 liq=83713",
@@ -120,7 +120,7 @@
       "count": 9
     }
   ],
-  "last_signal_at": "2026-03-17T06:47:00",
+  "last_signal_at": "2026-03-17T07:47:15",
   "pending_proposals": [],
   "approved_queue": [],
   "action_history": [
@@ -382,6 +382,5 @@
       "recent_pnl": 496625.33,
       "recent_trades": 1970
     }
-  ],
-  "last_pushed_at": "2026-03-17T06:47:04"
+  ]
 }
