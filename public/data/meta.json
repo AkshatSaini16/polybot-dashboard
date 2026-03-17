@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-03-17T01:31:32.880219",
+  "exported_at": "2026-03-17T01:41:00.795150",
   "bot_running": false,
   "current_regime": "sideways",
   "soft_params": {
@@ -61,15 +61,15 @@
   "skip_reasons": [
     {
       "reason": "wash_filter_flagged",
-      "count": 5193
+      "count": 5163
     },
     {
       "reason": "hard_rule:max_open_positions",
-      "count": 392
+      "count": 389
     },
     {
       "reason": "below_tier2: trust=70.0 liq=0",
-      "count": 264
+      "count": 262
     },
     {
       "reason": "below_tier2: composite=54.9 trust=70.0 bqs=32 liq=0",
@@ -77,11 +77,11 @@
     },
     {
       "reason": "exit_no_matching_position",
-      "count": 90
+      "count": 96
     },
     {
       "reason": "hard_rule:max_active_positions",
-      "count": 81
+      "count": 82
     },
     {
       "reason": "below_tier2: trust=70.0 liq=83713",
@@ -97,7 +97,7 @@
     },
     {
       "reason": "below_tier2: composite=43.7 trust=54.0 bqs=28 liq=0",
-      "count": 14
+      "count": 20
     },
     {
       "reason": "below_tier2: composite=56.7 trust=70.0 bqs=37 liq=0",
@@ -116,11 +116,11 @@
       "count": 9
     },
     {
-      "reason": "exit_liquidity:exit_liquidity: age=175.5h>4h AND move=100.0%>5.0%",
+      "reason": "exit_liquidity:exit_liquidity: age=177.0h>4h AND move=100.0%>5.0%",
       "count": 8
     }
   ],
-  "last_signal_at": "2026-03-17T01:31:30",
+  "last_signal_at": "2026-03-17T01:40:55",
   "pending_proposals": [],
   "approved_queue": [],
   "action_history": [
