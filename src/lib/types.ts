@@ -87,20 +87,16 @@ export interface Analytics {
   signals_executed: number;
 }
 
-export interface WalletReview {
-  active: number;
-  deactivated: number;
-  top_performers: string[];
-}
-
 export interface AiAdvisor {
   timestamp?: string;
   regime: string;
-  confidence: string;
+  confidence?: string;
   reasoning: string;
-  actions: string[];
-  wallet_review: WalletReview;
-  next_review: string;
+  deactivated_wallets?: { label: string; reason: string }[];
+  signals_6h?: { total: number; executed: number; wash_filtered: number; below_tier2: number };
+  positions?: { open: number; closed: number; total_pnl: number; win_rate: number };
+  params_before?: Record<string, unknown>;
+  params_after?: Record<string, unknown>;
 }
 
 export interface SoftParams {

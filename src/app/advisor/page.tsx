@@ -271,38 +271,75 @@ export default function AdvisorPage() {
               <p className="text-sm text-gray-300 leading-relaxed">{advisor.reasoning}</p>
             </div>
 
-            <div>
-              <p className="text-xs text-gray-500 uppercase tracking-wider mb-2">Actions Taken (Auto-Applied)</p>
-              <ul className="space-y-1.5">
-                {advisor.actions.map((action, i) => (
-                  <li key={i} className="flex items-start gap-2 text-sm">
-                    <span className="text-emerald-400 mt-0.5 shrink-0">-</span>
-                    <span className="text-gray-300">{action}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {advisor.wallet_review && (
+            {/* Deactivated wallets */}
+            {advisor.deactivated_wallets && advisor.deactivated_wallets.length > 0 && (
               <div>
-                <p className="text-xs text-gray-500 uppercase tracking-wider mb-2">Wallet Review</p>
-                <div className="flex gap-6 text-sm">
-                  <span className="text-gray-400">
-                    Active: <span className="text-white font-bold">{advisor.wallet_review.active}</span>
-                  </span>
-                  <span className="text-gray-400">
-                    Deactivated: <span className="text-white font-bold">{advisor.wallet_review.deactivated}</span>
-                  </span>
+                <p className="text-xs text-gray-500 uppercase tracking-wider mb-2">Wallets Deactivated</p>
+                <div className="flex flex-wrap gap-2">
+                  {advisor.deactivated_wallets.map((w: { label: string; reason: string }, i: number) => (
+                    <span key={i} className="px-2 py-1 bg-red-900/50 text-red-300 rounded text-xs">
+                      {w.label} — {w.reason}
+                    </span>
+                  ))}
                 </div>
-                {advisor.wallet_review.top_performers.length > 0 && (
-                  <div className="mt-2 flex flex-wrap gap-2">
-                    {advisor.wallet_review.top_performers.map((w, i) => (
-                      <span key={i} className="px-2 py-0.5 bg-emerald-900/50 text-emerald-300 rounded text-xs">
-                        {w}
-                      </span>
-                    ))}
-                  </div>
+              </div>
+            )}
+
+            {/* Signal & Position Stats */}
+            {(advisor.signals_6h || advisor.positions) && (
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+                {advisor.signals_6h && (
+                  <>
+                    <div>
+                      <p className="text-gray-500">Signals (6h)</p>
+                      <p className="text-lg font-mono font-bold">{advisor.signals_6h.total}</p>
+                      <p className="text-xs text-gray-600">{advisor.signals_6h.executed} executed</p>
+                    </div>
+                    <div>
+                      <p className="text-gray-500">Wash Filtered</p>
+                      <p className="text-lg font-mono font-bold text-orange-400">{advisor.signals_6h.wash_filtered}</p>
+                    </div>
+                  </>
                 )}
+                {advisor.positions && (
+                  <>
+                    <div>
+                      <p className="text-gray-500">Positions</p>
+                      <p className="text-lg font-mono font-bold">{advisor.positions.open} open / {advisor.positions.closed} closed</p>
+                    </div>
+                    <div>
+                      <p className="text-gray-500">Total P&L</p>
+                      <p className={`text-lg font-mono font-bold ${advisor.positions.total_pnl >= 0 ? "text-emerald-400" : "text-red-400"}`}>
+                        ${advisor.positions.total_pnl?.toFixed(2)}
+                      </p>
+                      <p className="text-xs text-gray-600">WR: {((advisor.positions.win_rate || 0) * 100).toFixed(0)}%</p>
+                    </div>
+                  </>
+                )}
+              </div>
+            )}
+
+            {/* Param changes */}
+            {advisor.params_before && advisor.params_after && (
+              <div>
+                <p className="text-xs text-gray-500 uppercase tracking-wider mb-2">Parameter Changes</p>
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-3 text-sm">
+                  {Object.keys(advisor.params_after).map((key) => {
+                    const before = advisor.params_before[key];
+                    const after = advisor.params_after[key];
+                    const changed = before !== after;
+                    return (
+                      <div key={key} className={changed ? "text-yellow-300" : "text-gray-400"}>
+                        <span className="text-gray-500">{key}: </span>
+                        {changed ? (
+                          <span className="font-mono">{String(before)} → {String(after)}</span>
+                        ) : (
+                          <span className="font-mono">{String(after)}</span>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
             )}
           </div>
