@@ -1,6 +1,24 @@
 {
   "trades": [
     {
+      "id": 43,
+      "condition_id": "0x7637dcb119d54ad03a968a1a6bec2e1f7e03bd22556808c8ef451c2150b6acac",
+      "wallet": "0xb45a797faa",
+      "side": "BUY",
+      "price": 0.4771,
+      "size_usdt": 4.79,
+      "size_inr": 399.96,
+      "pnl": 0.0,
+      "pnl_inr": 0.0,
+      "timestamp": "2026-03-17T02:46:12",
+      "tier": 2,
+      "category": "sports",
+      "status": "OPEN",
+      "question": "Spurs vs. Clippers: O/U 232.5",
+      "polymarket_url": "https://polymarket.com/sports/nba/nba-sas-lac-2026-03-16",
+      "bet_description": "Over on Spurs vs. Clippers: O/U 232.5 \u2014 48% implied"
+    },
+    {
       "id": 42,
       "condition_id": "0x54fde4b1f3769a13968a6f4fa9b3c90e1d2515b791daa465c59f8979502aea1a",
       "wallet": "0xbddf61af53",
@@ -314,12 +332,12 @@
       "price": 0.5174,
       "size_usdt": 4.79,
       "size_inr": 399.96,
-      "pnl": 0.4407,
-      "pnl_inr": 36.8,
+      "pnl": 0.0,
+      "pnl_inr": 0.0,
       "timestamp": "2026-03-16T20:11:24",
       "tier": 2,
       "category": "sports",
-      "status": "OPEN",
+      "status": "CLOSED",
       "question": "Bruins vs. Devils",
       "polymarket_url": "https://polymarket.com/sports/nhl/nhl-bos-nj-2026-03-16",
       "bet_description": "YES on Bruins vs. Devils \u2014 52% implied"
