@@ -1,6 +1,6 @@
 {
-  "exported_at": "2026-03-17T01:41:00.795150",
-  "bot_running": false,
+  "exported_at": "2026-03-17T01:45:54.078990",
+  "bot_running": true,
   "current_regime": "sideways",
   "soft_params": {
     "tier1_trust_min": 85,
@@ -61,11 +61,11 @@
   "skip_reasons": [
     {
       "reason": "wash_filter_flagged",
-      "count": 5163
+      "count": 5148
     },
     {
       "reason": "hard_rule:max_open_positions",
-      "count": 389
+      "count": 387
     },
     {
       "reason": "below_tier2: trust=70.0 liq=0",
@@ -88,15 +88,15 @@
       "count": 46
     },
     {
+      "reason": "below_tier2: composite=43.7 trust=54.0 bqs=28 liq=0",
+      "count": 23
+    },
+    {
       "reason": "category_disabled:geopolitical",
       "count": 21
     },
     {
       "reason": "below_tier2: composite=57.7 trust=70.0 bqs=39 liq=124934",
-      "count": 20
-    },
-    {
-      "reason": "below_tier2: composite=43.7 trust=54.0 bqs=28 liq=0",
       "count": 20
     },
     {
@@ -120,7 +120,7 @@
       "count": 8
     }
   ],
-  "last_signal_at": "2026-03-17T01:40:55",
+  "last_signal_at": "2026-03-17T01:45:53",
   "pending_proposals": [],
   "approved_queue": [],
   "action_history": [
