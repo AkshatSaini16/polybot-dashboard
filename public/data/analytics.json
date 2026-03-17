@@ -38,10 +38,10 @@
     {
       "category": "sports",
       "pnl": -1088.27,
-      "trades": 303,
+      "trades": 304,
       "win_rate": 0.09
     }
   ],
-  "signals_generated": 11754,
+  "signals_generated": 11784,
   "signals_executed": 36
 }
