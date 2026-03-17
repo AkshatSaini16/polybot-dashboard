@@ -1,7 +1,7 @@
 {
   "total_pnl": -19.36,
-  "total_trades": 18,
-  "win_rate": 0.444,
+  "total_trades": 20,
+  "win_rate": 0.4,
   "best_trade": 5.24,
   "worst_trade": -4.79,
   "monthly_alpha_est": -129.31,
@@ -26,7 +26,7 @@
     {
       "category": "",
       "pnl": -2549.2,
-      "trades": 643,
+      "trades": 663,
       "win_rate": 0.05
     },
     {
@@ -38,10 +38,10 @@
     {
       "category": "sports",
       "pnl": -1088.27,
-      "trades": 293,
-      "win_rate": 0.1
+      "trades": 295,
+      "win_rate": 0.09
     }
   ],
-  "signals_generated": 11433,
-  "signals_executed": 33
+  "signals_generated": 11476,
+  "signals_executed": 35
 }

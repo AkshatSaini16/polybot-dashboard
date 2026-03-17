@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-03-17T01:45:54.078990",
+  "exported_at": "2026-03-17T02:46:07.214303",
   "bot_running": true,
   "current_regime": "sideways",
   "soft_params": {
@@ -61,15 +61,15 @@
   "skip_reasons": [
     {
       "reason": "wash_filter_flagged",
-      "count": 5148
+      "count": 4967
     },
     {
       "reason": "hard_rule:max_open_positions",
-      "count": 387
+      "count": 363
     },
     {
       "reason": "below_tier2: trust=70.0 liq=0",
-      "count": 262
+      "count": 250
     },
     {
       "reason": "below_tier2: composite=54.9 trust=70.0 bqs=32 liq=0",
@@ -77,11 +77,11 @@
     },
     {
       "reason": "exit_no_matching_position",
-      "count": 96
+      "count": 100
     },
     {
       "reason": "hard_rule:max_active_positions",
-      "count": 82
+      "count": 83
     },
     {
       "reason": "below_tier2: trust=70.0 liq=83713",
@@ -89,7 +89,7 @@
     },
     {
       "reason": "below_tier2: composite=43.7 trust=54.0 bqs=28 liq=0",
-      "count": 23
+      "count": 28
     },
     {
       "reason": "category_disabled:geopolitical",
@@ -120,7 +120,7 @@
       "count": 8
     }
   ],
-  "last_signal_at": "2026-03-17T01:45:53",
+  "last_signal_at": "2026-03-17T02:46:06",
   "pending_proposals": [],
   "approved_queue": [],
   "action_history": [
@@ -382,6 +382,5 @@
       "recent_pnl": 496625.33,
       "recent_trades": 1970
     }
-  ],
-  "last_pushed_at": "2026-03-17T01:45:57"
+  ]
 }
