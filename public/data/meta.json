@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-03-17T20:25:53.671484",
+  "exported_at": "2026-03-17T21:26:04.164356",
   "bot_running": true,
   "current_regime": "cautious",
   "soft_params": {
@@ -46,18 +46,22 @@
   "skip_reasons": [
     {
       "reason": "exit_no_matching_position",
-      "count": 41
+      "count": 60
     },
     {
       "reason": "below_tier2: composite=70.3 trust=95.5 bqs=33 liq=0",
-      "count": 29
+      "count": 41
+    },
+    {
+      "reason": "below_tier2: composite=44.0 trust=50.0 bqs=35 liq=73993",
+      "count": 18
     },
     {
       "reason": "below_tier2: composite=72.0 trust=88.3 bqs=48 liq=54612",
       "count": 14
     },
     {
-      "reason": "below_tier2: composite=44.0 trust=50.0 bqs=35 liq=73993",
+      "reason": "below_tier2: composite=71.6 trust=88.3 bqs=46 liq=17829",
       "count": 12
     },
     {
@@ -69,20 +73,24 @@
       "count": 10
     },
     {
+      "reason": "below_tier2: composite=61.6 trust=75.0 bqs=42 liq=0",
+      "count": 10
+    },
+    {
+      "reason": "below_tier2: composite=71.6 trust=88.3 bqs=47 liq=41603",
+      "count": 9
+    },
+    {
       "reason": "below_tier2: composite=47.0 trust=50.0 bqs=43 liq=95538",
       "count": 9
     },
     {
-      "reason": "below_tier2: composite=71.4 trust=88.3 bqs=46 liq=54612",
+      "reason": "below_tier2: composite=73.9 trust=88.3 bqs=52 liq=92747",
       "count": 8
     },
     {
-      "reason": "below_tier2: composite=71.6 trust=88.3 bqs=46 liq=17829",
-      "count": 7
-    },
-    {
-      "reason": "below_tier2: composite=61.6 trust=75.0 bqs=42 liq=0",
-      "count": 6
+      "reason": "below_tier2: composite=71.4 trust=88.3 bqs=46 liq=54612",
+      "count": 8
     },
     {
       "reason": "below_tier2: composite=74.3 trust=95.2 bqs=43 liq=89382",
@@ -93,19 +101,11 @@
       "count": 5
     },
     {
-      "reason": "below_tier2: composite=57.9 trust=75.0 bqs=32 liq=0",
-      "count": 4
-    },
-    {
-      "reason": "below_tier2: composite=71.6 trust=88.3 bqs=47 liq=41603",
-      "count": 3
-    },
-    {
-      "reason": "below_tier2: composite=73.9 trust=88.3 bqs=52 liq=92747",
-      "count": 2
+      "reason": "below_tier2: composite=46.7 trust=50.0 bqs=42 liq=45463",
+      "count": 5
     }
   ],
-  "last_signal_at": "2026-03-17T20:25:48",
+  "last_signal_at": "2026-03-17T21:25:15",
   "pending_proposals": [],
   "approved_queue": [],
   "action_history": [],
@@ -186,7 +186,7 @@
       "is_active": true,
       "avg_score": 80.1,
       "trades": 2151,
-      "win_rate": 0.742,
+      "win_rate": 0.738,
       "recent_pnl": 4901051.62,
       "recent_trades": 1996
     },
@@ -196,7 +196,7 @@
       "is_active": true,
       "avg_score": 75.0,
       "trades": 2000,
-      "win_rate": 0.894,
+      "win_rate": 0.888,
       "recent_pnl": 699969.86,
       "recent_trades": 1993
     },
@@ -386,7 +386,7 @@
       "is_active": true,
       "avg_score": 78.3,
       "trades": 1592,
-      "win_rate": 0.824,
+      "win_rate": 0.82,
       "recent_pnl": 166635.22,
       "recent_trades": 1947
     },
@@ -406,7 +406,7 @@
       "is_active": true,
       "avg_score": 68.7,
       "trades": 1771,
-      "win_rate": 0.701,
+      "win_rate": 0.697,
       "recent_pnl": 212763.19,
       "recent_trades": 1949
     },
@@ -440,6 +440,5 @@
       "recent_pnl": 496625.33,
       "recent_trades": 1970
     }
-  ],
-  "last_pushed_at": "2026-03-17T20:25:56"
+  ]
 }
