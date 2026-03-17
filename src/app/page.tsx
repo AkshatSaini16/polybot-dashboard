@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import type { Portfolio, Position, Meta } from "@/lib/types";
+import type { Portfolio, Position, Meta, Investment } from "@/lib/types";
 import { formatUsdt, formatInr, usdtToInr } from "@/lib/currency";
 
 function Card({ title, children }: { title: string; children: React.ReactNode }) {
@@ -149,22 +149,60 @@ export default function PortfolioPage() {
         </div>
       </div>
 
+      {/* Invested + Balance overview */}
+      {meta.investments && meta.investments.length > 0 && (
+        <div className="bg-gray-900 border border-gray-800 rounded-lg p-5">
+          <div className="flex items-center justify-between mb-3">
+            <h3 className="text-xs font-medium text-gray-500 uppercase tracking-wider">Total Invested</h3>
+            <span className="text-2xl font-bold text-white">
+              {formatInr(meta.total_invested_inr ?? 0)}
+              <span className="text-sm text-gray-500 ml-2">({formatUsdt(meta.total_invested_usdt ?? 0)})</span>
+            </span>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            {meta.investments.map((inv: Investment, i: number) => (
+              <div key={i} className="flex items-center justify-between bg-gray-800/50 rounded px-3 py-2">
+                <div>
+                  <span className="text-sm text-gray-300">{inv.label}</span>
+                  <span className="text-xs text-gray-600 ml-2">{inv.date}</span>
+                </div>
+                <span className="text-sm font-medium text-emerald-400">+{formatInr(inv.amount_inr)}</span>
+              </div>
+            ))}
+          </div>
+          {/* Return on investment */}
+          {(() => {
+            const totalInvested = meta.total_invested_usdt ?? meta.starting_capital_usdt;
+            const currentValue = portfolio.balance_usdt;
+            const roi = totalInvested > 0 ? ((currentValue - totalInvested) / totalInvested) * 100 : 0;
+            const roiColor = roi >= 0 ? "text-emerald-400" : "text-red-400";
+            return (
+              <div className="mt-3 pt-3 border-t border-gray-800 flex items-center justify-between">
+                <span className="text-xs text-gray-500">Current Value vs Invested</span>
+                <div className="text-right">
+                  <span className="text-sm font-medium text-white">{formatInr(portfolio.balance_inr)}</span>
+                  <span className={`text-sm ml-2 ${roiColor}`}>
+                    ({roi >= 0 ? "+" : ""}{roi.toFixed(1)}%)
+                  </span>
+                </div>
+              </div>
+            );
+          })()}
+        </div>
+      )}
+
       {/* Summary cards */}
-      <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
-        <Card title="Balance (USDT)">
-          <p className="text-2xl font-bold">{formatUsdt(portfolio.balance_usdt)}</p>
-          <p className="text-sm text-gray-500">{formatInr(portfolio.balance_inr)}</p>
-        </Card>
-        <Card title="Active Capital">
-          <p className="text-2xl font-bold">{formatUsdt(portfolio.active_capital_usdt)}</p>
-          <p className="text-sm text-gray-500">Reserve: {formatUsdt(portfolio.reserve_usdt)}</p>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <Card title="Balance">
+          <p className="text-2xl font-bold">{formatInr(portfolio.balance_inr)}</p>
+          <p className="text-sm text-gray-500">{formatUsdt(portfolio.balance_usdt)}</p>
         </Card>
         <Card title="Unrealized P&L">
           <p className={`text-2xl font-bold ${pnlColor}`}>
-            {formatUsdt(portfolio.total_unrealized_pnl)}
+            {formatInr(usdtToInr(portfolio.total_unrealized_pnl))}
           </p>
           <p className={`text-sm ${pnlColor}`}>
-            {formatInr(usdtToInr(portfolio.total_unrealized_pnl))}
+            {formatUsdt(portfolio.total_unrealized_pnl)}
           </p>
         </Card>
         <Card title="Active Slots">
@@ -173,7 +211,7 @@ export default function PortfolioPage() {
             <span className="text-base text-gray-500">/{q?.active_slots_max ?? 12}</span>
           </p>
           <p className="text-sm text-gray-500">
-            Free: {formatUsdt(q?.free_capital_usdt ?? 0)}
+            Free: {formatInr(usdtToInr(q?.free_capital_usdt ?? 0))}
           </p>
         </Card>
         <Card title="Stale Queue">
@@ -181,8 +219,7 @@ export default function PortfolioPage() {
             {q?.stale_count ?? stalePositions.length}
           </p>
           <p className="text-sm text-gray-500">
-            Locked: {formatUsdt(q?.stale_locked_usdt ?? 0)}
-            <span className="text-gray-600"> / {((q?.stale_capital_cap_pct ?? 0.25) * 100).toFixed(0)}% cap</span>
+            Locked: {formatInr(usdtToInr(q?.stale_locked_usdt ?? 0))}
           </p>
         </Card>
       </div>

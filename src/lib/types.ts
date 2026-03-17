@@ -144,6 +144,13 @@ export interface AiAction {
   decided_at: string;
 }
 
+export interface Investment {
+  date: string;
+  amount_inr: number;
+  amount_usdt: number;
+  label: string;
+}
+
 export interface Meta {
   exported_at: string;
   last_pushed_at?: string;
@@ -153,6 +160,9 @@ export interface Meta {
   ai_advisor?: AiAdvisor;
   starting_capital_usdt: number;
   starting_capital_inr: number;
+  investments?: Investment[];
+  total_invested_inr?: number;
+  total_invested_usdt?: number;
   skip_reasons?: SkipReason[];
   last_signal_at?: string;
   bot_uptime_hours?: number;
