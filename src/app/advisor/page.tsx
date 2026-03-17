@@ -159,10 +159,10 @@ export default function AdvisorPage() {
         <SectionCard title="Regime">
           <div className="flex items-center gap-2">
             <RegimeBadge regime={meta.current_regime} />
-            {advisor && <ConfidenceBadge confidence={advisor.confidence} />}
+            {advisor?.confidence && <ConfidenceBadge confidence={advisor.confidence} />}
           </div>
           <p className="text-xs text-gray-500 mt-1">
-            Next review: {advisor?.next_review || "?"}
+            Regime: {advisor?.regime || "?"}
           </p>
         </SectionCard>
 
@@ -324,9 +324,9 @@ export default function AdvisorPage() {
               <div>
                 <p className="text-xs text-gray-500 uppercase tracking-wider mb-2">Parameter Changes</p>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-3 text-sm">
-                  {Object.keys(advisor.params_after).map((key) => {
-                    const before = advisor.params_before[key];
-                    const after = advisor.params_after[key];
+                  {Object.keys(advisor.params_after!).map((key) => {
+                    const before = advisor.params_before?.[key];
+                    const after = advisor.params_after![key];
                     const changed = before !== after;
                     return (
                       <div key={key} className={changed ? "text-yellow-300" : "text-gray-400"}>
