@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-03-17T18:25:32.085320",
+  "exported_at": "2026-03-17T18:26:41.711310",
   "bot_running": true,
   "current_regime": "unknown",
   "soft_params": {
@@ -372,6 +372,5 @@
       "recent_pnl": 496625.33,
       "recent_trades": 1970
     }
-  ],
-  "last_pushed_at": "2026-03-17T18:25:35"
+  ]
 }
