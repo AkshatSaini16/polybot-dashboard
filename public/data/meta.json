@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-03-17T13:27:49.442040",
+  "exported_at": "2026-03-17T13:48:34.752188",
   "bot_running": true,
   "current_regime": "cautious",
   "soft_params": {
@@ -59,7 +59,7 @@
   "skip_reasons": [
     {
       "reason": "wash_filter_flagged",
-      "count": 3009
+      "count": 2917
     },
     {
       "reason": "below_tier2: composite=54.9 trust=70.0 bqs=32 liq=0",
@@ -67,19 +67,19 @@
     },
     {
       "reason": "exit_no_matching_position",
-      "count": 128
+      "count": 133
     },
     {
       "reason": "below_tier2: trust=70.0 liq=0",
-      "count": 122
-    },
-    {
-      "reason": "hard_rule:max_open_positions",
-      "count": 108
+      "count": 118
     },
     {
       "reason": "hard_rule:max_active_positions",
       "count": 105
+    },
+    {
+      "reason": "hard_rule:max_open_positions",
+      "count": 100
     },
     {
       "reason": "below_tier2: composite=43.7 trust=54.0 bqs=28 liq=0",
@@ -118,7 +118,7 @@
       "count": 10
     }
   ],
-  "last_signal_at": "2026-03-17T13:27:18",
+  "last_signal_at": "2026-03-17T13:48:25",
   "pending_proposals": [],
   "approved_queue": [],
   "action_history": [

@@ -32,16 +32,16 @@
     {
       "category": "political",
       "pnl": -0.24,
-      "trades": 4,
+      "trades": 5,
       "win_rate": 0.0
     },
     {
       "category": "sports",
       "pnl": -1366.35,
-      "trades": 389,
+      "trades": 394,
       "win_rate": 0.1
     }
   ],
-  "signals_generated": 11870,
-  "signals_executed": 37
+  "signals_generated": 11903,
+  "signals_executed": 38
 }
