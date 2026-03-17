@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-03-17T13:06:59.872295",
+  "exported_at": "2026-03-17T13:22:52.351458",
   "bot_running": true,
   "current_regime": "cautious",
   "soft_params": {
@@ -40,26 +40,42 @@
   },
   "starting_capital_usdt": 59.88,
   "starting_capital_inr": 4999.98,
+  "investments": [
+    {
+      "date": "2026-03-14",
+      "amount_inr": 5000,
+      "amount_usdt": 59.88,
+      "label": "Initial deposit"
+    },
+    {
+      "date": "2026-03-17",
+      "amount_inr": 5000,
+      "amount_usdt": 59.88,
+      "label": "Top-up"
+    }
+  ],
+  "total_invested_inr": 10000,
+  "total_invested_usdt": 119.76,
   "skip_reasons": [
     {
       "reason": "wash_filter_flagged",
-      "count": 3087
+      "count": 3031
     },
     {
       "reason": "below_tier2: composite=54.9 trust=70.0 bqs=32 liq=0",
       "count": 139
     },
     {
-      "reason": "below_tier2: trust=70.0 liq=0",
+      "reason": "exit_no_matching_position",
       "count": 127
     },
     {
-      "reason": "exit_no_matching_position",
-      "count": 124
+      "reason": "below_tier2: trust=70.0 liq=0",
+      "count": 123
     },
     {
       "reason": "hard_rule:max_open_positions",
-      "count": 117
+      "count": 110
     },
     {
       "reason": "hard_rule:max_active_positions",
@@ -102,7 +118,7 @@
       "count": 10
     }
   ],
-  "last_signal_at": "2026-03-17T13:06:24",
+  "last_signal_at": "2026-03-17T13:22:16",
   "pending_proposals": [],
   "approved_queue": [],
   "action_history": [
@@ -251,7 +267,7 @@
       "avg_score": 41.6,
       "trades": 1592,
       "win_rate": 0.391,
-      "recent_pnl": 39761.45,
+      "recent_pnl": 39764.45,
       "recent_trades": 2877
     },
     {
@@ -435,6 +451,16 @@
       "recent_trades": 0
     },
     {
+      "address": "0xd84c2b6d65",
+      "label": "discovery_0xd84c2b",
+      "is_active": false,
+      "avg_score": 70.0,
+      "trades": 40,
+      "win_rate": 0.5,
+      "recent_pnl": 0.0,
+      "recent_trades": 0
+    },
+    {
       "address": "0xee613b3fc1",
       "label": "discovery_0xee613b",
       "is_active": false,
@@ -521,7 +547,7 @@
       "avg_score": 49.8,
       "trades": 1730,
       "win_rate": 0.479,
-      "recent_pnl": 1987.29,
+      "recent_pnl": 1974.75,
       "recent_trades": 1987
     },
     {

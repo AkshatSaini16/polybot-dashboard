@@ -18,7 +18,7 @@
       "pnl_inr": 6.15,
       "pnl_pct": 1.54,
       "opened_at": "2026-03-17T12:48:09",
-      "age_hours": 0.3,
+      "age_hours": 0.6,
       "end_date": "2026-03-18",
       "queue": "active",
       "source_wallet": "0x0b9cae2b0d",
@@ -29,7 +29,7 @@
     }
   ],
   "total_unrealized_pnl": 0.07,
-  "last_updated": "2026-03-17T13:06:59.755519",
+  "last_updated": "2026-03-17T13:22:52.207971",
   "queue": {
     "active_slots_used": 1,
     "active_slots_max": 12,
