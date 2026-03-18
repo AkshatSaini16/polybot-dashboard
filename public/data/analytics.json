@@ -26,11 +26,11 @@
     },
     {
       "category": "sports",
-      "pnl": 15.42,
-      "trades": 9,
-      "win_rate": 0.78
+      "pnl": 15.25,
+      "trades": 10,
+      "win_rate": 0.7
     }
   ],
-  "signals_generated": 962,
-  "signals_executed": 16
+  "signals_generated": 1041,
+  "signals_executed": 18
 }

@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-03-18T06:27:42.064955",
+  "exported_at": "2026-03-18T07:27:54.532416",
   "bot_running": true,
   "current_regime": "cautious",
   "soft_params": {
@@ -46,23 +46,27 @@
   "skip_reasons": [
     {
       "reason": "exit_no_matching_position",
-      "count": 188
+      "count": 202
     },
     {
       "reason": "wash_filter_flagged",
-      "count": 104
+      "count": 115
+    },
+    {
+      "reason": "below_tier2: composite=57.9 trust=75.0 bqs=32 liq=0",
+      "count": 94
     },
     {
       "reason": "below_tier2: composite=70.3 trust=95.5 bqs=33 liq=0",
       "count": 88
     },
     {
-      "reason": "below_tier2: composite=57.9 trust=75.0 bqs=32 liq=0",
-      "count": 82
+      "reason": "below_tier2: composite=70.3 trust=95.4 bqs=33 liq=0",
+      "count": 72
     },
     {
-      "reason": "below_tier2: composite=70.3 trust=95.4 bqs=33 liq=0",
-      "count": 60
+      "reason": "below_tier2: composite=51.8 trust=50.0 bqs=54 liq=257978",
+      "count": 29
     },
     {
       "reason": "below_tier2: composite=46.7 trust=50.0 bqs=42 liq=45463",
@@ -89,10 +93,6 @@
       "count": 17
     },
     {
-      "reason": "below_tier2: composite=51.8 trust=50.0 bqs=54 liq=257978",
-      "count": 17
-    },
-    {
       "reason": "below_tier2: composite=52.3 trust=50.0 bqs=56 liq=572369",
       "count": 15
     },
@@ -105,7 +105,7 @@
       "count": 14
     }
   ],
-  "last_signal_at": "2026-03-18T06:26:21",
+  "last_signal_at": "2026-03-18T07:27:54",
   "pending_proposals": [],
   "approved_queue": [],
   "action_history": [],
@@ -117,7 +117,7 @@
       "avg_score": 0.0,
       "trades": 0,
       "win_rate": 0,
-      "recent_pnl": 27414.2,
+      "recent_pnl": 27225.26,
       "recent_trades": 2877
     },
     {
@@ -440,6 +440,5 @@
       "recent_pnl": 496625.33,
       "recent_trades": 1970
     }
-  ],
-  "last_pushed_at": "2026-03-18T06:27:46"
+  ]
 }
