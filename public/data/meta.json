@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-03-18T01:26:52.563443",
+  "exported_at": "2026-03-18T02:27:04.933836",
   "bot_running": true,
   "current_regime": "cautious",
   "soft_params": {
@@ -46,7 +46,7 @@
   "skip_reasons": [
     {
       "reason": "exit_no_matching_position",
-      "count": 106
+      "count": 122
     },
     {
       "reason": "below_tier2: composite=70.3 trust=95.5 bqs=33 liq=0",
@@ -54,15 +54,15 @@
     },
     {
       "reason": "wash_filter_flagged",
-      "count": 43
+      "count": 72
+    },
+    {
+      "reason": "below_tier2: composite=57.9 trust=75.0 bqs=32 liq=0",
+      "count": 34
     },
     {
       "reason": "below_tier2: composite=46.7 trust=50.0 bqs=42 liq=45463",
       "count": 23
-    },
-    {
-      "reason": "below_tier2: composite=57.9 trust=75.0 bqs=32 liq=0",
-      "count": 22
     },
     {
       "reason": "below_tier2: composite=45.9 trust=50.0 bqs=40 liq=11177",
@@ -93,19 +93,19 @@
       "count": 12
     },
     {
+      "reason": "below_tier2: composite=70.3 trust=95.4 bqs=33 liq=0",
+      "count": 12
+    },
+    {
       "reason": "below_tier2: composite=62.6 trust=75.0 bqs=44 liq=64178",
       "count": 11
     },
     {
       "reason": "below_tier2: composite=62.2 trust=75.0 bqs=43 liq=89382",
       "count": 10
-    },
-    {
-      "reason": "below_tier2: composite=71.6 trust=88.3 bqs=47 liq=41603",
-      "count": 9
     }
   ],
-  "last_signal_at": "2026-03-18T01:26:31",
+  "last_signal_at": "2026-03-18T02:25:43",
   "pending_proposals": [],
   "approved_queue": [],
   "action_history": [],
@@ -440,6 +440,5 @@
       "recent_pnl": 496625.33,
       "recent_trades": 1970
     }
-  ],
-  "last_pushed_at": "2026-03-18T01:26:56"
+  ]
 }
