@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-03-18T02:27:04.933836",
+  "exported_at": "2026-03-18T04:27:17.390315",
   "bot_running": true,
   "current_regime": "cautious",
   "soft_params": {
@@ -46,19 +46,23 @@
   "skip_reasons": [
     {
       "reason": "exit_no_matching_position",
-      "count": 122
+      "count": 183
+    },
+    {
+      "reason": "wash_filter_flagged",
+      "count": 97
     },
     {
       "reason": "below_tier2: composite=70.3 trust=95.5 bqs=33 liq=0",
       "count": 88
     },
     {
-      "reason": "wash_filter_flagged",
-      "count": 72
+      "reason": "below_tier2: composite=57.9 trust=75.0 bqs=32 liq=0",
+      "count": 58
     },
     {
-      "reason": "below_tier2: composite=57.9 trust=75.0 bqs=32 liq=0",
-      "count": 34
+      "reason": "below_tier2: composite=70.3 trust=95.4 bqs=33 liq=0",
+      "count": 36
     },
     {
       "reason": "below_tier2: composite=46.7 trust=50.0 bqs=42 liq=45463",
@@ -93,10 +97,6 @@
       "count": 12
     },
     {
-      "reason": "below_tier2: composite=70.3 trust=95.4 bqs=33 liq=0",
-      "count": 12
-    },
-    {
       "reason": "below_tier2: composite=62.6 trust=75.0 bqs=44 liq=64178",
       "count": 11
     },
@@ -105,7 +105,7 @@
       "count": 10
     }
   ],
-  "last_signal_at": "2026-03-18T02:25:43",
+  "last_signal_at": "2026-03-18T04:26:37",
   "pending_proposals": [],
   "approved_queue": [],
   "action_history": [],
@@ -117,7 +117,7 @@
       "avg_score": 0.0,
       "trades": 0,
       "win_rate": 0,
-      "recent_pnl": 28344.51,
+      "recent_pnl": 27453.31,
       "recent_trades": 2877
     },
     {
@@ -186,7 +186,7 @@
       "is_active": true,
       "avg_score": 80.1,
       "trades": 2151,
-      "win_rate": 0.732,
+      "win_rate": 0.726,
       "recent_pnl": 4901051.62,
       "recent_trades": 1996
     },
@@ -196,7 +196,7 @@
       "is_active": true,
       "avg_score": 75.0,
       "trades": 2000,
-      "win_rate": 0.882,
+      "win_rate": 0.876,
       "recent_pnl": 699969.86,
       "recent_trades": 1993
     },
@@ -384,10 +384,10 @@
       "address": "0x0b9cae2b0d",
       "label": "geniusMC",
       "is_active": true,
-      "avg_score": 38.9,
-      "trades": 1834,
-      "win_rate": 0.288,
-      "recent_pnl": 9176.86,
+      "avg_score": 40.4,
+      "trades": 1933,
+      "win_rate": 0.33,
+      "recent_pnl": 11345.57,
       "recent_trades": 1947
     },
     {
@@ -406,7 +406,7 @@
       "is_active": true,
       "avg_score": 68.7,
       "trades": 1771,
-      "win_rate": 0.692,
+      "win_rate": 0.686,
       "recent_pnl": 212763.19,
       "recent_trades": 1949
     },
@@ -427,7 +427,7 @@
       "avg_score": 0.0,
       "trades": 0,
       "win_rate": 0,
-      "recent_pnl": -8419.13,
+      "recent_pnl": -8039.92,
       "recent_trades": 1987
     },
     {
@@ -440,6 +440,5 @@
       "recent_pnl": 496625.33,
       "recent_trades": 1970
     }
-  ],
-  "last_pushed_at": "2026-03-18T02:27:08"
+  ]
 }
