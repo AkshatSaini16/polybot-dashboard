@@ -1,6 +1,24 @@
 {
   "trades": [
     {
+      "id": 64,
+      "condition_id": "0x63f4859ba6b341ec56c53fc5d49e371def1dab41ccae6e02fb05166d8b96f5fd",
+      "wallet": "0x0b9cae2b0d",
+      "side": "BUY",
+      "price": 0.01,
+      "size_usdt": 4.79,
+      "size_inr": 399.96,
+      "pnl": 0.0,
+      "pnl_inr": 0.0,
+      "timestamp": "2026-03-18T05:23:14",
+      "tier": 2,
+      "category": "sports",
+      "status": "OPEN",
+      "question": "Howard Bison vs. UMBC Retrievers",
+      "polymarket_url": "https://polymarket.com/sports/cbb/cbb-howrd-umbc-2026-03-17",
+      "bet_description": "YES on Howard Bison vs. UMBC Retrievers \u2014 1% implied"
+    },
+    {
       "id": 63,
       "condition_id": "0xa5bb84a7462befd81df5497dba54cf6e2050d8da5449a0387db1cc67212d65d0",
       "wallet": "0x0b9cae2b0d",
