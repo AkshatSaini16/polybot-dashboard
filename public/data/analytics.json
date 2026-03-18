@@ -1,10 +1,10 @@
 {
-  "total_pnl": 10.41,
-  "total_trades": 8,
-  "win_rate": 0.75,
-  "best_trade": 5.02,
+  "total_pnl": 15.64,
+  "total_trades": 9,
+  "win_rate": 0.778,
+  "best_trade": 5.24,
   "worst_trade": -4.2,
-  "monthly_alpha_est": 69.51,
+  "monthly_alpha_est": 104.51,
   "daily_pnl": [
     {
       "date": "2026-03-17",
@@ -13,8 +13,8 @@
     },
     {
       "date": "2026-03-18",
-      "pnl": 14.61,
-      "cumulative": 10.41
+      "pnl": 19.85,
+      "cumulative": 15.65
     }
   ],
   "category_breakdown": [
@@ -26,11 +26,11 @@
     },
     {
       "category": "sports",
-      "pnl": 15.25,
-      "trades": 10,
-      "win_rate": 0.7
+      "pnl": 26.25,
+      "trades": 13,
+      "win_rate": 0.77
     }
   ],
-  "signals_generated": 1047,
-  "signals_executed": 18
+  "signals_generated": 1124,
+  "signals_executed": 21
 }
