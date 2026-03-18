@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-03-18T17:28:52.001597",
+  "exported_at": "2026-03-18T18:29:03.693192",
   "bot_running": true,
   "current_regime": "bull",
   "soft_params": {
@@ -56,7 +56,7 @@
   "skip_reasons": [
     {
       "reason": "exit_no_matching_position",
-      "count": 427
+      "count": 439
     },
     {
       "reason": "below_tier2: composite=70.3 trust=95.4 bqs=33 liq=0",
@@ -80,11 +80,11 @@
     },
     {
       "reason": "below_tier2: composite=70.3 trust=95.5 bqs=33 liq=0",
-      "count": 88
+      "count": 82
     },
     {
       "reason": "below_tier2: composite=47.0 trust=50.0 bqs=43 liq=110179",
-      "count": 42
+      "count": 54
     },
     {
       "reason": "below_tier2: composite=72.0 trust=93.4 bqs=40 liq=54612",
@@ -115,7 +115,7 @@
       "count": 18
     }
   ],
-  "last_signal_at": "2026-03-18T17:27:34",
+  "last_signal_at": "2026-03-18T18:27:46",
   "pending_proposals": [],
   "approved_queue": [],
   "action_history": [],
@@ -450,6 +450,5 @@
       "recent_pnl": 496625.33,
       "recent_trades": 1970
     }
-  ],
-  "last_pushed_at": "2026-03-18T17:28:56"
+  ]
 }

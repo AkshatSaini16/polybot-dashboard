@@ -20,14 +20,14 @@
   "category_breakdown": [
     {
       "category": "",
-      "pnl": 100.5,
-      "trades": 49,
-      "win_rate": 0.57
+      "pnl": 99.72,
+      "trades": 61,
+      "win_rate": 0.46
     },
     {
       "category": "political",
       "pnl": 0.0,
-      "trades": 1,
+      "trades": 2,
       "win_rate": 0.0
     },
     {
@@ -37,6 +37,6 @@
       "win_rate": 0.73
     }
   ],
-  "signals_generated": 1703,
-  "signals_executed": 29
+  "signals_generated": 1740,
+  "signals_executed": 30
 }
