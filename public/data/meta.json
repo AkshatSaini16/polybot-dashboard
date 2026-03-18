@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-03-18T18:29:03.693192",
+  "exported_at": "2026-03-18T19:29:15.858236",
   "bot_running": true,
   "current_regime": "bull",
   "soft_params": {
@@ -56,7 +56,7 @@
   "skip_reasons": [
     {
       "reason": "exit_no_matching_position",
-      "count": 439
+      "count": 430
     },
     {
       "reason": "below_tier2: composite=70.3 trust=95.4 bqs=33 liq=0",
@@ -68,7 +68,7 @@
     },
     {
       "reason": "below_tier2: composite=57.9 trust=75.0 bqs=32 liq=0",
-      "count": 104
+      "count": 100
     },
     {
       "reason": "below_tier2: composite=51.8 trust=50.0 bqs=54 liq=257978",
@@ -80,11 +80,15 @@
     },
     {
       "reason": "below_tier2: composite=70.3 trust=95.5 bqs=33 liq=0",
-      "count": 82
+      "count": 70
     },
     {
       "reason": "below_tier2: composite=47.0 trust=50.0 bqs=43 liq=110179",
-      "count": 54
+      "count": 57
+    },
+    {
+      "reason": "below_tier2: composite=70.2 trust=95.3 bqs=33 liq=0",
+      "count": 24
     },
     {
       "reason": "below_tier2: composite=72.0 trust=93.4 bqs=40 liq=54612",
@@ -99,10 +103,6 @@
       "count": 22
     },
     {
-      "reason": "below_tier2: composite=61.6 trust=75.0 bqs=42 liq=0",
-      "count": 20
-    },
-    {
       "reason": "below_tier2: composite=50.7 trust=50.0 bqs=52 liq=349249",
       "count": 19
     },
@@ -115,7 +115,7 @@
       "count": 18
     }
   ],
-  "last_signal_at": "2026-03-18T18:27:46",
+  "last_signal_at": "2026-03-18T19:27:10",
   "pending_proposals": [],
   "approved_queue": [],
   "action_history": [],
@@ -127,7 +127,7 @@
       "avg_score": 0.0,
       "trades": 0,
       "win_rate": 0,
-      "recent_pnl": 27219.61,
+      "recent_pnl": 27229.23,
       "recent_trades": 2877
     },
     {
@@ -196,7 +196,7 @@
       "is_active": true,
       "avg_score": 80.1,
       "trades": 2151,
-      "win_rate": 0.708,
+      "win_rate": 0.704,
       "recent_pnl": 4901051.62,
       "recent_trades": 1996
     },
@@ -206,7 +206,7 @@
       "is_active": true,
       "avg_score": 75.0,
       "trades": 2000,
-      "win_rate": 0.852,
+      "win_rate": 0.848,
       "recent_pnl": 699969.86,
       "recent_trades": 1993
     },
@@ -251,14 +251,34 @@
       "recent_trades": 134
     },
     {
+      "address": "0x0720803c7c",
+      "label": "discovery_0x072080",
+      "is_active": false,
+      "avg_score": 70.0,
+      "trades": 40,
+      "win_rate": 0.5,
+      "recent_pnl": 0.0,
+      "recent_trades": 46
+    },
+    {
+      "address": "0x2005d16a84",
+      "label": "discovery_0x2005d1",
+      "is_active": false,
+      "avg_score": 70.0,
+      "trades": 40,
+      "win_rate": 0.5,
+      "recent_pnl": 0.0,
+      "recent_trades": 47
+    },
+    {
       "address": "0x39d3c773be",
       "label": "discovery_0x39d3c7",
       "is_active": false,
       "avg_score": 0.0,
       "trades": 0,
       "win_rate": 0,
-      "recent_pnl": 0.0,
-      "recent_trades": 49
+      "recent_pnl": 14148.52,
+      "recent_trades": 92
     },
     {
       "address": "0x492442eab5",
@@ -268,7 +288,7 @@
       "trades": 0,
       "win_rate": 0,
       "recent_pnl": 0.0,
-      "recent_trades": 38
+      "recent_trades": 59
     },
     {
       "address": "0x63ce342161",
@@ -277,8 +297,8 @@
       "avg_score": 70.0,
       "trades": 40,
       "win_rate": 0.5,
-      "recent_pnl": 0.0,
-      "recent_trades": 47
+      "recent_pnl": -172.82,
+      "recent_trades": 97
     },
     {
       "address": "0x6a72f61820",
@@ -288,7 +308,7 @@
       "trades": 0,
       "win_rate": 0,
       "recent_pnl": 0.0,
-      "recent_trades": 50
+      "recent_trades": 90
     },
     {
       "address": "0x6ade597c0e",
@@ -298,7 +318,17 @@
       "trades": 0,
       "win_rate": 0,
       "recent_pnl": 73.55,
-      "recent_trades": 37
+      "recent_trades": 70
+    },
+    {
+      "address": "0x8f037a2e4f",
+      "label": "discovery_0x8f037a",
+      "is_active": false,
+      "avg_score": 70.0,
+      "trades": 40,
+      "win_rate": 0.5,
+      "recent_pnl": 0.0,
+      "recent_trades": 50
     },
     {
       "address": "0x96489abcb9",
@@ -308,7 +338,7 @@
       "trades": 0,
       "win_rate": 0,
       "recent_pnl": 0.0,
-      "recent_trades": 49
+      "recent_trades": 99
     },
     {
       "address": "0xc65ca47554",
@@ -318,7 +348,7 @@
       "trades": 0,
       "win_rate": 0,
       "recent_pnl": 0.0,
-      "recent_trades": 50
+      "recent_trades": 100
     },
     {
       "address": "0xd0d6053c3c",
@@ -328,7 +358,7 @@
       "trades": 40,
       "win_rate": 0.5,
       "recent_pnl": 0.0,
-      "recent_trades": 50
+      "recent_trades": 99
     },
     {
       "address": "0xd84c2b6d65",
@@ -338,7 +368,7 @@
       "trades": 0,
       "win_rate": 0,
       "recent_pnl": 0.0,
-      "recent_trades": 50
+      "recent_trades": 100
     },
     {
       "address": "0xde17f7144f",
@@ -348,7 +378,7 @@
       "trades": 40,
       "win_rate": 0.5,
       "recent_pnl": 0.0,
-      "recent_trades": 50
+      "recent_trades": 100
     },
     {
       "address": "0xee613b3fc1",
@@ -358,7 +388,7 @@
       "trades": 0,
       "win_rate": 0,
       "recent_pnl": 0.0,
-      "recent_trades": 50
+      "recent_trades": 100
     },
     {
       "address": "0xefbc5fec8d",
@@ -368,7 +398,7 @@
       "trades": 0,
       "win_rate": 0,
       "recent_pnl": 0.0,
-      "recent_trades": 50
+      "recent_trades": 100
     },
     {
       "address": "0xf195721ad8",
@@ -378,7 +408,7 @@
       "trades": 0,
       "win_rate": 0,
       "recent_pnl": 0.0,
-      "recent_trades": 50
+      "recent_trades": 67
     },
     {
       "address": "0x93abbc022c",
@@ -396,7 +426,7 @@
       "is_active": true,
       "avg_score": 40.4,
       "trades": 1933,
-      "win_rate": 0.322,
+      "win_rate": 0.319,
       "recent_pnl": 11345.67,
       "recent_trades": 1947
     },
@@ -416,7 +446,7 @@
       "is_active": true,
       "avg_score": 68.7,
       "trades": 1771,
-      "win_rate": 0.667,
+      "win_rate": 0.666,
       "recent_pnl": 212763.19,
       "recent_trades": 1949
     },
@@ -437,7 +467,7 @@
       "avg_score": 0.0,
       "trades": 0,
       "win_rate": 0,
-      "recent_pnl": -8155.19,
+      "recent_pnl": -8174.85,
       "recent_trades": 1987
     },
     {
@@ -450,6 +480,5 @@
       "recent_pnl": 496625.33,
       "recent_trades": 1970
     }
-  ],
-  "last_pushed_at": "2026-03-18T18:29:07"
+  ]
 }
