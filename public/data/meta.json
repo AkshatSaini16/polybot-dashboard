@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-03-18T09:28:16.276411",
+  "exported_at": "2026-03-18T10:28:27.627440",
   "bot_running": true,
   "current_regime": "cautious",
   "soft_params": {
@@ -46,19 +46,19 @@
   "skip_reasons": [
     {
       "reason": "exit_no_matching_position",
-      "count": 242
+      "count": 266
     },
     {
       "reason": "wash_filter_flagged",
       "count": 133
     },
     {
-      "reason": "below_tier2: composite=57.9 trust=75.0 bqs=32 liq=0",
-      "count": 104
+      "reason": "below_tier2: composite=70.3 trust=95.4 bqs=33 liq=0",
+      "count": 108
     },
     {
-      "reason": "below_tier2: composite=70.3 trust=95.4 bqs=33 liq=0",
-      "count": 96
+      "reason": "below_tier2: composite=57.9 trust=75.0 bqs=32 liq=0",
+      "count": 104
     },
     {
       "reason": "below_tier2: composite=70.3 trust=95.5 bqs=33 liq=0",
@@ -66,7 +66,7 @@
     },
     {
       "reason": "below_tier2: composite=51.8 trust=50.0 bqs=54 liq=257978",
-      "count": 53
+      "count": 65
     },
     {
       "reason": "below_tier2: composite=72.0 trust=93.4 bqs=40 liq=54612",
@@ -89,6 +89,10 @@
       "count": 19
     },
     {
+      "reason": "below_tier2: composite=78.6 trust=93.3 bqs=56 liq=13496",
+      "count": 18
+    },
+    {
       "reason": "below_tier2: composite=44.0 trust=50.0 bqs=35 liq=73993",
       "count": 18
     },
@@ -99,13 +103,9 @@
     {
       "reason": "below_tier2: composite=52.3 trust=50.0 bqs=56 liq=572369",
       "count": 15
-    },
-    {
-      "reason": "below_tier2: composite=50.4 trust=50.0 bqs=51 liq=232524",
-      "count": 15
     }
   ],
-  "last_signal_at": "2026-03-18T09:27:58",
+  "last_signal_at": "2026-03-18T10:28:01",
   "pending_proposals": [],
   "approved_queue": [],
   "action_history": [],
@@ -186,7 +186,7 @@
       "is_active": true,
       "avg_score": 80.1,
       "trades": 2151,
-      "win_rate": 0.72,
+      "win_rate": 0.718,
       "recent_pnl": 4901051.62,
       "recent_trades": 1996
     },
@@ -196,7 +196,7 @@
       "is_active": true,
       "avg_score": 75.0,
       "trades": 2000,
-      "win_rate": 0.868,
+      "win_rate": 0.864,
       "recent_pnl": 699969.86,
       "recent_trades": 1993
     },
@@ -406,7 +406,7 @@
       "is_active": true,
       "avg_score": 68.7,
       "trades": 1771,
-      "win_rate": 0.68,
+      "win_rate": 0.679,
       "recent_pnl": 212763.19,
       "recent_trades": 1949
     },
@@ -440,6 +440,5 @@
       "recent_pnl": 496625.33,
       "recent_trades": 1970
     }
-  ],
-  "last_pushed_at": "2026-03-18T09:28:19"
+  ]
 }
