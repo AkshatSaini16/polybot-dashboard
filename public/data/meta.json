@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-03-17T23:26:28.049916",
+  "exported_at": "2026-03-18T00:26:40.044228",
   "bot_running": true,
   "current_regime": "cautious",
   "soft_params": {
@@ -46,11 +46,11 @@
   "skip_reasons": [
     {
       "reason": "exit_no_matching_position",
-      "count": 89
+      "count": 97
     },
     {
       "reason": "below_tier2: composite=70.3 trust=95.5 bqs=33 liq=0",
-      "count": 64
+      "count": 76
     },
     {
       "reason": "below_tier2: composite=46.7 trust=50.0 bqs=42 liq=45463",
@@ -63,6 +63,10 @@
     {
       "reason": "below_tier2: composite=44.0 trust=50.0 bqs=35 liq=73993",
       "count": 18
+    },
+    {
+      "reason": "below_tier2: composite=57.9 trust=75.0 bqs=32 liq=0",
+      "count": 17
     },
     {
       "reason": "below_tier2: composite=61.6 trust=75.0 bqs=42 liq=0",
@@ -85,6 +89,10 @@
       "count": 10
     },
     {
+      "reason": "wash_filter_flagged",
+      "count": 9
+    },
+    {
       "reason": "below_tier2: composite=71.6 trust=88.3 bqs=47 liq=41603",
       "count": 9
     },
@@ -95,17 +103,9 @@
     {
       "reason": "below_tier2: composite=73.9 trust=88.3 bqs=52 liq=92747",
       "count": 8
-    },
-    {
-      "reason": "below_tier2: composite=71.4 trust=88.3 bqs=46 liq=54612",
-      "count": 8
-    },
-    {
-      "reason": "below_tier2: composite=71.5 trust=88.2 bqs=46 liq=25555",
-      "count": 7
     }
   ],
-  "last_signal_at": "2026-03-17T23:25:52",
+  "last_signal_at": "2026-03-18T00:26:07",
   "pending_proposals": [],
   "approved_queue": [],
   "action_history": [],
@@ -117,7 +117,7 @@
       "avg_score": 0.0,
       "trades": 0,
       "win_rate": 0,
-      "recent_pnl": 40060.93,
+      "recent_pnl": 27391.89,
       "recent_trades": 2877
     },
     {
@@ -427,7 +427,7 @@
       "avg_score": 0.0,
       "trades": 0,
       "win_rate": 0,
-      "recent_pnl": 1933.75,
+      "recent_pnl": -6417.2,
       "recent_trades": 1987
     },
     {
@@ -440,6 +440,5 @@
       "recent_pnl": 496625.33,
       "recent_trades": 1970
     }
-  ],
-  "last_pushed_at": "2026-03-17T23:26:31"
+  ]
 }
