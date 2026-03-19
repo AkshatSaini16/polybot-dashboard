@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-03-18T23:29:59.124225",
+  "exported_at": "2026-03-19T00:30:09.641008",
   "bot_running": true,
   "current_regime": "bull",
   "soft_params": {
@@ -56,7 +56,7 @@
   "skip_reasons": [
     {
       "reason": "exit_no_matching_position",
-      "count": 384
+      "count": 390
     },
     {
       "reason": "below_tier2: composite=70.3 trust=95.4 bqs=33 liq=0",
@@ -67,10 +67,6 @@
       "count": 148
     },
     {
-      "reason": "below_tier2: composite=57.9 trust=75.0 bqs=32 liq=0",
-      "count": 100
-    },
-    {
       "reason": "below_tier2: composite=51.8 trust=50.0 bqs=54 liq=257978",
       "count": 92
     },
@@ -79,8 +75,12 @@
       "count": 91
     },
     {
+      "reason": "below_tier2: composite=57.9 trust=75.0 bqs=32 liq=0",
+      "count": 89
+    },
+    {
       "reason": "below_tier2: composite=70.2 trust=95.3 bqs=33 liq=0",
-      "count": 72
+      "count": 84
     },
     {
       "reason": "below_tier2: composite=47.0 trust=50.0 bqs=43 liq=110179",
@@ -88,10 +88,6 @@
     },
     {
       "reason": "below_tier2: composite=72.0 trust=93.4 bqs=40 liq=54612",
-      "count": 23
-    },
-    {
-      "reason": "below_tier2: composite=70.3 trust=95.5 bqs=33 liq=0",
       "count": 23
     },
     {
@@ -113,9 +109,13 @@
     {
       "reason": "below_tier2: composite=62.5 trust=75.0 bqs=44 liq=80322",
       "count": 15
+    },
+    {
+      "reason": "below_tier2: composite=76.3 trust=93.4 bqs=51 liq=31414",
+      "count": 14
     }
   ],
-  "last_signal_at": "2026-03-18T23:29:37",
+  "last_signal_at": "2026-03-19T00:28:48",
   "pending_proposals": [],
   "approved_queue": [],
   "action_history": [],
@@ -127,7 +127,7 @@
       "avg_score": 0.0,
       "trades": 0,
       "win_rate": 0,
-      "recent_pnl": 26794.59,
+      "recent_pnl": 26788.29,
       "recent_trades": 2877
     },
     {
@@ -467,7 +467,7 @@
       "avg_score": 0.0,
       "trades": 0,
       "win_rate": 0,
-      "recent_pnl": -9302.78,
+      "recent_pnl": -9508.51,
       "recent_trades": 1987
     },
     {
@@ -480,6 +480,5 @@
       "recent_pnl": 496625.33,
       "recent_trades": 1970
     }
-  ],
-  "last_pushed_at": "2026-03-18T23:30:02"
+  ]
 }
