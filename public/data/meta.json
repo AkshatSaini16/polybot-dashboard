@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-03-19T00:30:09.641008",
+  "exported_at": "2026-03-19T09:18:37.614938",
   "bot_running": true,
   "current_regime": "bull",
   "soft_params": {
@@ -56,50 +56,50 @@
   "skip_reasons": [
     {
       "reason": "exit_no_matching_position",
-      "count": 390
-    },
-    {
-      "reason": "below_tier2: composite=70.3 trust=95.4 bqs=33 liq=0",
-      "count": 190
-    },
-    {
-      "reason": "wash_filter_flagged",
-      "count": 148
-    },
-    {
-      "reason": "below_tier2: composite=51.8 trust=50.0 bqs=54 liq=257978",
-      "count": 92
-    },
-    {
-      "reason": "below_tier2: composite=78.6 trust=93.3 bqs=56 liq=13496",
-      "count": 91
-    },
-    {
-      "reason": "below_tier2: composite=57.9 trust=75.0 bqs=32 liq=0",
-      "count": 89
+      "count": 258
     },
     {
       "reason": "below_tier2: composite=70.2 trust=95.3 bqs=33 liq=0",
-      "count": 84
+      "count": 123
+    },
+    {
+      "reason": "below_tier2: composite=70.3 trust=95.4 bqs=33 liq=0",
+      "count": 96
+    },
+    {
+      "reason": "below_tier2: composite=78.6 trust=93.3 bqs=56 liq=13496",
+      "count": 87
     },
     {
       "reason": "below_tier2: composite=47.0 trust=50.0 bqs=43 liq=110179",
       "count": 57
     },
     {
-      "reason": "below_tier2: composite=72.0 trust=93.4 bqs=40 liq=54612",
-      "count": 23
+      "reason": "below_tier2: composite=51.8 trust=50.0 bqs=54 liq=257978",
+      "count": 41
+    },
+    {
+      "reason": "wash_filter_flagged",
+      "count": 28
+    },
+    {
+      "reason": "below_tier2: composite=47.0 trust=50.0 bqs=42 liq=32677",
+      "count": 26
+    },
+    {
+      "reason": "below_tier2: composite=50.2 trust=50.0 bqs=51 liq=272965",
+      "count": 20
+    },
+    {
+      "reason": "below_tier2: composite=45.3 trust=50.0 bqs=38 liq=66722",
+      "count": 20
     },
     {
       "reason": "below_tier2: composite=50.7 trust=50.0 bqs=52 liq=349249",
       "count": 19
     },
     {
-      "reason": "below_tier2: composite=26.2 trust=23.0 bqs=31 liq=0",
-      "count": 19
-    },
-    {
-      "reason": "below_tier2: composite=70.4 trust=93.4 bqs=36 liq=5845",
+      "reason": "below_tier2: composite=45.4 trust=50.0 bqs=38 liq=16952",
       "count": 17
     },
     {
@@ -111,11 +111,11 @@
       "count": 15
     },
     {
-      "reason": "below_tier2: composite=76.3 trust=93.4 bqs=51 liq=31414",
-      "count": 14
+      "reason": "below_tier2: composite=49.0 trust=50.0 bqs=47 liq=274625",
+      "count": 12
     }
   ],
-  "last_signal_at": "2026-03-19T00:28:48",
+  "last_signal_at": "2026-03-19T09:18:14",
   "pending_proposals": [],
   "approved_queue": [],
   "action_history": [],
@@ -127,7 +127,7 @@
       "avg_score": 0.0,
       "trades": 0,
       "win_rate": 0,
-      "recent_pnl": 26788.29,
+      "recent_pnl": 26926.95,
       "recent_trades": 2877
     },
     {
@@ -194,9 +194,9 @@
       "address": "0x02227b8f5a",
       "label": "HorizonSplendidView",
       "is_active": true,
-      "avg_score": 80.1,
+      "avg_score": 80.0,
       "trades": 2151,
-      "win_rate": 0.698,
+      "win_rate": 0.684,
       "recent_pnl": 4901051.62,
       "recent_trades": 1996
     },
@@ -206,7 +206,7 @@
       "is_active": true,
       "avg_score": 75.0,
       "trades": 2000,
-      "win_rate": 0.842,
+      "win_rate": 0.824,
       "recent_pnl": 699969.86,
       "recent_trades": 1993
     },
@@ -218,7 +218,7 @@
       "trades": 0,
       "win_rate": 0,
       "recent_pnl": 963603.12,
-      "recent_trades": 1398
+      "recent_trades": 1397
     },
     {
       "address": "0x916f7165c2",
@@ -248,7 +248,7 @@
       "trades": 0,
       "win_rate": 0,
       "recent_pnl": 2952262.94,
-      "recent_trades": 134
+      "recent_trades": 133
     },
     {
       "address": "0x0720803c7c",
@@ -424,9 +424,9 @@
       "address": "0x0b9cae2b0d",
       "label": "geniusMC",
       "is_active": true,
-      "avg_score": 40.4,
+      "avg_score": 40.5,
       "trades": 1933,
-      "win_rate": 0.316,
+      "win_rate": 0.311,
       "recent_pnl": 11345.67,
       "recent_trades": 1947
     },
@@ -446,7 +446,7 @@
       "is_active": true,
       "avg_score": 68.7,
       "trades": 1771,
-      "win_rate": 0.66,
+      "win_rate": 0.647,
       "recent_pnl": 212763.19,
       "recent_trades": 1949
     },
@@ -467,7 +467,7 @@
       "avg_score": 0.0,
       "trades": 0,
       "win_rate": 0,
-      "recent_pnl": -9508.51,
+      "recent_pnl": -9052.15,
       "recent_trades": 1987
     },
     {
@@ -480,6 +480,5 @@
       "recent_pnl": 496625.33,
       "recent_trades": 1970
     }
-  ],
-  "last_pushed_at": "2026-03-19T00:30:13"
+  ]
 }
